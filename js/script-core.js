@@ -1,46 +1,46 @@
 (function($){
 	"use strict";
 
-	var kingster_mobile = false;
+	var uni_santiago_mobile = false;
 	if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/BlackBerry/i) ||
 		navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/Windows Phone/i) ){ 
-		kingster_mobile = true; 
+		uni_santiago_mobile = true; 
 	}else{ 
-		kingster_mobile = false; 
+		uni_santiago_mobile = false; 
 	} 
 
-	var kingster_display = 'desktop';
+	var uni_santiago_display = 'desktop';
 	if( typeof(window.matchMedia) == 'function' ){
-		$(window).on('resize kingster-set-display', function(){
+		$(window).on('resize uni-santiago-set-display', function(){
 			if( window.matchMedia('(max-width: 419px)').matches ){
-				kingster_display = 'mobile-portrait';
+				uni_santiago_display = 'mobile-portrait';
 			}else if( window.matchMedia('(max-width: 767px)').matches ){
-				kingster_display = 'mobile-landscape'
+				uni_santiago_display = 'mobile-landscape'
 			}else if( window.matchMedia('(max-width: 959px)').matches ){
-				kingster_display = 'tablet'
+				uni_santiago_display = 'tablet'
 			}else{
-				kingster_display = 'desktop';
+				uni_santiago_display = 'desktop';
 			}
 		});
-		$(window).trigger('kingster-set-display');
+		$(window).trigger('uni-santiago-set-display');
 	}else{
-		$(window).on('resize kingster-set-display', function(){
+		$(window).on('resize uni-santiago-set-display', function(){
 			if( $(window).innerWidth() <= 419 ){
-				kingster_display = 'mobile-portrait';
+				uni_santiago_display = 'mobile-portrait';
 			}else if( $(window).innerWidth() <= 767 ){
-				kingster_display = 'mobile-landscape'
+				uni_santiago_display = 'mobile-landscape'
 			}else if( $(window).innerWidth() <= 959 ){
-				kingster_display = 'tablet'
+				uni_santiago_display = 'tablet'
 			}else{
-				kingster_display = 'desktop';
+				uni_santiago_display = 'desktop';
 			}
 		});
-		$(window).trigger('kingster-set-display');
+		$(window).trigger('uni-santiago-set-display');
 	}
 
 	// ref : http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
 	// ensure 1 is fired
-	var kingster_debounce = function(func, threshold, execAsap){
+	var uni_santiago_debounce = function(func, threshold, execAsap){
 		
 		var timeout;
 
@@ -65,7 +65,7 @@
 	}	
 	
 	// reduce the event occurance
-	var kingster_throttling = function(func, threshold){
+	var uni_santiago_throttling = function(func, threshold){
 		
 		var timeout;
 
@@ -86,13 +86,13 @@
 	/////////////////////////
 	// menu handle function
 	/////////////////////////
-	var kingster_sf_menu = function( menu ){
+	var uni_santiago_sf_menu = function( menu ){
 
 		if( menu.length == 0 ) return;
 
 		this.main_menu = menu;
 
-		this.slide_bar = this.main_menu.children('.kingster-navigation-slide-bar');
+		this.slide_bar = this.main_menu.children('.uni-santiago-navigation-slide-bar');
 		this.slide_bar_val = { width: 0, left: 0 };
 		this.slide_bar_offset = '2';
 
@@ -100,9 +100,9 @@
 		
 		this.init();
 		
-	} // kingster_sf_menu
+	} // uni_santiago_sf_menu
 
-	kingster_sf_menu.prototype = {
+	uni_santiago_sf_menu.prototype = {
 		
 		init: function(){
 			
@@ -116,7 +116,7 @@
 				t.main_menu.superfish({ delay: 400, speed: 'fast' });	
 				
 				t.sf_menu_position();
-				$(window).resize(kingster_debounce(function(){
+				$(window).resize(uni_santiago_debounce(function(){
 					t.sf_menu_position();
 				}, 300));
 			}
@@ -147,7 +147,7 @@
 					}
 					
 					mega_row.append( $('<div class="sf-mega-section" ></div>')
-						.addClass('kingster-column-' + column_size)
+						.addClass('uni-santiago-column-' + column_size)
 						.html( $('<div class="sf-mega-section-inner" ></div>')
 							.addClass($(this).attr('class'))
 							.attr('id', $(this).attr('id'))
@@ -164,11 +164,11 @@
 		
 		sf_menu_position: function(){
 
-			if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ) return;
+			if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ) return;
 
 			// submenu of normal menu
-			var body_wrapper = $('.kingster-body-wrapper');
-			var sub_normal_menu = this.main_menu.find('.sf-menu > li.kingster-normal-menu .sub-menu');
+			var body_wrapper = $('.uni-santiago-body-wrapper');
+			var sub_normal_menu = this.main_menu.find('.sf-menu > li.uni-santiago-normal-menu .sub-menu');
 			
 			sub_normal_menu.css({display: 'block'}).removeClass('sub-menu-right');
 			sub_normal_menu.each(function(){
@@ -179,7 +179,7 @@
 			sub_normal_menu.css({display: 'none'});
 			
 			// submenu of mega menu
-			this.main_menu.find('.sf-menu > li.kingster-mega-menu .sf-mega').each(function(){
+			this.main_menu.find('.sf-menu > li.uni-santiago-mega-menu .sf-mega').each(function(){
 				if( !$(this).hasClass('sf-mega-full') ){
 					
 					$(this).css({ display: 'block' });
@@ -207,7 +207,7 @@
 			$(window).load(function(){ t.init_slidebar_pos(); });
 			
 			// animate slidebar 
-			if( !kingster_mobile ){
+			if( !uni_santiago_mobile ){
 				t.main_menu.children('.sf-menu').children('li').on({
 					mouseenter: function(){
 						var nav_element = $(this).children('a');
@@ -224,17 +224,17 @@
 			
 			// window resize event
 			$(window).on('resize', function(){ t.init_slidebar_pos(); });
-			$(window).on('kingster-navigation-slider-bar-init', function(){ 
+			$(window).on('uni-santiago-navigation-slider-bar-init', function(){ 
 				t.current_menu = t.main_menu.children('.sf-menu').children('.current-menu-item, .current-menu-ancestor').children('a');
 				t.animate_slidebar_pos(); 
 			});
-			$(window).on('kingster-navigation-slider-bar-animate', function(){ t.animate_slidebar_pos(); });
+			$(window).on('uni-santiago-navigation-slider-bar-animate', function(){ t.animate_slidebar_pos(); });
 			
 		}, // init_slidebar
 		
 		init_slidebar_pos: function(){
 
-			if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ) return;
+			if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ) return;
 
 			var t = this;
 
@@ -248,7 +248,7 @@
 		}, // set_slidebar_pos	
 		animate_slidebar_pos: function(){
 
-			if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ) return;
+			if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ) return;
 
 			var t = this;
 
@@ -261,32 +261,32 @@
 
 		} // set_slidebar_pos
 		
-	}; // kingster_sf_menu.prototype
+	}; // uni_santiago_sf_menu.prototype
 	
 	/////////////////////////
 	// mobile menu
 	/////////////////////////
-	$.fn.kingster_mobile_menu = function( args ){
+	$.fn.uni_santiago_mobile_menu = function( args ){
 		
-		var menu_button = $(this).siblings('.kingster-mm-menu-button');
+		var menu_button = $(this).siblings('.uni-santiago-mm-menu-button');
 		var options = {
 			navbar: { title: '<span class="mmenu-custom-close" ></span>' },
 			extensions: [ 'pagedim-black' ],
 
 		};
 		var extensions = { 
-			offCanvas: { pageNodetype: '.kingster-body-outer-wrapper' } 
+			offCanvas: { pageNodetype: '.uni-santiago-body-outer-wrapper' } 
 		};
 
 		// remove the wrap for submenu
 		$(this).find('a[href="#"]').each(function(){
 			var content = $(this).html();
-			$('<span class="kingster-mm-menu-blank" ></span>').html(content).insertBefore($(this));
+			$('<span class="uni-santiago-mm-menu-blank" ></span>').html(content).insertBefore($(this));
 			$(this).remove();
 		});
 		
 		if( $(this).attr('data-slide') ){
-			var html_class = 'kingster-mmenu-' + $(this).attr('data-slide');
+			var html_class = 'uni-santiago-mmenu-' + $(this).attr('data-slide');
 			$('html').addClass(html_class);
 
 			options.offCanvas = { position : $(this).attr('data-slide') };
@@ -307,10 +307,10 @@
 
 		// add class active to button
 		menu_api.bind('open', function($panel){
-			menu_button.addClass('kingster-active');
+			menu_button.addClass('uni-santiago-active');
 		});
 		menu_api.bind('close', function($panel){
-			menu_button.removeClass('kingster-active');
+			menu_button.removeClass('uni-santiago-active');
 		});
 
 	}	
@@ -318,16 +318,16 @@
 	/////////////////////////
 	// overlay menu
 	/////////////////////////
-	var kingster_overlay_menu = function( menu ){
+	var uni_santiago_overlay_menu = function( menu ){
 
 		this.menu = menu;
-		this.menu_button = menu.children('.kingster-overlay-menu-icon');
-		this.menu_content = menu.children('.kingster-overlay-menu-content');
-		this.menu_close = this.menu_content.children('.kingster-overlay-menu-close');
+		this.menu_button = menu.children('.uni-santiago-overlay-menu-icon');
+		this.menu_content = menu.children('.uni-santiago-overlay-menu-content');
+		this.menu_close = this.menu_content.children('.uni-santiago-overlay-menu-close');
 
 		this.init();
 	}
-	kingster_overlay_menu.prototype = {
+	uni_santiago_overlay_menu.prototype = {
 		
 		init: function(){
 
@@ -344,10 +344,10 @@
 
 			// bind the menu button
 			t.menu_button.on('click', function(){
-				$(this).addClass('kingster-active');
+				$(this).addClass('uni-santiago-active');
 
 				t.menu_content.fadeIn(200, function(){
-					$(this).addClass('kingster-active');
+					$(this).addClass('uni-santiago-active');
 				});
 
 				return false;
@@ -355,12 +355,12 @@
 
 			// bind the menu close button
 			t.menu_close.on('click', function(){
-				t.menu_button.removeClass('kingster-active');
+				t.menu_button.removeClass('uni-santiago-active');
 
 				t.menu_content.fadeOut(400, function(){
-					$(this).removeClass('kingster-active');
+					$(this).removeClass('uni-santiago-active');
 				});
-				t.menu_content.find('.sub-menu').slideUp(200).removeClass('kingster-active');
+				t.menu_content.find('.sub-menu').slideUp(200).removeClass('uni-santiago-active');
 
 				return false;
 			});
@@ -369,19 +369,19 @@
 			t.menu_content.find('a').on('click', function(e){ 
 				var sub_menu = $(this).siblings('.sub-menu');
 				if( sub_menu.length > 0 ){
-					if( !sub_menu.hasClass('kingster-active') ){
-						var prev_active = sub_menu.closest('li').siblings().find('.sub-menu.kingster-active');
+					if( !sub_menu.hasClass('uni-santiago-active') ){
+						var prev_active = sub_menu.closest('li').siblings().find('.sub-menu.uni-santiago-active');
 						if( prev_active.length > 0 ){
-							prev_active.removeClass('kingster-active').slideUp(150);
-							sub_menu.delay(150).slideDown(400, 'easeOutQuart').addClass('kingster-active');
+							prev_active.removeClass('uni-santiago-active').slideUp(150);
+							sub_menu.delay(150).slideDown(400, 'easeOutQuart').addClass('uni-santiago-active');
 						}else{
-							sub_menu.slideDown(400, 'easeOutQuart').addClass('kingster-active');
+							sub_menu.slideDown(400, 'easeOutQuart').addClass('uni-santiago-active');
 						}
 
-						$(this).addClass('kingster-no-preload');
+						$(this).addClass('uni-santiago-no-preload');
 						return false;
 					}else{
-						$(this).removeClass('kingster-no-preload');
+						$(this).removeClass('uni-santiago-no-preload');
 					}
 				}else{
 					t.menu_close.trigger('click');
@@ -390,12 +390,12 @@
 
 		}
 
-	}; // kingster_overlay_menu.prototype
+	}; // uni_santiago_overlay_menu.prototype
 
 	/////////////////////////
 	// header side navigation
 	/////////////////////////
-	var kingster_header_side_nav = function( side_nav ){
+	var uni_santiago_header_side_nav = function( side_nav ){
 
 		if( side_nav.length == 0 ) return;
 
@@ -406,9 +406,9 @@
 
 		this.init();
 
-	} // kingster_header_side_nav
+	} // uni_santiago_header_side_nav
 
-	kingster_header_side_nav.prototype = {
+	uni_santiago_header_side_nav.prototype = {
 
 		init: function(){
 
@@ -422,10 +422,10 @@
 			
 			$(window).scroll(function(){
 
-				if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ) return;
+				if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ) return;
 
 				// if content longer than screen height
-				if( t.side_nav.hasClass('kingster-allow-slide') ){
+				if( t.side_nav.hasClass('uni-santiago-allow-slide') ){
 
 					var admin_bar_height = parseInt($('html').css('margin-top'));
 					var scroll_down = ($(window).scrollTop() > t.prev_scroll);
@@ -434,14 +434,14 @@
 					// if scroll down
 					if( scroll_down ){
 
-						if( !t.side_nav.hasClass('kingster-fix-bottom') ){
-							if( t.side_nav.hasClass('kingster-fix-top') ){
+						if( !t.side_nav.hasClass('uni-santiago-fix-bottom') ){
+							if( t.side_nav.hasClass('uni-santiago-fix-top') ){
 								t.side_nav.css('top', t.side_nav.offset().top);
-								t.side_nav.removeClass('kingster-fix-top');
+								t.side_nav.removeClass('uni-santiago-fix-top');
 
 							}else if( $(window).height() + $(window).scrollTop() > t.side_nav_content.offset().top + t.side_nav_content.outerHeight() ){ 
-								if( !t.side_nav.hasClass('kingster-fix-bottom') ){
-									t.side_nav.addClass('kingster-fix-bottom');
+								if( !t.side_nav.hasClass('uni-santiago-fix-bottom') ){
+									t.side_nav.addClass('uni-santiago-fix-bottom');
 									t.side_nav.css('top', '');
 								}
 							}
@@ -450,15 +450,15 @@
 					// if scroll up
 					}else{
 
-						if( !t.side_nav.hasClass('kingster-fix-top') ){
-							if( t.side_nav.hasClass('kingster-fix-bottom') ){
+						if( !t.side_nav.hasClass('uni-santiago-fix-top') ){
+							if( t.side_nav.hasClass('uni-santiago-fix-bottom') ){
 								var top_pos = $(window).scrollTop() + ($(window).height() - admin_bar_height) - t.side_nav_content.outerHeight();
 								t.side_nav.css('top', top_pos);
-								t.side_nav.removeClass('kingster-fix-bottom');
+								t.side_nav.removeClass('uni-santiago-fix-bottom');
 
 							}else if( $(window).scrollTop() + admin_bar_height < t.side_nav_content.offset().top ){ 
-								if( !t.side_nav.hasClass('kingster-fix-top') ){
-									t.side_nav.addClass('kingster-fix-top');
+								if( !t.side_nav.hasClass('uni-santiago-fix-top') ){
+									t.side_nav.addClass('uni-santiago-fix-top');
 									t.side_nav.css('top', '');
 								}
 							}
@@ -473,29 +473,29 @@
 
 		init_nav_bar_element: function(){
 
-			if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ) return;
+			if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ) return;
 
 			var t = this;
-			var middle_pos = t.side_nav_content.children('.kingster-pos-middle').addClass('kingster-active');
-			var bottom_pos = t.side_nav_content.children('.kingster-pos-bottom').addClass('kingster-active');
+			var middle_pos = t.side_nav_content.children('.uni-santiago-pos-middle').addClass('uni-santiago-active');
+			var bottom_pos = t.side_nav_content.children('.uni-santiago-pos-bottom').addClass('uni-santiago-active');
 
 			// remove all additional space
-			t.side_nav_content.children('.kingster-pre-spaces').remove();
+			t.side_nav_content.children('.uni-santiago-pre-spaces').remove();
 
 			// add class depends on the screen size/content
 			if( $(window).height() < t.side_nav_content.height() ){
-				t.side_nav.addClass('kingster-allow-slide');
+				t.side_nav.addClass('uni-santiago-allow-slide');
 			}else{
-				t.side_nav.removeClass('kingster-allow-slide kingster-fix-top kingster-fix-bottom').css('top', '');
+				t.side_nav.removeClass('uni-santiago-allow-slide uni-santiago-fix-top uni-santiago-fix-bottom').css('top', '');
 
 				// set the middle position
-				if( t.side_nav.hasClass('kingster-style-middle') ){
+				if( t.side_nav.hasClass('uni-santiago-style-middle') ){
 					middle_pos.each(function(){
 						var top_padding = parseInt($(this).css('padding-top'));
 						var prespace = ((t.side_nav.height() - (t.side_nav_content.height() - top_padding)) / 2) - top_padding;
 
 						if( prespace > 0 ){
-							$('<div class="kingster-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
+							$('<div class="uni-santiago-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
 						}
 					});
 				}
@@ -505,25 +505,25 @@
 					var prespace = t.side_nav.height() - t.side_nav_content.height();
 
 					if( prespace > 0 ){
-						$('<div class="kingster-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
+						$('<div class="uni-santiago-pre-spaces" ></div>').css('height', prespace).insertBefore($(this));
 					}
 				});
 
 			}
 		}
 
-	}; // kingster_sf_menu.prototype
+	}; // uni_santiago_sf_menu.prototype
 
 	/////////////////////////
 	// anchoring
 	/////////////////////////	
 
-	var kingster_anchor = function(){
+	var uni_santiago_anchor = function(){
 
 		this.anchor_link = $('a[href*="#"]').not('[href="#"]').filter(function(){
 
 			// for mm-menu plugin
-			if( $(this).is('.kingster-mm-menu-button, .mm-next, .mm-prev, .mm-title, .gdlr-core-ilightbox') ){
+			if( $(this).is('.uni-santiago-mm-menu-button, .mm-next, .mm-prev, .mm-title, .gdlr-core-ilightbox') ){
 				return false;
 			}
 
@@ -533,7 +533,7 @@
 			}
 
 			// for woocommerce
-			if( $(this).parent('.description_tab, .reviews_tab').length || $(this).not('[class^="kingster"]').closest('.woocommerce').length ){
+			if( $(this).parent('.description_tab, .reviews_tab').length || $(this).not('[class^="uni-santiago"]').closest('.woocommerce').length ){
 				return false;
 			}
 
@@ -541,13 +541,13 @@
 		});
 
 		if( this.anchor_link.length ){
-			this.menu_anchor = $('#kingster-main-menu, #kingster-bullet-anchor');
-			this.home_anchor = this.menu_anchor.find('ul.sf-menu > li.current-menu-item > a, ul.sf-menu > li.current-menu-ancestor > a, .kingster-bullet-anchor-link.current-menu-item');
+			this.menu_anchor = $('#uni-santiago-main-menu, #uni-santiago-bullet-anchor');
+			this.home_anchor = this.menu_anchor.find('ul.sf-menu > li.current-menu-item > a, ul.sf-menu > li.current-menu-ancestor > a, .uni-santiago-bullet-anchor-link.current-menu-item');
 
 			this.init();
 		}
 	}
-	kingster_anchor.prototype = {
+	uni_santiago_anchor.prototype = {
 
 		init: function(){
 
@@ -557,8 +557,8 @@
 			t.scroll_section();
 
 			// init bullet anchor height
-			t.menu_anchor.filter('#kingster-bullet-anchor').each(function(){
-				$(this).css('margin-top', - t.menu_anchor.height() / 2).addClass('kingster-init');
+			t.menu_anchor.filter('#uni-santiago-bullet-anchor').each(function(){
+				$(this).css('margin-top', - t.menu_anchor.height() / 2).addClass('uni-santiago-init');
 			});
 
 			// initialize if the page hash exists
@@ -571,7 +571,7 @@
 					if( !current_menu.is('.current-menu-item, .current-menu-ancestor') ){
 						current_menu.addClass('current-menu-item').siblings().removeClass('current-menu-item current-menu-ancestor');
 
-						$(window).trigger('kingster-navigation-slider-bar-init');
+						$(window).trigger('uni-santiago-navigation-slider-bar-init');
 					}
 
 					t.scroll_to(url_hash, false, 300);
@@ -606,7 +606,7 @@
 		scroll_to: function( hash, redirect, duration ){
 
 			// start scrolling
-			if( hash == '#kingster-top-anchor' ){
+			if( hash == '#uni-santiago-top-anchor' ){
 				var scroll_position = 0;
 			}else{
 				
@@ -623,10 +623,10 @@
 				scroll_position = scroll_position - parseInt($('html').css('margin-top'));
 
 				// offset for fixed nav bar
-				if( kingster_display == 'mobile-portrait' || kingster_display == 'mobile-landscape' ){
+				if( uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'mobile-landscape' ){
 					scroll_position = scroll_position - 75;
-				}else if( typeof(window.kingster_anchor_offset) != 'undefined' ){
-					scroll_position = scroll_position - parseInt(window.kingster_anchor_offset);
+				}else if( typeof(window.uni_santiago_anchor_offset) != 'undefined' ){
+					scroll_position = scroll_position - parseInt(window.uni_santiago_anchor_offset);
 				}
 
 				if( scroll_position < 0 ) scroll_position = 0;
@@ -637,7 +637,7 @@
 
 			}else if( redirect ){
 
-				window.location.href = kingster_script_core.home_url + hash;
+				window.location.href = uni_santiago_script_core.home_url + hash;
 
 				return false;
 			}
@@ -653,7 +653,7 @@
 			if( !menu_link_anchor.length ){ return; }
 
 			// get anchor section
-			var home_anchor_section = $('#kingster-page-wrapper');
+			var home_anchor_section = $('#uni-santiago-page-wrapper');
 			var anchor_section = home_anchor_section.find('div[id], section[id]');
 			if( !anchor_section.length ){ return; }
 
@@ -667,17 +667,17 @@
 			// check section on scroll event
 			$(window).scroll(function(){
 
-				if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ) return;
+				if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ) return;
 				
 				if( t.home_anchor.length && $(window).scrollTop() <= home_anchor_section.offset().top ){
 
 					t.home_anchor.each(function(){
-						if( $(this).hasClass('kingster-bullet-anchor-link') ){
+						if( $(this).hasClass('uni-santiago-bullet-anchor-link') ){
 							$(this).addClass('current-menu-item').siblings().removeClass('current-menu-item');
-							$(this).parent('.kingster-bullet-anchor').attr('data-anchor-section', 'kingster-home');
+							$(this).parent('.uni-santiago-bullet-anchor').attr('data-anchor-section', 'uni-santiago-home');
 						}else if( !$(this).parent('.current-menu-item, .current-menu-ancestor').length ){
 							$(this).parent().addClass('current-menu-item').siblings().removeClass('current-menu-item current-menu-ancestor');
-							$(window).trigger('kingster-navigation-slider-bar-init');
+							$(window).trigger('uni-santiago-navigation-slider-bar-init');
 						}			
 					});
 
@@ -692,12 +692,12 @@
 						if( (section_position > top_offset_pos) && (section_position <  top_offset_pos + $(this).outerHeight()) ){
 							var section_id = $(this).attr('id');
 							menu_link_anchor.filter('[data-anchor="#' +  section_id + '"]').each(function(){
-								if( $(this).hasClass('kingster-bullet-anchor-link') ){
+								if( $(this).hasClass('uni-santiago-bullet-anchor-link') ){
 									$(this).addClass('current-menu-item').siblings().removeClass('current-menu-item');
-									$(this).parent('.kingster-bullet-anchor').attr('data-anchor-section', section_id);
+									$(this).parent('.uni-santiago-bullet-anchor').attr('data-anchor-section', section_id);
 								}else if( $(this).parent('li.menu-item').length && !$(this).parent('li.menu-item').is('.current-menu-item, .current-menu-ancestor') ){
 									$(this).parent('li.menu-item').addClass('current-menu-item').siblings().removeClass('current-menu-item current-menu-ancestor');
-									$(window).trigger('kingster-navigation-slider-bar-init');
+									$(window).trigger('uni-santiago-navigation-slider-bar-init');
 								}
 							});
 							
@@ -713,24 +713,24 @@
 
 	};
 
-	var kingster_sticky_navigation = function(){
+	var uni_santiago_sticky_navigation = function(){
 
 		var t = this;
 
 		// get navigation
-		t.sticky_nav = $('.kingster-with-sticky-navigation .kingster-sticky-navigation');
-		t.mobile_menu = $('#kingster-mobile-header');
+		t.sticky_nav = $('.uni-santiago-with-sticky-navigation .uni-santiago-sticky-navigation');
+		t.mobile_menu = $('#uni-santiago-mobile-header');
 
 		// set the anchor offset
-		if( t.sticky_nav.hasClass('kingster-sticky-navigation-height') ){
-			window.kingster_anchor_offset = t.sticky_nav.outerHeight();
+		if( t.sticky_nav.hasClass('uni-santiago-sticky-navigation-height') ){
+			window.uni_santiago_anchor_offset = t.sticky_nav.outerHeight();
 			$(window).resize(function(){
-				window.kingster_anchor_offset = t.sticky_nav.outerHeight();
+				window.uni_santiago_anchor_offset = t.sticky_nav.outerHeight();
 			});
 		}else if( t.sticky_nav.attr('data-navigation-offset') ){
-			window.kingster_anchor_offset = parseInt(t.sticky_nav.attr('data-navigation-offset'));
+			window.uni_santiago_anchor_offset = parseInt(t.sticky_nav.attr('data-navigation-offset'));
 		}else if( t.sticky_nav.length ){
-			window.kingster_anchor_offset = 75;
+			window.uni_santiago_anchor_offset = 75;
 		}
 
 		// init the sticky navigation
@@ -738,68 +738,68 @@
 			t.init(); 
 		}
 
-		if( t.mobile_menu.hasClass('kingster-sticky-mobile-navigation') ){
+		if( t.mobile_menu.hasClass('uni-santiago-sticky-mobile-navigation') ){
 			t.style_mobile_slide();
-			$(window).trigger('kingster-set-sticky-mobile-navigation'); 
+			$(window).trigger('uni-santiago-set-sticky-mobile-navigation'); 
 		}
 
 	}
-	kingster_sticky_navigation.prototype = {
+	uni_santiago_sticky_navigation.prototype = {
 		
 		init: function(){
 
 			var t = this;
 
-			if( t.sticky_nav.hasClass('kingster-style-fixed') ){
+			if( t.sticky_nav.hasClass('uni-santiago-style-fixed') ){
 				t.style_fixed();
-			}else if( t.sticky_nav.hasClass('kingster-style-slide') ){
+			}else if( t.sticky_nav.hasClass('uni-santiago-style-slide') ){
 				t.style_slide();
 			}
 
-			$(window).trigger('kingster-set-sticky-navigation'); 
+			$(window).trigger('uni-santiago-set-sticky-navigation'); 
 		},
 
 		style_fixed: function(){
 
 			var t = this;
-			var placeholder = $('<div class="kingster-sticky-menu-placeholder" ></div>');
+			var placeholder = $('<div class="uni-santiago-sticky-menu-placeholder" ></div>');
 
-			$(window).on('scroll kingster-set-sticky-navigation', function(){
+			$(window).on('scroll uni-santiago-set-sticky-navigation', function(){
 
-				if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ) return;
+				if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ) return;
 
 				var page_offset = parseInt($('html').css('margin-top'));
 
-				if( !t.sticky_nav.hasClass('kingster-fixed-navigation') ){
+				if( !t.sticky_nav.hasClass('uni-santiago-fixed-navigation') ){
 
 					if( $(window).scrollTop() + page_offset > t.sticky_nav.offset().top ){
-						if( !t.sticky_nav.hasClass('kingster-without-placeholder') ){
+						if( !t.sticky_nav.hasClass('uni-santiago-without-placeholder') ){
 							placeholder.height(t.sticky_nav.outerHeight());
 						}
 						placeholder.insertAfter(t.sticky_nav);
 						$('body').append(t.sticky_nav);
-						t.sticky_nav.addClass('kingster-fixed-navigation');
+						t.sticky_nav.addClass('uni-santiago-fixed-navigation');
 						
-						setTimeout(function(){ t.sticky_nav.addClass('kingster-animate-fixed-navigation'); }, 10);	
+						setTimeout(function(){ t.sticky_nav.addClass('uni-santiago-animate-fixed-navigation'); }, 10);	
 						setTimeout(function(){ 
 							t.sticky_nav.css('height', ''); 
-							$(window).trigger('kingster-navigation-slider-bar-animate');
+							$(window).trigger('uni-santiago-navigation-slider-bar-animate');
 						}, 200);
 					}
 				}else{
 
 					if( $(window).scrollTop() + page_offset <= placeholder.offset().top ){
-						if( !t.sticky_nav.hasClass('kingster-without-placeholder') ){
+						if( !t.sticky_nav.hasClass('uni-santiago-without-placeholder') ){
 							t.sticky_nav.height(placeholder.height());
 						}
 						t.sticky_nav.insertBefore(placeholder);
-						t.sticky_nav.removeClass('kingster-fixed-navigation');
+						t.sticky_nav.removeClass('uni-santiago-fixed-navigation');
 						placeholder.remove();
 
-						setTimeout(function(){ t.sticky_nav.removeClass('kingster-animate-fixed-navigation'); }, 10);	
+						setTimeout(function(){ t.sticky_nav.removeClass('uni-santiago-animate-fixed-navigation'); }, 10);	
 						setTimeout(function(){ 
 							t.sticky_nav.css('height', ''); 
-							$(window).trigger('kingster-navigation-slider-bar-animate');
+							$(window).trigger('uni-santiago-navigation-slider-bar-animate');
 						}, 200);
 					}
 				}
@@ -810,28 +810,28 @@
 		style_slide: function(){
 
 			var t = this;
-			var placeholder = $('<div class="kingster-sticky-menu-placeholder" ></div>');
+			var placeholder = $('<div class="uni-santiago-sticky-menu-placeholder" ></div>');
 
-			$(window).on('scroll kingster-set-sticky-navigation', function(){
+			$(window).on('scroll uni-santiago-set-sticky-navigation', function(){
 
-				if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ){ return; }
+				if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ){ return; }
 
 				var page_offset = parseInt($('html').css('margin-top'));
 
-				if( !t.sticky_nav.hasClass('kingster-fixed-navigation') ){
+				if( !t.sticky_nav.hasClass('uni-santiago-fixed-navigation') ){
 
 					if( $(window).scrollTop() + page_offset > t.sticky_nav.offset().top + t.sticky_nav.outerHeight() + 200 ){
 						
-						if( !t.sticky_nav.hasClass('kingster-without-placeholder') ){
+						if( !t.sticky_nav.hasClass('uni-santiago-without-placeholder') ){
 							placeholder.height(t.sticky_nav.outerHeight());
 						}
 						placeholder.insertAfter(t.sticky_nav);
 						t.sticky_nav.css('display', 'none');
 
 						$('body').append(t.sticky_nav);
-						t.sticky_nav.addClass('kingster-fixed-navigation kingster-animate-fixed-navigation');
+						t.sticky_nav.addClass('uni-santiago-fixed-navigation uni-santiago-animate-fixed-navigation');
 						t.sticky_nav.slideDown(200);
-						$(window).trigger('kingster-navigation-slider-bar-animate');
+						$(window).trigger('uni-santiago-navigation-slider-bar-animate');
 					}
 				}else{
 
@@ -842,10 +842,10 @@
 
 						t.sticky_nav.insertBefore(placeholder);
 						placeholder.remove();
-						t.sticky_nav.removeClass('kingster-fixed-navigation kingster-animate-fixed-navigation');
+						t.sticky_nav.removeClass('uni-santiago-fixed-navigation uni-santiago-animate-fixed-navigation');
 						t.sticky_nav.css('display', 'block');
 
-						$(window).trigger('kingster-navigation-slider-bar-animate');
+						$(window).trigger('uni-santiago-navigation-slider-bar-animate');
 					}
 				}
 			});
@@ -855,19 +855,19 @@
 		style_mobile_slide: function(){
 
 			var t = this;
-			var placeholder = $('<div class="kingster-sticky-mobile-placeholder" ></div>');
+			var placeholder = $('<div class="uni-santiago-sticky-mobile-placeholder" ></div>');
 
-			$(window).on('scroll kingster-set-sticky-mobile-navigation', function(){
+			$(window).on('scroll uni-santiago-set-sticky-mobile-navigation', function(){
 
-				if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' || kingster_display == 'tablet' ){
+				if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' || uni_santiago_display == 'tablet' ){
 
 					var page_offset = parseInt($('html').css('margin-top'));
 
-					if( !t.mobile_menu.hasClass('kingster-fixed-navigation') ){
+					if( !t.mobile_menu.hasClass('uni-santiago-fixed-navigation') ){
 						if( $(window).scrollTop() + page_offset > t.mobile_menu.offset().top + t.mobile_menu.outerHeight() + 200 ){
 							placeholder.height(t.mobile_menu.outerHeight()).insertAfter(t.mobile_menu);
 							$('body').append(t.mobile_menu);
-							t.mobile_menu.addClass('kingster-fixed-navigation');
+							t.mobile_menu.addClass('uni-santiago-fixed-navigation');
 							t.mobile_menu.css('display', 'none').slideDown(200);
 						}
 					}else{
@@ -878,7 +878,7 @@
 
 							t.mobile_menu.insertBefore(placeholder);
 							placeholder.remove();
-							t.mobile_menu.removeClass('kingster-fixed-navigation');
+							t.mobile_menu.removeClass('uni-santiago-fixed-navigation');
 							t.mobile_menu.css('display', 'block');
 						}
 					}
@@ -890,21 +890,21 @@
 
 	};
 
-	var kingster_font_resize = function(){
+	var uni_santiago_font_resize = function(){
 
 		this.heading_font = $('h1, h2, h3, h4, h5, h6');
 
 		this.init();
 
 	}
-	kingster_font_resize.prototype = {
+	uni_santiago_font_resize.prototype = {
 
 		init: function(){
 
 			var t = this;
 
 			t.resize();
-			$(window).on('resize', kingster_throttling(function(){
+			$(window).on('resize', uni_santiago_throttling(function(){
 				t.resize();
 			}, 100));
 
@@ -914,7 +914,7 @@
 			
 			var t = this;
 
-			if( kingster_display == 'mobile-landscape' || kingster_display == 'mobile-portrait' ){
+			if( uni_santiago_display == 'mobile-landscape' || uni_santiago_display == 'mobile-portrait' ){
 
 				t.heading_font.each(function(){
 					if( parseInt($(this).css('font-size')) > 40 ){
@@ -938,7 +938,7 @@
 
 	};
 
-	$.fn.kingster_tab = function(){
+	$.fn.uni_santiago_tab = function(){
 		var elem = $(this);
 
 		elem.find('.gdlr-core-tab-item-title').on('click', function(){
@@ -977,35 +977,35 @@
 	$(document).ready(function(){
 	
 		// resize font on mobile
-		new kingster_font_resize();
+		new uni_santiago_font_resize();
 
 		// init main navigation menu
-		$('#kingster-main-menu, #kingster-right-menu, #kingster-mobile-menu, #kingster-top-bar-menu').each(function(){
-			if( $(this).hasClass('kingster-overlay-menu') ){
-				new kingster_overlay_menu( $(this) );
-			}else if( $(this).hasClass('kingster-mm-menu-wrap') ){
-				$(this).kingster_mobile_menu();
+		$('#uni-santiago-main-menu, #uni-santiago-right-menu, #uni-santiago-mobile-menu, #uni-santiago-top-bar-menu').each(function(){
+			if( $(this).hasClass('uni-santiago-overlay-menu') ){
+				new uni_santiago_overlay_menu( $(this) );
+			}else if( $(this).hasClass('uni-santiago-mm-menu-wrap') ){
+				$(this).uni_santiago_mobile_menu();
 			}else{
-				new kingster_sf_menu( $(this) );
+				new uni_santiago_sf_menu( $(this) );
 			}
 		});
 
-		$('#kingster-top-search, #kingster-mobile-top-search').each(function(){
+		$('#uni-santiago-top-search, #uni-santiago-mobile-top-search').each(function(){
 
-			var search_wrap = $(this).siblings('.kingster-top-search-wrap');
+			var search_wrap = $(this).siblings('.uni-santiago-top-search-wrap');
 			search_wrap.appendTo('body');
 
 			// bind click button
 			$(this).on('click', function(){
 				search_wrap.fadeIn(200, function(){
-					$(this).addClass('kingster-active');
+					$(this).addClass('uni-santiago-active');
 				});
 			});
 
 			// bind close button
-			search_wrap.find('.kingster-top-search-close').on('click', function(){
+			search_wrap.find('.uni-santiago-top-search-close').on('click', function(){
 				search_wrap.fadeOut(200, function(){
-					$(this).addClass('kingster-active');
+					$(this).addClass('uni-santiago-active');
 				});
 			});
 
@@ -1017,26 +1017,26 @@
 			});
 		});
 
-		$('#kingster-main-menu-cart, #kingster-mobile-menu-cart').each(function(){
+		$('#uni-santiago-main-menu-cart, #uni-santiago-mobile-menu-cart').each(function(){
 			
 			$(this).on({
 				mouseenter: function(){
-					$(this).addClass('kingster-active kingster-animating');
+					$(this).addClass('uni-santiago-active uni-santiago-animating');
 				}, 
 				mouseleave: function(){
 					var menu_cart = $(this);
-					menu_cart.removeClass('kingster-active');
+					menu_cart.removeClass('uni-santiago-active');
 					setTimeout(function(){
-						menu_cart.removeClass('kingster-animating');
+						menu_cart.removeClass('uni-santiago-animating');
 					}, 400)
 				}
 			});
 		});
 
 		// additional space for header transparent
-		$('.kingster-header-boxed-wrap, .kingster-header-background-transparent, .kingster-navigation-bar-wrap.kingster-style-transparent').each(function(){
+		$('.uni-santiago-header-boxed-wrap, .uni-santiago-header-background-transparent, .uni-santiago-navigation-bar-wrap.uni-santiago-style-transparent').each(function(){
 			var header_transparent = $(this);
-			var header_transparent_sub = $('.kingster-header-transparent-substitute');
+			var header_transparent_sub = $('.uni-santiago-header-transparent-substitute');
 
 			header_transparent_sub.height(header_transparent.outerHeight());
 			$(window).on('load resize', function(){
@@ -1047,8 +1047,8 @@
 		// full screen for 404 not found
 		$('body.error404, body.search-no-results').each(function(){
 
-			var wrap = $(this).find('#kingster-full-no-header-wrap');
-			var body_wrap_offset = parseInt($(this).children('.kingster-body-outer-wrapper').children('.kingster-body-wrapper').css('margin-bottom'));
+			var wrap = $(this).find('#uni-santiago-full-no-header-wrap');
+			var body_wrap_offset = parseInt($(this).children('.uni-santiago-body-outer-wrapper').children('.uni-santiago-body-wrapper').css('margin-bottom'));
 			
 			var padding = ($(window).height() - wrap.offset().top - wrap.outerHeight() - body_wrap_offset) / 2;
 			if( padding > 0 ){
@@ -1065,28 +1065,28 @@
 		});
 
 		// back to top button
-		var back_to_top = $('#kingster-footer-back-to-top-button');
+		var back_to_top = $('#uni-santiago-footer-back-to-top-button');
 		if( back_to_top.length ){ 
 			$(window).on('scroll', function(){
 				if( $(window).scrollTop() > 300 ){
-					back_to_top.addClass('kingster-scrolled');
+					back_to_top.addClass('uni-santiago-scrolled');
 				}else{
-					back_to_top.removeClass('kingster-scrolled');
+					back_to_top.removeClass('uni-santiago-scrolled');
 				}
 			});
 		}
 
 		// page preload
-		$('body').children('#kingster-page-preload').each(function(){
+		$('body').children('#uni-santiago-page-preload').each(function(){
 			var page_preload = $(this);
 			var animation_time = parseInt(page_preload.attr('data-animation-time'));
 			
 			$('a[href]').not('[href^="#"], [target="_blank"], .gdlr-core-js, .strip, .sf-with-ul, .remove, .ajax_add_to_cart').on('click', function(e){
-				if( e.which != 1 || $(this).hasClass('kingster-no-preload') || e.ctrlKey ) return;
+				if( e.which != 1 || $(this).hasClass('uni-santiago-no-preload') || e.ctrlKey ) return;
 				if( $(this).closest('.tribe-events-nav-pagination').length ) return; 
 
 				if( window.location.href != this.href ){
-					page_preload.addClass('kingster-out').fadeIn(animation_time);
+					page_preload.addClass('uni-santiago-out').fadeIn(animation_time);
 				}
 			});
 			
@@ -1096,7 +1096,7 @@
 		});
 
 		// single nav style 2 sync height
-		$('body.kingster-blog-style-2 .kingster-single-nav-area').each(function(){
+		$('body.uni-santiago-blog-style-2 .uni-santiago-single-nav-area').each(function(){
 			var max_height;
 			var single_nav_2 = $(this).children();
 
@@ -1122,20 +1122,20 @@
 		});
 
 		// page builder
-		$('.gdlr-core-tab-item').kingster_tab();
+		$('.gdlr-core-tab-item').uni_santiago_tab();
 		
 	});
 
 	// fix back button for preload
 	$(window).on('pageshow', function(event) {
 	    if( event.originalEvent.persisted ){
-	        $('body').children('#kingster-page-preload').each(function(){
+	        $('body').children('#uni-santiago-page-preload').each(function(){
 				$(this).fadeOut(400);
 			});
 	    }
 	});
 	// $(window).on('beforeunload', function(){
-	// 	$('body').children('#kingster-page-preload').each(function(){
+	// 	$('body').children('#uni-santiago-page-preload').each(function(){
 	// 		$(this).fadeOut(400);
 	// 	});
 	// });
@@ -1143,9 +1143,9 @@
 	$(window).load(function(){
 
 		// fixed footer
-		$('#kingster-fixed-footer').each(function(){
+		$('#uni-santiago-fixed-footer').each(function(){
 			var fixed_footer = $(this);
-			var placeholder = $('<div class="kingster-fixed-footer-placeholder" ></div>');
+			var placeholder = $('<div class="uni-santiago-fixed-footer-placeholder" ></div>');
 
 			placeholder.insertBefore(fixed_footer);
 			placeholder.height(fixed_footer.outerHeight());
@@ -1157,13 +1157,13 @@
 		});
 
 		// side navigation bar
-		new kingster_header_side_nav( $('#kingster-header-side-nav') );
+		new uni_santiago_header_side_nav( $('#uni-santiago-header-side-nav') );
 
 		// sticky navigation
-		new kingster_sticky_navigation();
+		new uni_santiago_sticky_navigation();
 
 		// anchoring
-		new kingster_anchor();
+		new uni_santiago_anchor();
 
 	});
 
