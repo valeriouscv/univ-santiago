@@ -3,11 +3,11 @@
 
 	$(document).ready(function(){
 
-		$('select#display_name').wrap('<div class="kingster-lp-combobox" ></div>');
+		$('select#display_name').wrap('<div class="uni-santiago-lp-combobox" ></div>');
 
 		$('#learn-press-course-tabs').each(function(){
 			var tab_head = $(this).find('.learn-press-nav-tabs');
-			var tab_slide_bar = $(this).find('.kingster-tab-slidebar');
+			var tab_slide_bar = $(this).find('.uni-santiago-tab-slidebar');
 
 			// init
 			var slide_bar_width = tab_head.children('.active').outerWidth();
