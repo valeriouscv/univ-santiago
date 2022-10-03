@@ -26,6 +26,30 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400%2C700%7CRoboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css" />
 
+    <!-- AddEvent script -->
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+    <!-- Remove "AddEvent" from the dropdown with the following CSS -->
+    <style type="text/css">
+        .addeventatc_dropdown {padding: 6px 0px;}
+        .addeventatc_dropdown .copyx .frs {display: none;}
+    </style>
+
+    <!-- AddEvent Settings -->
+    <script type="text/javascript">
+    window.addeventasync = function(){
+        addeventatc.settings({
+            appleical  : {show:true, text:"iCalendar"},
+            google     : {show:true, text:"Google Calendar"},
+            office365  : {show:true, text:"Outlook 365"},
+            outlook    : {show:false, text:"Outlook"},
+            outlookcom : {show:true, text:"Outlook Live"},
+            yahoo      : {show:false, text:"Yahoo <em>(online)</em>"}
+        });
+    };
+    </script>
+
+
 </head>
 
 <body class="home page-template-default page page-id-6208 gdlr-core-body tribe-no-js uni-santiago-body uni-santiago-body-front uni-santiago-full uni-santiago-with-sticky-navigation uni-santiago-sticky-navigation-no-logo uni-santiago-blockquote-style-1 gdlr-core-link-to-lightbox" >
@@ -131,12 +155,12 @@
                                         <li class="menu-item menu-item-has-children ">
                                             <a href="#">Resources</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item"><a href="#">Department Page</a></li>
-                                                <li class="menu-item"><a href="#">Major Page</a></li>
+                                                <li class="menu-item"><a href="#">Ciências da Educação, Filosofia e Letras</a></li>
+                                                <li class="menu-item"><a href="#">Ciências da Saúde, Ambiente e Tecnologias</a></li>
                                                 <li class="menu-item">
-                                                    <a href="#">Faculty Page</a>
+                                                    <a href="#">Ciências Económicas e Empresariais</a>
                                                 </li>
-                                                <li class="menu-item "><a href="#">Single Course</a></li>
+                                                <li class="menu-item "><a href="#">Ciências Jurídicas e Sociais</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item "><a href="#">Logo</a></li>
@@ -149,7 +173,7 @@
                                         <li class="menu-item"><a href="campus-tour.html">Campus Tour</a></li>
                                         <li class="menu-item"><a href="scholarships.html">Scholarships</a></li>
                                         <li class="menu-item"><a href="athletics.html">Athletics</a></li>
-                                        <li class="menu-item"><a href="give-to-uni-santiago.html">Give To uni-santiago</a></li>
+                                        <li class="menu-item"><a href="us-virtual.html">Give To uni-santiago</a></li>
                                         <li class="menu-item"><a href="alumni.html">Alumni</a></li>
                                         <li class="menu-item"><a href="event-calendar.html">Event Calendar</a></li>
                                     </ul>
@@ -165,7 +189,7 @@
                                 <li class="menu-item"><a href="athletics.html">Athletics</a></li>
                                 <li class="menu-item"><a href="university-life.html">University Life</a></li>
                                 <li class="menu-itemmenu-item-has-children ">
-                                    <a href="blog-full-right-sidebar-with-frame.html">Blog</a>
+                                    <a href="us-virtual.html">Blog</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item menu-item-has-children"><a href="blog-full-right-sidebar.html">Blog Full</a>
                                             <ul class="sub-menu">
@@ -296,14 +320,14 @@
                                                     <li class="menu-item menu-item-has-children " data-size="15">
                                                         <a href="departments.html" class="sf-with-ul-pre">Departamentos</a>
                                                         <ul class="sub-menu">
-                                                            <li class="menu-item"><a href="#">Department Page</a></li>
+                                                            <li class="menu-item"><a href="#">Ciências da Educação, Filosofia e Letras</a></li>
                                                             <li class="menu-item">
-                                                                <a href="#">Major Page</a>
+                                                                <a href="#">Ciências da Saúde, Ambiente e Tecnologias</a>
                                                             </li>
                                                             <li class="menu-item">
-                                                                <a href="#">Faculty Page</a>
+                                                                <a href="#">Ciências Económicas e Empresariais</a>
                                                             </li>
-                                                            <li class="menu-item "><a href="#">Single Course</a></li>
+                                                            <li class="menu-item "><a href="#">Ciências Jurídicas e Sociais</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item " data-size="15">
@@ -322,7 +346,7 @@
                                                 <li class="menu-item" data-size="60"><a href="campus-tour.html">Campus Tour</a></li>
                                                 <li class="menu-item" data-size="60"><a href="scholarships.html">Scholarships</a></li>
                                                 <li class="menu-item" data-size="60"><a href="athletics.html">Athletics</a></li>
-                                                <li class="menu-item" data-size="60"><a href="give-to-uni-santiago.html">Give To uni-santiago</a></li>
+                                                <li class="menu-item" data-size="60"><a href="us-virtual.html">Give To uni-santiago</a></li>
                                                 <li class="menu-item" data-size="60"><a href="alumni.html">Alumni</a></li>
                                                 <li class="menu-item" data-size="60"><a href="event-calendar.html">Event Calendar</a></li>
                                             </ul>
@@ -345,10 +369,10 @@
                                         <li class="menu-item uni-santiago-normal-menu"><a href="athletics.html">Athletics</a></li>
                                         <li class="menu-item uni-santiago-normal-menu"><a href="university-life.html">University Life</a></li>
                                         <li class="menu-itemmenu-item-has-children  uni-santiago-normal-menu">
-                                            <a href="blog-full-right-sidebar-with-frame.html" class="sf-with-ul-pre">Blog</a>
+                                            <a href="us-virtual.html" class="sf-with-ul-pre">Blog</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-itemmenu-item-has-children " data-size="60">
-                                                    <a href="blog-full-right-sidebar-with-frame.html" class="sf-with-ul-pre">Blog Full</a>
+                                                    <a href="us-virtual.html" class="sf-with-ul-pre">Blog Full</a>
                                                     <ul class="sub-menu">
                                                         <li class="menu-item"><a href="blog-full-right-sidebar.html">Blog Full Right Sidebar</a></li>
                                                         <li class="menu-item"><a href="blog-full-left-sidebar.html">Blog Full Left Sidebar</a></li>
@@ -405,266 +429,43 @@
             </div>
 
 
-            <div class="uni-santiago-page-title-wrap uni-santiago-style-custom uni-santiago-left-align" style="background-image: url(upload/page-title-support.jpg) ;">
-                <div class="uni-santiago-header-transparent-substitute">
-                </div>
-                <div class="uni-santiago-page-title-overlay">
-                </div>
-                <div class="uni-santiago-page-title-top-gradient">
-                </div>
-                <div class="uni-santiago-page-title-bottom-gradient">
-                </div>
-                <div class="uni-santiago-page-title-container uni-santiago-container">
-                    <div class="uni-santiago-page-title-content uni-santiago-item-pdlr" style="padding-top: 550px ;padding-bottom: 55px ;">
-                        <div class="uni-santiago-page-caption" style="font-size: 21px ;font-weight: 400 ;letter-spacing: 0px ;">
-                            Become a donor
-                        </div>
-                        <h1 class="uni-santiago-page-title" style="font-size: 48px ;font-weight: 700 ;text-transform: none ;letter-spacing: 0px ;color: #ffffff ;">Give To uni-santiago</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="uni-santiago-breadcrumbs">
-                <div class="uni-santiago-breadcrumbs-container uni-santiago-container">
-                    <div class="uni-santiago-breadcrumbs-item uni-santiago-item-pdlr">
-                        <!-- Breadcrumb NavXT 6.5.0 -->
-                        <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to uni-santiago - College." href="https://demo.goodlayers.com/uni-santiago/homepages/college" class="home"><span property="name">Home</span></a>
-                        <meta property="position" content="1">
-                        </span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name" class="post post-page current-item">Give To uni-santiago</span>
-                        <meta property="url" content="index.html">
-                        <meta property="position" content="2">
-                        </span>
-                    </div>
-                </div>
-            </div>
+            <div class="uni-santiago-page-title-wrap  uni-santiago-style-medium uni-santiago-left-align"><div class="uni-santiago-header-transparent-substitute" style="height: 166.5px;"></div><div class="uni-santiago-page-title-overlay"></div><div class="uni-santiago-page-title-container uni-santiago-container"><div class="uni-santiago-page-title-content uni-santiago-item-pdlr"><div class="uni-santiago-page-title-event-link"><a href="https://demo.goodlayers.com/uni-santiago/homepages/college/events/">« All Events</a></div><h3 class="uni-santiago-page-title">Reunion Event : uni-santiago’s Alumni Golf Tour</h3><div class="uni-santiago-page-title-event-time"><span class="tribe-event-date-start">January 7, 2020 @ 7:00 am</span> - <span class="tribe-event-time">11:30 pm</span></div></div></div></div>
             <div class="uni-santiago-page-wrapper" id="uni-santiago-page-wrapper">
-                <div class="gdlr-core-page-builder-body">
-                    <div class="gdlr-core-pbf-sidebar-wrapper " style="margin: 0px 0px 60px 0px;">
-                        <div class="gdlr-core-pbf-sidebar-container gdlr-core-line-height-0 clearfix gdlr-core-js gdlr-core-container">
-                            <div class="gdlr-core-pbf-sidebar-content gdlr-core-column-40 gdlr-core-pbf-sidebar-padding gdlr-core-line-height gdlr-core-column-extend-left" style="padding: 40px 0px 30px 0px;">
-                                <div class="gdlr-core-pbf-sidebar-content-inner">
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr">
-                                            <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 29px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">About uni-santiago Fund</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                            <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;text-transform: none ;">
-                                                <p>
-                                                    We continues to adapt to new ways of teaching, new disciplines of study and new ways of learning. Your gift enriches the experience of all students by supporting efforts to recruit top faculty, expand academic programs and respond to the emerging needs of our campus and our world.
-                                                </p>
-                                                <p>
-                                                    Not only does uni-santiago University provide you the practical skills that is necessary to transition seamlessly into the workforce upon your graduation, but we also make sure that you will have a good sense of social justice so that you make the transition responsibly.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr" style="padding-bottom: 75px ;">
-                                            <div class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-round" style="border-width: 0px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;">
-                                                <img src="upload/support-building.jpg" alt="" width="1000" height="296" title="support-building"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 40px ;">
-                                            <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                <h3 class="gdlr-core-title-item-title gdlr-core-skin-title gdlr-core-with-side-border" style="font-size: 22px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;margin-right: 30px ;">Various Donation Options</h3>
-                                                <div class="gdlr-core-title-item-divider gdlr-core-right gdlr-core-skin-divider" style="font-size: 22px ;border-bottom-width: 3px ;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first">
-                                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px -7px 0px 0px;">
-                                            <div class="gdlr-core-pbf-background-wrap">
-                                            </div>
-                                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                                <div class="gdlr-core-pbf-element">
-                                                    <div class="gdlr-core-feature-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
-                                                        <div class="gdlr-core-feature-box gdlr-core-js gdlr-core-feature-box-type-outer" style="background-color: #3db166 ;border-width: 0px 0px 0px 0px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
-                                                            <div class="gdlr-core-feature-box-background" style="background-image: url(upload/shutterstock_209187682.jpg) ;opacity: 0.14 ;">
-                                                            </div>
-                                                            <div class="gdlr-core-feature-box-content gdlr-core-sync-height-content">
-                                                                <h3 class="gdlr-core-feature-box-item-title" style="font-size: 16px ;font-weight: 600 ;">Student Scholarships</h3>
-                                                            </div>
-                                                            <a class="gdlr-core-feature-box-link" href="#" target="_self"></a>
+                <div class="uni-santiago-content-container uni-santiago-container">
+                    <div class="uni-santiago-sidebar-wrap clearfix uni-santiago-line-height-0 uni-santiago-sidebar-style-right">
+                        <div class="uni-santiago-sidebar-center uni-santiago-column-40 uni-santiago-line-height">
+                            <div class="gdlr-core-page-builder-body">
+                                <div class="gdlr-core-pbf-section">
+                                    <div class="gdlr-core-pbf-section-container gdlr-core-container clearfix">
+                                        <div class="gdlr-core-pbf-element">
+                                            <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix gdlr-core-style-blog-full" style="padding-bottom: 40px;">
+                                                <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
+                                                    <div class="gdlr-core-item-list gdlr-core-blog-full gdlr-core-item-mglr gdlr-core-style-left">
+                                                        <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                            <img src="upload/shutterstock_106223549.jpg" alt="" width="1280" height="919" title="shutterstock_106223549">
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-column gdlr-core-column-20">
-                                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px -3px 0px -3px;">
-                                            <div class="gdlr-core-pbf-background-wrap">
-                                            </div>
-                                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                                <div class="gdlr-core-pbf-element">
-                                                    <div class="gdlr-core-feature-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
-                                                        <div class="gdlr-core-feature-box gdlr-core-js gdlr-core-feature-box-type-outer" style="background-color: #3db166 ;border-width: 0px 0px 0px 0px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
-                                                            <div class="gdlr-core-feature-box-background" style="background-image: url(upload/shutterstock_299633474.jpg) ;opacity: 0.14 ;">
+                                                        <div class="gdlr-core-blog-full-head clearfix">
+                                                            <div class="gdlr-core-blog-full-head-right">
+                                                                <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
+                                                                    <div class="gdlr-core-blog-content clearfix">
+                                                                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence
+                                                                        in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence
+                                                                        in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the...
+                                                                        
+                                                                        <div class="clear"></div>
+                                                                        <div title="Add to Calendar" class="addeventatc gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle">
+                                                                            Add to Calendar
+                                                                            <span class="start">10/10/2022 08:00 AM</span>
+                                                                            <span class="end">10/10/2022 10:00 AM</span>
+                                                                            <span class="timezone">America/Los_Angeles</span>
+                                                                            <span class="title">Summary of the event</span>
+                                                                            <span class="description">Description of the event</span>
+                                                                            <span class="location">Location of the event</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="gdlr-core-feature-box-content gdlr-core-sync-height-content">
-                                                                <h3 class="gdlr-core-feature-box-item-title" style="font-size: 16px ;font-weight: 600 ;">Schools & Colleges</h3>
-                                                            </div>
-                                                            <a class="gdlr-core-feature-box-link" href="#" target="_self"></a>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-column gdlr-core-column-20">
-                                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px -7px;">
-                                            <div class="gdlr-core-pbf-background-wrap">
-                                            </div>
-                                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                                <div class="gdlr-core-pbf-element">
-                                                    <div class="gdlr-core-feature-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
-                                                        <div class="gdlr-core-feature-box gdlr-core-js gdlr-core-feature-box-type-outer" style="background-color: #3db166 ;border-width: 0px 0px 0px 0px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
-                                                            <div class="gdlr-core-feature-box-background" style="background-image: url(upload/support-image-3.jpg) ;opacity: 0.14 ;">
-                                                            </div>
-                                                            <div class="gdlr-core-feature-box-content gdlr-core-sync-height-content">
-                                                                <h3 class="gdlr-core-feature-box-item-title" style="font-size: 16px ;font-weight: 600 ;">Library & Cultural</h3>
-                                                            </div>
-                                                            <a class="gdlr-core-feature-box-link" href="#" target="_self"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first">
-                                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px -7px 0px 0px;">
-                                            <div class="gdlr-core-pbf-background-wrap">
-                                            </div>
-                                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                                <div class="gdlr-core-pbf-element">
-                                                    <div class="gdlr-core-feature-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
-                                                        <div class="gdlr-core-feature-box gdlr-core-js gdlr-core-feature-box-type-outer" style="background-color: #3db166 ;border-width: 0px 0px 0px 0px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
-                                                            <div class="gdlr-core-feature-box-background" style="background-image: url(upload/support-image-4.jpg) ;opacity: 0.14 ;">
-                                                            </div>
-                                                            <div class="gdlr-core-feature-box-content gdlr-core-sync-height-content">
-                                                                <h3 class="gdlr-core-feature-box-item-title" style="font-size: 16px ;font-weight: 600 ;">Support Sport Team</h3>
-                                                            </div>
-                                                            <a class="gdlr-core-feature-box-link" href="#" target="_self"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-column gdlr-core-column-20">
-                                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px -3px 0px -3px;">
-                                            <div class="gdlr-core-pbf-background-wrap">
-                                            </div>
-                                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                                <div class="gdlr-core-pbf-element">
-                                                    <div class="gdlr-core-feature-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
-                                                        <div class="gdlr-core-feature-box gdlr-core-js gdlr-core-feature-box-type-outer" style="background-color: #3db166 ;border-width: 0px 0px 0px 0px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
-                                                            <div class="gdlr-core-feature-box-background" style="background-image: url(upload/shutterstock_150587615.jpg) ;opacity: 0.14 ;">
-                                                            </div>
-                                                            <div class="gdlr-core-feature-box-content gdlr-core-sync-height-content">
-                                                                <h3 class="gdlr-core-feature-box-item-title" style="font-size: 16px ;font-weight: 600 ;">Student Life</h3>
-                                                            </div>
-                                                            <a class="gdlr-core-feature-box-link" href="#" target="_self"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-column gdlr-core-column-20">
-                                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px -7px;padding: 0px 0px 50px 0px;">
-                                            <div class="gdlr-core-pbf-background-wrap">
-                                            </div>
-                                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                                <div class="gdlr-core-pbf-element">
-                                                    <div class="gdlr-core-feature-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
-                                                        <div class="gdlr-core-feature-box gdlr-core-js gdlr-core-feature-box-type-outer" style="background-color: #3db166 ;border-width: 0px 0px 0px 0px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;">
-                                                            <div class="gdlr-core-feature-box-background" style="background-image: url(upload/support-image-6.jpg) ;opacity: 0.14 ;">
-                                                            </div>
-                                                            <div class="gdlr-core-feature-box-content gdlr-core-sync-height-content">
-                                                                <h3 class="gdlr-core-feature-box-item-title" style="font-size: 16px ;font-weight: 600 ;">Emergency Fund</h3>
-                                                            </div>
-                                                            <a class="gdlr-core-feature-box-link" href="#" target="_self"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 40px ;">
-                                            <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                <h3 class="gdlr-core-title-item-title gdlr-core-skin-title gdlr-core-with-side-border" style="font-size: 22px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;margin-right: 30px ;">Why give to uni-santiago?</h3>
-                                                <div class="gdlr-core-title-item-divider gdlr-core-right gdlr-core-skin-divider" style="font-size: 22px ;border-bottom-width: 3px ;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-accordion-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-accordion-style-icon gdlr-core-icon-pos-left">
-                                            <div class="gdlr-core-accordion-item-tab clearfix gdlr-core-active">
-                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon ">
-                                                </div>
-                                                <div class="gdlr-core-accordion-item-content-wrapper">
-                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js ">Student Scholarships</h4>
-                                                    <div class="gdlr-core-accordion-item-content">
-                                                        <p>
-                                                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &#8220;What&#8217;s happened to me?&#8221; he thought. It wasn&#8217;t a dream. His room, a proper human room although.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-accordion-item-tab clearfix ">
-                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon ">
-                                                </div>
-                                                <div class="gdlr-core-accordion-item-content-wrapper">
-                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js ">Scholls & Colleges</h4>
-                                                    <div class="gdlr-core-accordion-item-content">
-                                                        <p>
-                                                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &#8220;What&#8217;s happened to me?&#8221; he thought. It wasn&#8217;t a dream. His room, a proper human room although.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-accordion-item-tab clearfix ">
-                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon ">
-                                                </div>
-                                                <div class="gdlr-core-accordion-item-content-wrapper">
-                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js ">Library & Cultural Institutions </h4>
-                                                    <div class="gdlr-core-accordion-item-content">
-                                                        <p>
-                                                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &#8220;What&#8217;s happened to me?&#8221; he thought. It wasn&#8217;t a dream. His room, a proper human room although.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-accordion-item-tab clearfix ">
-                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon ">
-                                                </div>
-                                                <div class="gdlr-core-accordion-item-content-wrapper">
-                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js ">uni-santiago Sport Team</h4>
-                                                    <div class="gdlr-core-accordion-item-content">
-                                                        <p>
-                                                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &#8220;What&#8217;s happened to me?&#8221; he thought. It wasn&#8217;t a dream. His room, a proper human room although.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-accordion-item-tab clearfix ">
-                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon ">
-                                                </div>
-                                                <div class="gdlr-core-accordion-item-content-wrapper">
-                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js ">Student Life</h4>
-                                                    <div class="gdlr-core-accordion-item-content">
-                                                        <p>
-                                                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &#8220;What&#8217;s happened to me?&#8221; he thought. It wasn&#8217;t a dream. His room, a proper human room although.
-                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -672,88 +473,67 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-pbf-sidebar-right gdlr-core-column-extend-right uni-santiago-sidebar-area gdlr-core-column-20 gdlr-core-pbf-sidebar-padding gdlr-core-line-height" style="padding: 30px 0px 30px 0px;">
-                                <div class="gdlr-core-sidebar-item gdlr-core-item-pdlr">
-                                    <div id="text-15" class="widget widget_text uni-santiago-widget">
-                                        <div class="textwidget">
-                                            <a class="gdlr-core-button gdlr-core-button-shortcode gdlr-core-button-gradient gdlr-core-button-no-border gdlr-core-button-full-width" href="#" target="_blank" style="font-size: 17px ;font-weight: 700 ;padding: 22px 50px 24px;text-transform: none ;margin-right: 20px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;" rel="noopener noreferrer"><span class="gdlr-core-content">Become A Donor</span><i class="gdlr-core-pos-right arrow_right"></i></a>
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 30px ;"></span>
-                                            <div class="gdlr-core-widget-box-shortcode " style="color: #ffffff ;padding: 30px 45px;background-color: #192f59 ;">
-                                                <div class="gdlr-core-widget-box-shortcode-content">
-                                                </p>
-                                                <h3 style="font-size: 20px; color: #fff; margin-bottom: 15px;">Department Contact Info</h3>
-                                                <p>
-                                                    <span style="color: #3db166; font-size: 16px; font-weight: 600;">Office Of Development</span><br/>
-                                                    <span style="font-size: 15px;"><br/>
-                                                    1810 Campus Way NE<br/>
-                                                    Bothell, WA 98011-8246</span>
-                                                </p>
-                                                <p>
-                                                    <span style="font-size: 15px;">+1-2345-5432-45<br/>
-                                                    <a href="https://demo.goodlayers.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82e0f1e0e3c2e9f7f7ecebf4e7f0ace7e6f7">[email&#160;protected]</a><br/>
+                        </div>
+                        <div class="uni-santiago-sidebar-right uni-santiago-column-20 uni-santiago-line-height uni-santiago-line-height">
+                            <div class="uni-santiago-sidebar-area uni-santiago-item-pdlr">
+                                <div id="text-5" class="widget widget_text uni-santiago-widget">
+                                    <h3 class="uni-santiago-widget-title">Details</h3>
+                                    <div class="gdlr-core-blog-info-font">
+                                        <b>Organizer: </b>Culture Club</br>
+                                        <b>Venue: </b>Campus de Bolonha</br>
+                                        <b>Phone: </b>+238 345 12 14</br>
+                                        <b>Email: </b>cgri@us.edu.cv
+                                    </div>
+                                </div>
+                                <div id="gdlr-core-recent-post-widget-1" class="widget widget_gdlr-core-recent-post-widget uni-santiago-widget">
+                                    <h3 class="uni-santiago-widget-title">Similar Events</h3>
+                                    <span class="clear"></span>
+                                    <div class="gdlr-core-recent-post-widget-wrap gdlr-core-style-1">
+                                        <div class="gdlr-core-recent-post-widget clearfix">
+                                            <div class="gdlr-core-recent-post-widget-thumbnail gdlr-core-media-image">
+                                                <img src="upload/3454568-1-150x150.jpg" alt="" width="150" height="150" title="3454568">
+                                            </div>
+                                            <div class="gdlr-core-recent-post-widget-content">
+                                                <div class="gdlr-core-recent-post-widget-title">
+                                                    <a href="#">The Forum hosts a discussion with Niall Ferguson</a>
+                                                </div>
+                                                <div class="gdlr-core-recent-post-widget-info">
+                                                    <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016 at 7:00pm</a></span>
+                                                    <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author">
+                                                        <span class="gdlr-core-head"></span><a href="#" title="Posts by James Smith" rel="author">Campus Bolonha</a>
                                                     </span>
-                                                </p>
-                                                <p>
-                                                    <span style="font-size: 16px; color: #3db166;">Mon &#8211; Fri 9:00A.M. &#8211; 5:00P.M.</span>
-                                                </p>
-                                                <span class="gdlr-core-space-shortcode" style="margin-top: 40px ;"></span>
-                                                <h3 style="font-size: 20px; color: #fff; margin-bottom: 15px;">Social Info</h3>
-                                                <div class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align" style="padding-bottom: 0px ;">
-                                                    <a href="#url" target="_blank" class="gdlr-core-social-network-icon" title="facebook" style="color: #3db166 ;" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a><a href="#" target="_blank" class="gdlr-core-social-network-icon" title="google-plus" style="color: #3db166 ;" rel="noopener noreferrer"><i class="fa fa-google-plus"></i></a><a href="#" target="_blank" class="gdlr-core-social-network-icon" title="linkedin" style="color: #3db166 ;" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a><a href="#" target="_blank" class="gdlr-core-social-network-icon" title="skype" style="color: #3db166 ;" rel="noopener noreferrer"><i class="fa fa-skype"></i></a><a href="#url" target="_blank" class="gdlr-core-social-network-icon" title="twitter" style="color: #3db166 ;" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="#" target="_blank" class="gdlr-core-social-network-icon" title="instagram" style="color: #3db166 ;" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
-                                                </div>
-                                                <p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div id="gdlr-core-video-widget-2" class="widget widget_gdlr-core-video-widget uni-santiago-widget">
-                                        <h3 class="uni-santiago-widget-title">Video Presentation</h3>
-                                        <span class="clear"></span>
-                                        <div class="gdlr-core-video-widget gdlr-core-media-image">
-                                            <a class="gdlr-core-lightgallery gdlr-core-js " href="https://www.youtube.com/watch?v=C5pKtnmHTxg"><img src="upload/shutterstock_516640027-700x450.jpg" alt="" width="700" height="450" title="shutterstock_516640027"/><i class="fa fa-play"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gdlr-core-pbf-wrapper " style="padding: 65px 0px 60px 0px;">
-                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #192f59 ;">
-                        </div>
-                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
-                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
-                                <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first">
-                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: -123px 0px 0px 0px;padding: 0px 55px 0px 0px;">
-                                        <div class="gdlr-core-pbf-background-wrap">
-                                        </div>
-                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr">
-                                                    <div class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-rectangle" style="border-width: 0px;">
-                                                        <img src="upload/shutterstock_704277943-1500x1000.jpg" alt="" width="1500" height="1000" title="shutterstock_704277943"/>
-                                                    </div>
+                                        <div class="gdlr-core-recent-post-widget clearfix">
+                                            <div class="gdlr-core-recent-post-widget-thumbnail gdlr-core-media-image">
+                                                <img src="upload/shutterstock_62838724-150x150.jpg" alt="" width="150" height="150" title="shutterstock_62838724">
+                                            </div>
+                                            <div class="gdlr-core-recent-post-widget-content">
+                                                <div class="gdlr-core-recent-post-widget-title">
+                                                    <a href="#">Can Biology and Chemistry work to save the world?</a>
+                                                </div>
+                                                <div class="gdlr-core-recent-post-widget-info">
+                                                    <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016 at 9pm</a></span>
+                                                    <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author">
+                                                        <span class="gdlr-core-head"></span><a href="#" title="Posts by James Smith" rel="author">Campus Bolonha</a>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-column gdlr-core-column-30">
-                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 45px 0px 0px 0px;">
-                                        <div class="gdlr-core-pbf-background-wrap">
-                                        </div>
-                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 20px ;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 23px ;text-transform: none ;color: #ffffff ;">
-                                                        <p>
-                                                            Thanks to you, our students are gaining the knowledge, skills and values to create a more humane, just, and sustainable world.
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                        <div class="gdlr-core-recent-post-widget clearfix">
+                                            <div class="gdlr-core-recent-post-widget-thumbnail gdlr-core-media-image">
+                                                <img src="upload/shutterstock_1102460810-150x150.jpg" alt="" width="150" height="150" title="shutterstock_1102460810">
                                             </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a class="gdlr-core-button gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 14px ;font-weight: 700 ;letter-spacing: 0px ;padding: 13px 26px 16px 30px;text-transform: none ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;background: #3db166 ;"><span class="gdlr-core-content">Become A Donor</span><i class="gdlr-core-pos-right fa fa-external-link" style="font-size: 14px ;"></i></a>
+                                            <div class="gdlr-core-recent-post-widget-content">
+                                                <div class="gdlr-core-recent-post-widget-title">
+                                                    <a href="#">Professor Tom comments on voluntary recalls by snack brands</a>
+                                                </div>
+                                                <div class="gdlr-core-recent-post-widget-info">
+                                                    <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016 at 3pm</a></span>
+                                                    <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author">
+                                                        <span class="gdlr-core-head"></span><a href="#" title="Posts by James Smith" rel="author">Campus Bolonha</a>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
