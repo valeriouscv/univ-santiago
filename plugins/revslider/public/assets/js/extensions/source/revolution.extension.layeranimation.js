@@ -22,7 +22,7 @@ var _R = jQuery.fn.revolution,
 ///////////////////////////////////////////
 jQuery.extend(true,_R, {
 
-	updateMarkup : function(layer,o) {		
+	updateMarUSp : function(layer,o) {		
 				
 		var d = jQuery(layer).data();
 
@@ -181,7 +181,7 @@ jQuery.extend(true,_R, {
 		if (index!==undefined && opt.layers[index])
 			jQuery.each(opt.layers[index], function(i,a) { 
 				var _t = jQuery(this);
-				_R.updateMarkup(this,opt);
+				_R.updateMarUSp(this,opt);
 				_R.prepareSingleCaption({caption:_t, opt:opt, offsetx:base_offsetx, offsety:base_offsety, index:i, recall:recall,  preset:preset});	
 				if (!preset || startSlideAnimAt===0) _R.buildFullTimeLine({caption:_t, opt:opt, offsetx:base_offsetx, offsety:base_offsety, index:i, recall:recall,  preset:preset, regenerate: startSlideAnimAt===0});
 
@@ -194,7 +194,7 @@ jQuery.extend(true,_R, {
 					_ = _t.data();
 				
 				if (_.hoveredstatus!==true && _.inhoveroutanimation!==true) {
-					_R.updateMarkup(this,opt);					
+					_R.updateMarUSp(this,opt);					
 					_R.prepareSingleCaption({caption:_t, opt:opt, offsetx:base_offsetx, offsety:base_offsety, index:i, recall:recall,  preset:preset});
 					
 					if ((!preset || startSlideAnimAt===0) &&  _.veryfirstststic !==true)  {					
@@ -652,10 +652,10 @@ jQuery.extend(true,_R, {
 		calcCaptionResponsive(_nc,opt,0,_._responsive);
 
 		
-		// ALL ELEMENTS IF THE MAIN ELEMENT IS REKURSIVE RESPONSIVE SHOULD BE REPONSIVE HANDLED
+		// ALL ELEMENTS IF THE MAIN ELEMENT IS REUSRSIVE RESPONSIVE SHOULD BE REPONSIVE HANDLED
 		if (_nc.hasClass("tp-resizeme")) 		
 			_nc.find('*').each(function() {
-				calcCaptionResponsive(jQuery(this),opt,"rekursive",_._responsive);
+				calcCaptionResponsive(jQuery(this),opt,"reUSrsive",_._responsive);
 			});									
 		
 		// _nc FRONTCORNER CHANGES
@@ -1991,8 +1991,8 @@ var getcssParams = function(nc,level) {
 		pc;
 	
 	
-	// CHECK IF CURRENT ELEMENT SHOULD RESPECT REKURSICVE RESIZES, AND SHOULD OWN THE SAME ATTRIBUTES FROM PARRENT ELEMENT
-	if (level=="rekursive") {
+	// CHECK IF CURRENT ELEMENT SHOULD RESPECT REUSRSICVE RESIZES, AND SHOULD OWN THE SAME ATTRIBUTES FROM PARRENT ELEMENT
+	if (level=="reUSrsive") {
 		pc = nc.closest('.tp-caption');		
 		if (pc && (
 				(nc.css("fontSize") === pc.css("fontSize")) && 
@@ -2032,7 +2032,7 @@ var getcssParams = function(nc,level) {
 	obj.borderLeftWidth = nc.data('borderleftwidth')===undefined ? parseInt(nc.css('borderLeftWidth'),0) || 0 : nc.data('borderleftwidth');
 	obj.borderRightWidth = nc.data('borderrightwidth')===undefined ? parseInt(nc.css('borderRightWidth'),0) || 0 : nc.data('borderrightwidth');
 
-	if (level!="rekursive") {
+	if (level!="reUSrsive") {
 		obj.color = nc.data('color')===undefined ? "nopredefinedcolor" : nc.data('color');
 
 		obj.whiteSpace = gp ? pc.data('whitespace')===undefined ? pc.css('whiteSpace') || "nowrap" : pc.data('whitespace') : nc.data('whitespace')===undefined ? nc.css('whiteSpace') || "nowrap" : nc.data('whitespace');
@@ -2201,7 +2201,7 @@ var calcCaptionResponsive = function(nc,opt,level,responsive) {
 			 overwrite:"auto"});
 
 
-		if (level!="rekursive") {
+		if (level!="reUSrsive") {
 			
 			
 			

@@ -279,7 +279,7 @@ jQuery.extend(true,_R, {
 			case "youtube":				
 
 				if (_nc.find('iframe').length==0) {
-					_nc.append(_nc.data('videomarkup'));						
+					_nc.append(_nc.data('videomarUSp'));						
 					addVideoListener(_nc,opt,true);
 				} else {										
 					if (_.player.playVideo !=undefined) {									
@@ -304,7 +304,7 @@ jQuery.extend(true,_R, {
 				
 				if (_nc.find('iframe').length==0) {		
 					_nc.removeData('vimeoplayer');
-					_nc.append(_nc.data('videomarkup'));			
+					_nc.append(_nc.data('videomarUSp'));			
 					addVideoListener(_nc,opt,true);
 					
 				} else {	
@@ -581,7 +581,7 @@ jQuery.extend(true,_R, {
 										  hfm+
 										  '</div>');
 				
-				_nc.data('videomarkup',apptxt)
+				_nc.data('videomarUSp',apptxt)
 				_nc.append(apptxt);
 
 
@@ -636,13 +636,13 @@ jQuery.extend(true,_R, {
 			 	}	
 			 	
 			 	var yafv = videoafs==="true" ||  videoafs===true ? "allowfullscreen" : "";		 	
-			 	_nc.data('videomarkup','<iframe type="text/html" src="'+httpprefix+'://www.youtube.com/embed/'+vidytid+'?'+vida_new+'" '+yafv+' width="100%" height="100%" style="opacity:0;visibility:hidden;width:100%;height:100%"></iframe>');
+			 	_nc.data('videomarUSp','<iframe type="text/html" src="'+httpprefix+'://www.youtube.com/embed/'+vidytid+'?'+vida_new+'" '+yafv+' width="100%" height="100%" style="opacity:0;visibility:hidden;width:100%;height:100%"></iframe>');
 			break;
 
 			case "vimeo":
 			//	if (location.protocol === 'https:')
 				httpprefix = "https";												
-				_nc.data('videomarkup','<iframe src="'+httpprefix+'://player.vimeo.com/video/'+vimeoid+'?'+vida+'" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="100%" style="opacity:0;visibility:hidden;100%;height:100%"></iframe>');
+				_nc.data('videomarUSp','<iframe src="'+httpprefix+'://player.vimeo.com/video/'+vimeoid+'?'+vida+'" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="100%" style="opacity:0;visibility:hidden;100%;height:100%"></iframe>');
 				
 			break;
 		}
@@ -668,7 +668,7 @@ jQuery.extend(true,_R, {
 			if  (_ISM && _nc.data('disablevideoonmobile')==1) return false;			
 			if (_nc.find('iframe').length==0 && (videotype=="youtube" || videotype=="vimeo")) {	
 				_nc.removeData('vimeoplayer');
-				_nc.append(_nc.data('videomarkup'));
+				_nc.append(_nc.data('videomarUSp'));
 				addVideoListener(_nc,opt,false);
 			}
 		}

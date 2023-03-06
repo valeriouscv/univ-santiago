@@ -200,8 +200,8 @@ jQuery.extend(true,_R, {
 var defineCarouselElements = function(opt) {
 	var _ = opt.carousel;
 
-	_.infbackup = _.infinity;
-	_.maxVisiblebackup = _.maxVisibleItems;
+	_.infbacUSp = _.infinity;
+	_.maxVisiblebacUSp = _.maxVisibleItems;
 	// SET DEFAULT OFFSETS TO 0
 	_.slide_globaloffset = "none";
 	_.slide_offset = 0; 	
@@ -236,7 +236,7 @@ var setCarouselDefaults = function(opt) {
 
 	// CALCULATE CAROUSEL WIDTH
 	_.maxwidth = opt.slideamount*_.slide_width;
-	if (_.maxVisiblebackup>_.slides.length+1) 
+	if (_.maxVisiblebacUSp>_.slides.length+1) 
 		_.maxVisibleItems = _.slides.length+2;
 	
 	// SET MAXIMUM CAROUSEL WARPPER WIDTH (SHOULD BE AN ODD NUMBER)	
@@ -247,7 +247,7 @@ var setCarouselDefaults = function(opt) {
 	
 
 	// INFINITY MODIFICATIONS		
-	_.infinity = _.wrapwidth >=_.maxwidth ? "off" : _.infbackup;
+	_.infinity = _.wrapwidth >=_.maxwidth ? "off" : _.infbacUSp;
 			
 	
 	// SET POSITION OF WRAP CONTAINER		
