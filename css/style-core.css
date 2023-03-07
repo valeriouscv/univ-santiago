@@ -219,6 +219,10 @@ input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focu
 .sf-menu.uni-santiago-top-bar-menu > .uni-santiago-mega-menu .sf-mega-section-inner ul{ font-size: 13px; }
 .sf-menu.uni-santiago-top-bar-menu > .uni-santiago-mega-menu .sf-mega-section-inner ul li{ padding: 0px 18px 10px; }
 
+
+/* sbmenu desktop */
+
+
 /* mobile menu */	
 .uni-santiago-mm-menu-wrap{ display: none; }
 .admin-bar .mm-menu{ margin-top: 32px; }
