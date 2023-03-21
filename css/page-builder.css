@@ -915,11 +915,11 @@ ul.slides .clearfix{ height: auto; opacity: 1; clear: none; }
 
 /* tab feature3 */
 .gdlr-core-tab-feature3-title-wrap .gdlr-core-tab-feature3-title{ color: #777; }
-.gdlr-core-tab-feature3-title-wrap.gdlr-core-active .gdlr-core-tab-feature3-title{ color: #0082fa; }
+.gdlr-core-tab-feature3-title-wrap.gdlr-core-active .gdlr-core-tab-feature3-title{ color: #003F88; }
 .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-content-title{ color: #222; }
 .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-content-text{ color: #373737; }
 body .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-content-button .gdlr-core-button,
-body .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-content-button .gdlr-core-button:hover{ color: #0082fa; border-color: #0082fa; }
+body .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-content-button .gdlr-core-button:hover{ color: #003F88; border-color: #003F88; }
 
 .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-title{ font-size: 15px; font-weight: 500; margin-bottom: 0px; text-transform: uppercase; }
 .gdlr-core-tab-feature3-item .gdlr-core-tab-feature3-title-wrap{ cursor: pointer; padding-bottom: 25px; }
