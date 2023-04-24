@@ -2453,7 +2453,8 @@ input[type=button]:focus,input[type=submit]:focus,input[type=reset]:focus {
 	margin-left:23px
 }
 .uni-santiago-top-bar-right-social {
-	display:inline
+	display:inline;
+	margin-left: 558px;
 }
 .uni-santiago-top-bar-right-social a {
 	margin-left:25px
