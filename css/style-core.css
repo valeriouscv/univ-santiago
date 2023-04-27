@@ -2454,7 +2454,7 @@ input[type=button]:focus,input[type=submit]:focus,input[type=reset]:focus {
 }
 .uni-santiago-top-bar-right-social {
 	display:inline;
-	margin-left: 360px;
+	margin-left: 564px;
 }
 .uni-santiago-top-bar-right-social a {
 	margin-left:25px
@@ -6759,17 +6759,12 @@ body .tribe-bar-views-inner {
 	padding: 15px; 
 	width: 100%;
 	display: block; -webkit-appearance: none; 
-	background-color:#a5e4ef; 
+	background-color:#003F88; 
 	border: 0;
 	color: #fff;
 	font-style: normal !important;
 	cursor: pointer;
 	font-style: normal;
-}
-
-
-.submit-button:hover {
-	background: #648d94;
 }
 
 .filter ul {
