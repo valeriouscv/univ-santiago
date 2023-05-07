@@ -147,7 +147,7 @@
                                     <ul class="sub-menu">
                                         <li class="menu-item"><a href="apply-to-us-santiago.html">Apply To uni-santiago</a></li>
                                         <li class="menu-item"><a href="campus-tour.html">Campus Tour</a></li>
-                                        <li class="menu-item"><a href="scholarships.html">Scholarships</a></li>
+                                        <li class="menu-item"><a href="bolsas.html">Scholarships</a></li>
                                         <li class="menu-item"><a href="athletics.html">Athletics</a></li>
                                         <li class="menu-item"><a href="us-virtual.html">Give To uni-santiago</a></li>
                                         <li class="menu-item"><a href="alumni.html">Alumni</a></li>
@@ -320,7 +320,7 @@
                                             <ul class="sub-menu">
                                                 <li class="menu-item" data-size="60"><a href="apply-to-us-santiago.html">Apply To uni-santiago</a></li>
                                                 <li class="menu-item" data-size="60"><a href="campus-tour.html">Campus Tour</a></li>
-                                                <li class="menu-item" data-size="60"><a href="scholarships.html">Scholarships</a></li>
+                                                <li class="menu-item" data-size="60"><a href="bolsas.html">Scholarships</a></li>
                                                 <li class="menu-item" data-size="60"><a href="athletics.html">Athletics</a></li>
                                                 <li class="menu-item" data-size="60"><a href="us-virtual.html">Give To uni-santiago</a></li>
                                                 <li class="menu-item" data-size="60"><a href="alumni.html">Alumni</a></li>
@@ -441,12 +441,12 @@
                             <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align" style="margin-bottom: 25px;">
-                                        <div class="gdlr-core-divider-container" style="max-width: 305px;"><div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #003F88; border-width: 4px;"></div></div>
+                                        <div class="gdlr-core-divider-container" style="max-width: 305px;"><div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0d3b66; border-width: 4px;"></div></div>
                                     </div>
                                 </div>
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px;">
-                                        <div class="gdlr-core-text-box-item-content" style="font-size: 19px; text-transform: none; color: #003F88;">
+                                        <div class="gdlr-core-text-box-item-content" style="font-size: 19px; text-transform: none; color: #0d3b66;">
                                             <p>
                                                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,<br />
                                                 there live the blind texts. Separated they live in
@@ -764,7 +764,7 @@
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 19px; text-transform: none; color: #003F88;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 19px; text-transform: none; color: #0d3b66;">
                                                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
                                                     </div>
                                                 </div>
@@ -788,7 +788,7 @@
                                         <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align" style="margin-bottom: 50px;">
-                                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #003F88; border-width: 3px;"></div>
+                                                    <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #0d3b66; border-width: 3px;"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-core-pbf-element">
