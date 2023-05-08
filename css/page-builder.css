@@ -572,7 +572,7 @@ ul.slides .clearfix{ height: auto; opacity: 1; clear: none; }
 .gdlr-core-flipbox .gdlr-core-flipbox-background{ position: absolute;
 	top: 0px; right: 0px; bottom: 0px; left: 0px; background-position: center; background-size: cover; }
 .gdlr-core-flipbox .gdlr-core-flipbox-frame{ position: absolute; margin: 20px;
-	top: 0px; right: 0px; bottom: 0px; left: 0px; border-style: solid; border-width: 5px;
+	top: 0px; right: 0px; bottom: 0px; left: 0px; border-style: solid; border-width: 2px;
 	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }	
 .gdlr-core-flipbox .gdlr-core-flipbox-front,
 .gdlr-core-flipbox .gdlr-core-flipbox-back{ width: 100%; overflow: hidden; position: relative; }
@@ -582,7 +582,7 @@ ul.slides .clearfix{ height: auto; opacity: 1; clear: none; }
 .gdlr-core-flipbox .gdlr-core-flipbox-front,
 .gdlr-core-flipbox .gdlr-core-flipbox-back{  padding: 50px 40px 40px; }
 .gdlr-core-flipbox .gdlr-core-flipbox-front.gdlr-core-flipbox-type-outer,
-.gdlr-core-flipbox .gdlr-core-flipbox-back.gdlr-core-flipbox-type-outer{ border-width: 5px; border-style: solid;
+.gdlr-core-flipbox .gdlr-core-flipbox-back.gdlr-core-flipbox-type-outer{ border-width: 2px; border-style: solid;
 	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
 
 .gdlr-core-flipbox-item .gdlr-core-icon-left .gdlr-core-flipbox-content-wrap{ overflow: hidden; }
@@ -600,13 +600,13 @@ ul.slides .clearfix{ height: auto; opacity: 1; clear: none; }
 .gdlr-core-feature-box-item .gdlr-core-feature-box-background{ position: absolute;
 	top: 0px; right: 0px; bottom: 0px; left: 0px; background-position: center; background-size: cover; }
 .gdlr-core-feature-box-item .gdlr-core-feature-box-frame{ position: absolute; margin: 20px;
-	top: 0px; right: 0px; bottom: 0px; left: 0px; border-style: solid; border-width: 5px;
+	top: 0px; right: 0px; bottom: 0px; left: 0px; border-style: solid; border-width: 2px;
 	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }	
 .gdlr-core-feature-box-item .gdlr-core-feature-box-link{ position: absolute;
 	top: 0px; right: 0px; bottom: 0px; left: 0px; 
 	/* for ie-9 */ background: rgba(0,0,0,0); }
 
-.gdlr-core-feature-box-item .gdlr-core-feature-box.gdlr-core-feature-box-type-outer{ border-width: 5px; border-style: solid;
+.gdlr-core-feature-box-item .gdlr-core-feature-box.gdlr-core-feature-box-type-outer{ border-width: 2px; border-style: solid;
 	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
 
 
@@ -2345,7 +2345,7 @@ ul.gdlr-core-category-background-widget li.gdlr-core-with-bg a:hover{ color: #ff
 .gdlr-core-flexslider.gdlr-core-bullet-style-round .flex-control-nav li a{ border: none; width: 7px; height: 7px; }
 .gdlr-core-flexslider.gdlr-core-bullet-style-round .flex-control-nav li a.flex-active{ transform: scale(1.5); }
 
-.gdlr-core-flexslider.gdlr-core-bullet-style-round2 .flex-control-nav li a{ border-width: 3px; }
+.gdlr-core-flexslider.gdlr-core-bullet-style-round2 .flex-control-nav li a{ border-width: 2px; }
 .gdlr-core-flexslider.gdlr-core-bullet-style-round2 .flex-control-nav li a.flex-active{ background: transparent; }
 
 .gdlr-core-flexslider.gdlr-core-bullet-style-round3 .flex-control-nav li a{ border: none; width: 8px; height: 8px; margin-bottom: 2px; margin-top: 2px; }
@@ -2404,7 +2404,7 @@ ul.gdlr-core-category-background-widget li.gdlr-core-with-bg a:hover{ color: #ff
 
 .gdlr-core-flexslider-nav.gdlr-core-plain-circle-style li{ float: left; line-height: 1; }
 .gdlr-core-flexslider-nav.gdlr-core-plain-circle-style li a{ font-size: 47px; display: block; 
-	border-width: 3px; border-style: solid; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
+	border-width: 2px; border-style: solid; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
 .gdlr-core-flexslider-nav.gdlr-core-plain-circle-style li a i{ display: block; }
 .gdlr-core-flexslider-nav.gdlr-core-plain-circle-style li a.flex-next{ margin-left: 8px; }
 .gdlr-core-flexslider-nav.gdlr-core-plain-circle-style li a.flex-next i{ display: block; margin: -6px -4px -4px -6px }
