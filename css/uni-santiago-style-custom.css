@@ -241,13 +241,13 @@ body.single-post .uni-santiago-sidebar-style-none, body.blog .uni-santiago-sideb
 .uni-santiago-footer-wrapper{ padding-bottom: 22px; } 
 .uni-santiago-copyright-container{ padding-top: 33px; } 
 .uni-santiago-copyright-container{ padding-bottom: 33px; } 
-.uni-santiago-body h1, .uni-santiago-body h2, .uni-santiago-body h3, .uni-santiago-body h4, .uni-santiago-body h5, .uni-santiago-body h6, .uni-santiago-body .uni-santiago-title-font,.uni-santiago-body .gdlr-core-title-font{ font-family: LeBeauneNew; }.woocommerce-breadcrumb, .woocommerce span.onsale, .single-product.woocommerce div.product p.price .woocommerce-Price-amount, .single-product.woocommerce #review_form #respond label{ font-family: LeBeauneNew; } 
-.uni-santiago-navigation .sf-menu > li > a, .uni-santiago-navigation .sf-vertical > li > a, .uni-santiago-navigation-font{ font-family: LeBeauneNew } 
-.uni-santiago-body, .uni-santiago-body .gdlr-core-content-font, .uni-santiago-body input, .uni-santiago-body textarea, .uni-santiago-body button, .uni-santiago-body select, .uni-santiago-body .uni-santiago-content-font, .gdlr-core-audio .mejs-container *{ font-family: LeBeauneNew } 
-.uni-santiago-body .gdlr-core-info-font, .uni-santiago-body .uni-santiago-info-font{ font-family: LeBeauneNew } 
-.uni-santiago-body .gdlr-core-blog-info-font, .uni-santiago-body .uni-santiago-blog-info-font{ font-family: LeBeauneNew } 
-.uni-santiago-body .gdlr-core-quote-font, blockquote{ font-family: "Montserrat", sans-serif; } 
-.uni-santiago-body .gdlr-core-testimonial-content{ font-family: LeBeauneNew } 
+.uni-santiago-body h1, .uni-santiago-body h2, .uni-santiago-body h3, .uni-santiago-body h4, .uni-santiago-body h5, .uni-santiago-body h6, .uni-santiago-body .uni-santiago-title-font,.uni-santiago-body .gdlr-core-title-font{ font-family: Jost, sans-serif; }.woocommerce-breadcrumb, .woocommerce span.onsale, .single-product.woocommerce div.product p.price .woocommerce-Price-amount, .single-product.woocommerce #review_form #respond label{ font-family: Jost, sans-serif; } 
+.uni-santiago-navigation .sf-menu > li > a, .uni-santiago-navigation .sf-vertical > li > a, .uni-santiago-navigation-font{ font-family: Jost, sans-serif } 
+.uni-santiago-body, .uni-santiago-body .gdlr-core-content-font, .uni-santiago-body input, .uni-santiago-body textarea, .uni-santiago-body button, .uni-santiago-body select, .uni-santiago-body .uni-santiago-content-font, .gdlr-core-audio .mejs-container *{ font-family: Jost, sans-serif } 
+.uni-santiago-body .gdlr-core-info-font, .uni-santiago-body .uni-santiago-info-font{ font-family: Jost, sans-serif } 
+.uni-santiago-body .gdlr-core-blog-info-font, .uni-santiago-body .uni-santiago-blog-info-font{ font-family: Jost, sans-serif } 
+.uni-santiago-body .gdlr-core-quote-font, blockquote{ font-family: "Montserrat", Jost, sans-serif; } 
+.uni-santiago-body .gdlr-core-testimonial-content{ font-family: Jost, sans-serif } 
 .uni-santiago-body h1{ font-size: 52px; } 
 .uni-santiago-body h2, #poststuff .gdlr-core-page-builder-body h2{ font-size: 48px; } 
 .uni-santiago-body h3{ font-size: 36px; } 
@@ -732,10 +732,10 @@ form.skip-question button, form.complete-quiz button{ color: #999; }
 .gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-skin-e-background{ background-color: #f5f5f5 }.gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-flexslider-nav.gdlr-core-round-style li a, .gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-flexslider-nav.gdlr-core-rectangle-style li a{ background-color: #f5f5f5; }.gdlr-core-page-builder-body [data-skin="Course color"] input:not([type="button"]):not([type="submit"]):not([type="reset"]), .gdlr-core-page-builder-body [data-skin="Course color"] textarea{ background-color: #f5f5f5; }.gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-course-form .gdlr-core-course-form-combobox{ color: #f5f5f5; }
 .gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-skin-e-content{ color: #748494 }.gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-flexslider-nav.gdlr-core-round-style li a i, .gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-flexslider-nav.gdlr-core-rectangle-style li a i{ color: #748494; }.gdlr-core-page-builder-body [data-skin="Course color"] input:not([type="button"]):not([type="submit"]):not([type="reset"]), .gdlr-core-page-builder-body [data-skin="Course color"] textarea{ color: #748494; }.gdlr-core-page-builder-body [data-skin="Course color"] ::-webkit-input-placeholder{ color: #748494; }.gdlr-core-page-builder-body [data-skin="Course color"] ::-moz-placeholder{ color: #748494; }.gdlr-core-page-builder-body [data-skin="Course color"] :-ms-input-placeholder{ color: #748494; }.gdlr-core-page-builder-body [data-skin="Course color"] :-moz-placeholder{ color: #748494; }.gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-course-form .gdlr-core-course-form-combobox select,.gdlr-core-page-builder-body [data-skin="Course color"] .gdlr-core-course-form .gdlr-core-course-form-combobox:after{ color: #748494; }
 @font-face {
-font-family: LeBeauneNew;
-src: url("../fonts/Sans-serif.otf");
+font-family: Jost, sans-serif;
+src: url("../fonts/Jost, sans-serif.otf");
 src: url("../fonts/LeBeauneNewd41d.otf?#iefix") format("embedded-opentype"), 
-url("../fonts/Sans-serif.ttf") format("truetype");
+url("../fonts/Jost, sans-serif.ttf") format("truetype");
 font-weight: 400;
 font-style: normal;
 }

@@ -966,7 +966,7 @@ rs-dotted.threexthreewhite		{	background:url(../assets/gridtile_3x3_white.png)}
 	font-weight: normal;
 	color: #7f8c8d;
 	color: #ffffff;
-	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, Jost, sans-serif;
 	letter-spacing: 2px;
 }
 .rev-scroll-btn > *:hover,
@@ -1429,7 +1429,7 @@ body.rtl .rs-pzimg {left: 0 !important}
 	- DEBUG MODE -
 *******************/
 
-.rs_error_message_box { background: #111;width:800px;margin: 40px auto;padding: 40px 20px;text-align: center;font-family: "Open Sans",sans-serif}
+.rs_error_message_box { background: #111;width:800px;margin: 40px auto;padding: 40px 20px;text-align: center;font-family: "Open Sans",Jost, sans-serif}
 .rs_error_message_oops {margin: 0px 0px 20px;line-height: 60px;font-size: 34px;color: #FFF;}
 .rs_error_message_content {margin: 0px 0px 20px;line-height: 25px;font-size: 17px;color: #FFF;}
 .rs_error_message_button {color: #fff !important;background: #333;display: inline-block;padding: 10px 15px;text-align: right;border-radius: 5px;cursor: pointer;text-decoration: none !important}
