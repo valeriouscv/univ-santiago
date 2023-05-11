@@ -452,7 +452,7 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 40px; font-weight: 700; letter-spacing: 0px; text-transform: none; color: #ffffff;">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 40px; font-weight: 500; letter-spacing: 0px; text-transform: none; color: #ffffff;">
                                                             University Life
                                                         </h3>
                                                     </div>
@@ -653,7 +653,7 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 29px; font-weight: 700; letter-spacing: 0px; text-transform: none; color: #ffffff;">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 29px; font-weight: 500; letter-spacing: 0px; text-transform: none; color: #ffffff;">
                                                             The Campus Experience
                                                         </h3>
                                                     </div>
@@ -1050,7 +1050,7 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-blockquote-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-large-size" style="padding-bottom: 0px;">
                                                     <div class="gdlr-core-blockquote gdlr-core-info-font">
-                                                        <div class="gdlr-core-blockquote-item-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 170px; font-weight: 700;">&#8220;</div>
+                                                        <div class="gdlr-core-blockquote-item-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 170px; font-weight: 500;">&#8220;</div>
                                                         <div class="gdlr-core-blockquote-item-content-wrap">
                                                             <div class="gdlr-core-blockquote-item-content gdlr-core-skin-content" style="font-size: 21px; font-weight: 600; letter-spacing: 0px;">
                                                                 <p>Our goal is to be at the heart of the financial services industry as businesses expand across.</p>

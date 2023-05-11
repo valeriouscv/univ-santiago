@@ -50,7 +50,7 @@ body{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; w
 p{ margin-bottom: 20px;  }
 ul, ol{ margin-left: 35px; margin-bottom: 20px; }
 dl{ margin-bottom: 20px; }
-dl dt{ font-weight: 700; margin-top: 10px; }
+dl dt{ font-weight: 500; margin-top: 10px; }
 dl dt:first-child{ margin-top: 0px; }
 dl dd{ margin-left: 20px; }
 h1, h2, h3, h4, h5, h6{ line-height: 1.2; margin-bottom: 20px; }
@@ -401,12 +401,12 @@ body.admin-bar .uni-santiago-overlay-menu-content{ margin-top: 32px; overflow-y:
 
 .uni-santiago-main-menu-cart{ float: left; margin-top: -4px; padding-left: 20px; margin-left: 5px; position: relative; }
 .uni-santiago-main-menu-cart i{ font-size: 16px; margin-top: -1px; cursor: pointer; }
-.uni-santiago-main-menu-cart > .uni-santiago-top-cart-count{ font-size: 10px; font-weight: 700; vertical-align: super;
+.uni-santiago-main-menu-cart > .uni-santiago-top-cart-count{ font-size: 10px; font-weight: 500; vertical-align: super;
 	width: 16px; height: 16px; line-height: 15px; position: absolute; top: -5px; right: -8px; text-align: center;
 	border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
 
 .uni-santiago-top-cart-content-wrap{ position: absolute; width: 210px; right: 0px; top: 100%; padding-top: 24px; z-index: 99; }
-.uni-santiago-top-cart-content-wrap .uni-santiago-top-cart-content{ padding: 25px; text-align: left; font-size: 16px; font-weight: 700; }
+.uni-santiago-top-cart-content-wrap .uni-santiago-top-cart-content{ padding: 25px; text-align: left; font-size: 16px; font-weight: 500; }
 .uni-santiago-top-cart-content-wrap .woocommerce-Price-amount.amount{ float: none; }
 .uni-santiago-top-cart-content-wrap .uni-santiago-top-cart-count-wrap{ margin-bottom: 8px; }
 .uni-santiago-top-cart-content-wrap .uni-santiago-top-cart-amount-wrap{ margin-bottom: 23px; }
@@ -655,7 +655,7 @@ footer.uni-santiago-no-title-divider .uni-santiago-widget-title{ border: 0px; pa
 .uni-santiago-single-article .uni-santiago-single-article-content ol{ line-height: 2; }
 .uni-santiago-single-article .uni-santiago-single-article-thumbnail{ margin-bottom: 42px; }
 .uni-santiago-single-article .uni-santiago-single-article-head{ margin-bottom: 32px; }
-.uni-santiago-single-article .uni-santiago-single-article-title{ font-size: 37px; font-weight: 700; margin-bottom: 16px; letter-spacing: 0.5px; }
+.uni-santiago-single-article .uni-santiago-single-article-title{ font-size: 37px; font-weight: 500; margin-bottom: 16px; letter-spacing: 0.5px; }
 .uni-santiago-single-article .uni-santiago-single-article-head-right{ overflow: hidden; }
 
 .uni-santiago-blog-info-wrapper .uni-santiago-head{ margin-right: 7px; vertical-align: baseline; }
@@ -872,7 +872,7 @@ body.blog .uni-santiago-single-article{ padding-bottom: 60px; }
 .uni-santiago-blog-title-wrap.uni-santiago-style-small .uni-santiago-blog-title-content{ padding-top: 93px; padding-bottom: 87px; }
 .uni-santiago-blog-title-wrap.uni-santiago-style-large .uni-santiago-blog-title-content{ padding-top: 184px; padding-bottom: 168px; }
 
-.uni-santiago-blog-title-wrap .uni-santiago-single-article-title{ font-size: 43px; font-weight: 700; margin-bottom: 11px; letter-spacing: 0.5px; }
+.uni-santiago-blog-title-wrap .uni-santiago-single-article-title{ font-size: 43px; font-weight: 500; margin-bottom: 11px; letter-spacing: 0.5px; }
 .uni-santiago-blog-title-wrap .uni-santiago-single-article-head-right{ overflow: hidden; }
 .uni-santiago-blog-title-wrap .uni-santiago-single-article-date-wrapper{ margin-top: 11px; }
 
@@ -1239,7 +1239,7 @@ header.woocommerce-Address-title.title h3 { font-size: 18px; }
 .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img { width: 47px;}
 .widget_shopping_cart a.button.wc-forward { padding: 19px 28px; font-size: 14px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 .woocommerce .widget_price_filter .price_slider_amount .button { float: left; font-size: 14px; padding: 16px 26px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
-.price_slider_amount .price_label { margin-top: 24px; font-size: 17px; font-weight: 700; }
+.price_slider_amount .price_label { margin-top: 24px; font-size: 17px; font-weight: 500; }
 .woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li { padding: 15px 0; border-bottom-style: solid; border-bottom-width: 1px; }
 .woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li { padding: 15px 0; margin: 0; list-style: none; border-bottom-style: solid; border-bottom-width: 1px; }
 html ul.cart_list li a, html .woocommerce ul.product_list_widget li a { font-weight: 400; }
@@ -1416,7 +1416,7 @@ html.mm-pagedim-black #mm-blocker{background:#000}
 
 /* custom */
 ul.mm-listview li{ margin: 0px 25px; border-bottom-width: 1px; border-bottom-style: solid; }
-ul.mm-listview li a, ul.mm-listview li span.uni-santiago-mm-menu-blank{ font-size: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; padding: 17px 0px; }
+ul.mm-listview li a, ul.mm-listview li span.uni-santiago-mm-menu-blank{ font-size: 12px; text-transform: uppercase; font-weight: 500; letter-spacing: 0.5px; padding: 17px 0px; }
 .mm-navbar .mm-btn{ line-height: 40px; font-size: 30px; display: block; text-align: left; left: -8px; padding: 0px; }
 .mm-navbar .mm-btn:before{ content: "\34"; font-family: elegantIcons; }
 .mm-navbar .mmenu-custom-close{ line-height: 40px; font-size: 30px; display: block; text-align: left; margin-left: -8px; cursor: pointer; }
@@ -1503,12 +1503,12 @@ body .tribe-bar-views-inner{ background: #e0e0e0; padding: 19px 0px 45px; }
 .uni-santiago-body h2.tribe-events-list-separator-month{ font-size: 14px; font-weight: 800; letter-spacing: 1px; padding: 15px 19px; }
 .uni-santiago-body .tribe-events-list-separator-month + .type-tribe_events.tribe-events-first, 
 .uni-santiago-body .tribe-events-list .type-tribe_events { padding-top: 3px; padding-bottom: 50px; }
-.uni-santiago-body h3.tribe-events-list-event-title{ font-size: 24px; font-weight: 700; }
+.uni-santiago-body h3.tribe-events-list-event-title{ font-size: 24px; font-weight: 500; }
 .uni-santiago-body .tribe-events-venue-details{ line-height: 1.8; color: #555; }
 .uni-santiago-body .tribe-events-list .tribe-events-loop .tribe-events-event-image{ margin: 13px 3% 0 0; width: 36%; }
-.uni-santiago-body a.tribe-events-read-more{ background: #222; color: #fff; padding: 13px 22px; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-top: 12px; float: left; }
-.uni-santiago-body ul.tribe-events-sub-nav{ text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 700; }
-.uni-santiago-body table.tribe-events-calendar th{ padding: 10px; font-size: 13px; font-weight: 700; border: none; }
+.uni-santiago-body a.tribe-events-read-more{ background: #222; color: #fff; padding: 13px 22px; font-size: 12px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-top: 12px; float: left; }
+.uni-santiago-body ul.tribe-events-sub-nav{ text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 500; }
+.uni-santiago-body table.tribe-events-calendar th{ padding: 10px; font-size: 13px; font-weight: 500; border: none; }
 .uni-santiago-body .tribe-events-notices{ margin: 10px 0 34px; }
 .uni-santiago-body div#tribe-events-header{ padding-bottom: 10px; }
 .uni-santiago-body div#tribe-events-footer{ padding-top: 15px; }
@@ -1521,7 +1521,7 @@ body .tribe-bar-views-inner{ background: #e0e0e0; padding: 19px 0px 45px; }
 .uni-santiago-body .tribe-bar-views-list span[class^=tribe-icon-], 
 .uni-santiago-body .tribe-select2-results-views span[class^=tribe-icon-]{ margin-left: 14px; font-size: 15px; }
 .uni-santiago-body #tribe-bar-form label{ font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
-.uni-santiago-body h2.tribe-events-page-title{ font-size: 27px; font-weight: 700; letter-spacing: 2px; padding-top: 20px; margin-bottom: 9px; }
+.uni-santiago-body h2.tribe-events-page-title{ font-size: 27px; font-weight: 500; letter-spacing: 2px; padding-top: 20px; margin-bottom: 9px; }
 .uni-santiago-body span.tribe-events-user-recurrence-toggle{ margin-bottom: 30px; }
 .uni-santiago-body input#tribeHideRecurrence{ margin-top: -1px; }
 .uni-santiago-body .tribe-events-user-recurrence-toggle label{ font-weight: 400; font-style: normal; font-size: 14px; color: #666; }
@@ -6506,7 +6506,7 @@ body .tribe-bar-views-inner {
 	margin-top:0px;
 	margin-bottom:20px;
 	line-height:1.2;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 
@@ -6790,7 +6790,7 @@ body .tribe-bar-views-inner {
 	text-transform: uppercase;
 	color: #7287a2;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0px;
 }
 

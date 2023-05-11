@@ -1,9 +1,9 @@
-.uni-santiago-page-title-wrap{ background-image: url(../upload/page-title.jpg); }.uni-santiago-top-bar-right-button{ padding-bottom: 11px; margin-bottom: -11px; }.uni-santiago-body h1, .uni-santiago-body h2, .uni-santiago-body h3, .uni-santiago-body h4, .uni-santiago-body h5, .uni-santiago-body h6{ margin-top: 0px; margin-bottom: 20px; line-height: 1.2; font-weight: 700; }
-#poststuff .gdlr-core-page-builder-body h2{ padding: 0px; margin-bottom: 20px; line-height: 1.2; font-weight: 700; }
-#poststuff .gdlr-core-page-builder-body h1{ padding: 0px; font-weight: 700; }
+.uni-santiago-page-title-wrap{ background-image: url(../upload/page-title.jpg); }.uni-santiago-top-bar-right-button{ padding-bottom: 11px; margin-bottom: -11px; }.uni-santiago-body h1, .uni-santiago-body h2, .uni-santiago-body h3, .uni-santiago-body h4, .uni-santiago-body h5, .uni-santiago-body h6{ margin-top: 0px; margin-bottom: 20px; line-height: 1.2; font-weight: 500; }
+#poststuff .gdlr-core-page-builder-body h2{ padding: 0px; margin-bottom: 20px; line-height: 1.2; font-weight: 500; }
+#poststuff .gdlr-core-page-builder-body h1{ padding: 0px; font-weight: 500; }
 
 .gdlr-core-button, .uni-santiago-button, 
-input[type="button"], input[type="submit"], input[type="reset"]{ text-transform: none; font-weight: 700; }
+input[type="button"], input[type="submit"], input[type="reset"]{ text-transform: none; font-weight: 500; }
 input, textarea{ border-bottom-width: 1px; }
 
 .gdlr-core-twitter-item{ position: relative; }
@@ -18,7 +18,7 @@ input, textarea{ border-bottom-width: 1px; }
 .gdlr-core-twitter-item .gdlr-core-flexslider .gdlr-core-twitter-item-list-content{ margin-right: 12px; }
 .gdlr-core-twitter-item .gdlr-core-twitter-item-list-content{ font-size: 14px; }
 
-.gdlr-core-tab-item .gdlr-core-tab-item-title{ font-size: 17px; font-weight: 700; text-transform: none; letter-spacing: 0px; }
+.gdlr-core-tab-item .gdlr-core-tab-item-title{ font-size: 17px; font-weight: 500; text-transform: none; letter-spacing: 0px; }
 .gdlr-core-tab-style1-horizontal .gdlr-core-tab-item-title{ border: 0px; margin-left: 0px; padding: 24px 40px 24px; }
 .gdlr-core-tab-style1-horizontal .gdlr-core-tab-item-title.gdlr-core-active{ margin-bottom: 0px; padding: 24px 40px 24px; }
 .gdlr-core-tab-style1-horizontal .gdlr-core-tab-item-title-wrap{ border: 0px; }
@@ -113,8 +113,8 @@ ul.gdlr-core-custom-menu-widget.gdlr-core-menu-style-list li a:before{ margin-le
 .gdlr-core-event-item .gdlr-core-event-item-info-wrap .gdlr-core-head{ margin-right: 10px; }
 .gdlr-core-event-item-info.gdlr-core-type-start-date-month{ display: block; float: left; width: 40px; text-align: center; 
 	white-space: nowrap; margin-right: 25px; border-bottom-width: 3px; border-bottom-style: solid; padding-bottom: 10px; }
-.gdlr-core-type-start-date-month .gdlr-core-date{ font-size: 34px; line-height: 1; font-weight: 700; display: block; }
-.gdlr-core-type-start-date-month .gdlr-core-month{ font-size: 16px; display: block; font-weight: 700; text-transform: uppercase; }
+.gdlr-core-type-start-date-month .gdlr-core-date{ font-size: 34px; line-height: 1; font-weight: 500; display: block; }
+.gdlr-core-type-start-date-month .gdlr-core-month{ font-size: 16px; display: block; font-weight: 500; text-transform: uppercase; }
 
 .gdlr-core-event-item-list.gdlr-core-style-widget{ margin-bottom: 25px; }
 .gdlr-core-event-item-list.gdlr-core-style-widget .gdlr-core-event-item-title{ font-size: 18px; margin-bottom: 14px; }
@@ -124,7 +124,7 @@ ul.gdlr-core-custom-menu-widget.gdlr-core-menu-style-list li a:before{ margin-le
 .gdlr-core-event-item-list.gdlr-core-style-grid{ margin-bottom: 35px; }
 .gdlr-core-event-item-list.gdlr-core-style-grid .gdlr-core-event-item-thumbnail{ overflow: hidden; 
 	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
-.gdlr-core-event-item-list.gdlr-core-style-grid .gdlr-core-event-item-title{ font-size: 19px; margin-bottom: 14px; font-weight: 700; }
+.gdlr-core-event-item-list.gdlr-core-style-grid .gdlr-core-event-item-title{ font-size: 19px; margin-bottom: 14px; font-weight: 500; }
 .gdlr-core-event-item-list.gdlr-core-style-grid .gdlr-core-event-item-content-wrap{ overflow: hidden; }
 .gdlr-core-event-item-list.gdlr-core-style-grid .gdlr-core-event-item-info{ display: block; margin-bottom: 2px; }
 
@@ -151,8 +151,8 @@ body .gdlr-core-portfolio-grid .gdlr-core-portfolio-content-wrap .gdlr-core-port
 .gdlr-core-sidebar-item .textwidget .gdlr-core-button-full-width{ display: block; margin-right: 0 !important; text-align: center; }
 body .gdlr-core-accordion-style-icon .gdlr-core-accordion-item-title{ font-size: 17px; text-transform: none; font-weight: 400; letter-spacing: 0px; }
 body .gdlr-core-button{ letter-spacing: 0; }
-body .gdlr-core-newsletter-item.gdlr-core-style-rectangle-full .gdlr-core-newsletter-submit input[type="submit"]{ font-size: 15px; font-weight: 700; line-height: 20px; padding: 17px 19px; letter-spacing: 0; }
-body .gdlr-core-block-item-title-wrap .gdlr-core-block-item-title{ font-weight: 700; }
+body .gdlr-core-newsletter-item.gdlr-core-style-rectangle-full .gdlr-core-newsletter-submit input[type="submit"]{ font-size: 15px; font-weight: 500; line-height: 20px; padding: 17px 19px; letter-spacing: 0; }
+body .gdlr-core-block-item-title-wrap .gdlr-core-block-item-title{ font-weight: 500; }
 body .gdlr-core-icon-pos-right.gdlr-core-accordion-style-background-title-icon .gdlr-core-accordion-item-title{ padding: 25px 25px 25px 30px; }
 body .gdlr-core-blog-grid .gdlr-core-blog-title{ font-size: 19px; }
 body .gdlr-core-newsletter-item.gdlr-core-style-rectangle-full .gdlr-core-newsletter-email input[type="email"]{ font-size: 14px; padding: 18px 20px; }
@@ -217,7 +217,7 @@ body.uni-santiago-boxed .uni-santiago-body-wrapper{ margin-top: 0px; margin-bott
 .uni-santiago-page-title-wrap.uni-santiago-style-custom .uni-santiago-page-caption{ margin-bottom: 4px; } 
 .uni-santiago-page-title-wrap .uni-santiago-page-title{ text-transform: none; } 
 .uni-santiago-page-title-wrap.uni-santiago-style-custom .uni-santiago-page-title{ font-size: 43px; } 
-.uni-santiago-page-title-wrap .uni-santiago-page-title{ font-weight: 700; } 
+.uni-santiago-page-title-wrap .uni-santiago-page-title{ font-weight: 500; } 
 .uni-santiago-page-title-wrap.uni-santiago-style-custom .uni-santiago-page-title{ letter-spacing: 0px; } 
 .uni-santiago-page-title-wrap .uni-santiago-page-caption{ text-transform: none; } 
 .uni-santiago-page-title-wrap.uni-santiago-style-custom .uni-santiago-page-caption{ font-size: 21px; } 
@@ -266,7 +266,7 @@ body.single-post .uni-santiago-sidebar-style-none, body.blog .uni-santiago-sideb
 .uni-santiago-sidebar-area .uni-santiago-widget-title{ letter-spacing: 0px; } 
 .uni-santiago-sidebar-area .uni-santiago-widget-title{ text-transform: none; } 
 .uni-santiago-footer-wrapper .uni-santiago-widget-title{ font-size: 17px; } 
-.uni-santiago-footer-wrapper .uni-santiago-widget-title{ font-weight: 700; } 
+.uni-santiago-footer-wrapper .uni-santiago-widget-title{ font-weight: 500; } 
 .uni-santiago-footer-wrapper .uni-santiago-widget-title{ letter-spacing: 0px; } 
 .uni-santiago-footer-wrapper .uni-santiago-widget-title{ text-transform: none; } 
 .uni-santiago-footer-wrapper{ font-size: 16px; } 
