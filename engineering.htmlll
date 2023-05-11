@@ -417,7 +417,7 @@
                         <div class="uni-santiago-page-caption" style="font-size: 21px ;font-weight: 400 ;letter-spacing: 0px ;">
                             Undergraduate Program
                         </div>
-                        <h1 class="uni-santiago-page-title" style="font-size: 48px ;font-weight: 700 ;text-transform: none ;letter-spacing: 0px ;color: #ffffff ;">ENgineering</h1>
+                        <h1 class="uni-santiago-page-title" style="font-size: 48px ;font-weight: 500 ;text-transform: none ;letter-spacing: 0px ;color: #ffffff ;">ENgineering</h1>
                     </div>
                 </div>
             </div>
@@ -664,7 +664,7 @@
                                                 <div class="gdlr-core-tab-item-content gdlr-core-active" data-tab-id="1" style="background-color: #ffffff ;background-image: url(upload/logo-bg.webp) ;background-position: top right ;">
                                                     <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top">
                                                         <div class="gdlr-core-title-item-title-wrap ">
-                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 700 ;text-transform: none ;color: #314e85 ;">Why Choose uni-santiago?<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 500 ;text-transform: none ;color: #314e85 ;">Why Choose uni-santiago?<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
                                                         </div>
                                                     </div>
                                                     <p>
@@ -677,7 +677,7 @@
                                                 <div class="gdlr-core-tab-item-content " data-tab-id="2" style="background-color: #ffffff ;background-image: url(upload/logo-bg.webp) ;background-position: top right ;">
                                                     <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top">
                                                         <div class="gdlr-core-title-item-title-wrap ">
-                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 700 ;text-transform: none ;color: #314e85 ;">Self Development<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 500 ;text-transform: none ;color: #314e85 ;">Self Development<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
                                                         </div>
                                                     </div>
                                                     <p>
@@ -690,7 +690,7 @@
                                                 <div class="gdlr-core-tab-item-content " data-tab-id="3" style="background-color: #ffffff ;background-image: url(upload/logo-bg.webp) ;background-position: top right ;">
                                                     <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top">
                                                         <div class="gdlr-core-title-item-title-wrap ">
-                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 700 ;text-transform: none ;color: #314e85 ;">Spirituality<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 500 ;text-transform: none ;color: #314e85 ;">Spirituality<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
                                                         </div>
                                                     </div>
                                                     <p>
@@ -703,7 +703,7 @@
                                                 <div class="gdlr-core-tab-item-content " data-tab-id="4" style="background-color: #ffffff ;background-image: url(upload/logo-bg.webp) ;background-position: top right ;">
                                                     <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top">
                                                         <div class="gdlr-core-title-item-title-wrap ">
-                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 700 ;text-transform: none ;color: #314e85 ;">Alumni<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 500 ;text-transform: none ;color: #314e85 ;">Alumni<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
                                                         </div>
                                                     </div>
                                                     <p>
@@ -780,7 +780,7 @@
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a class="gdlr-core-button gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 14px ;font-weight: 700 ;letter-spacing: 0px ;padding: 13px 26px 16px 30px;text-transform: none ;margin: 0px 10px 10px 0px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;background: #0d3b66 ;"><span class="gdlr-core-content">Apply</span><i class="gdlr-core-pos-right fa fa-external-link" style="font-size: 14px ;"></i></a><a class="gdlr-core-button gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 14px ;font-weight: 700 ;letter-spacing: 0px ;padding: 13px 26px 16px 30px;text-transform: none ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;background: #0d3b66 ;"><span class="gdlr-core-content">Download Brochure</span><i class="gdlr-core-pos-right fa fa-file-pdf-o" style="font-size: 14px ;"></i></a>
+                                                    <a class="gdlr-core-button gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 14px ;font-weight: 500 ;letter-spacing: 0px ;padding: 13px 26px 16px 30px;text-transform: none ;margin: 0px 10px 10px 0px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;background: #0d3b66 ;"><span class="gdlr-core-content">Apply</span><i class="gdlr-core-pos-right fa fa-external-link" style="font-size: 14px ;"></i></a><a class="gdlr-core-button gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 14px ;font-weight: 500 ;letter-spacing: 0px ;padding: 13px 26px 16px 30px;text-transform: none ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;background: #0d3b66 ;"><span class="gdlr-core-content">Download Brochure</span><i class="gdlr-core-pos-right fa fa-file-pdf-o" style="font-size: 14px ;"></i></a>
                                                 </div>
                                             </div>
                                         </div>

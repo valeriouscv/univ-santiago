@@ -1527,7 +1527,7 @@ body .tribe-bar-views-inner{ background: #e0e0e0; padding: 19px 0px 45px; }
 .uni-santiago-body .tribe-events-user-recurrence-toggle label{ font-weight: 400; font-style: normal; font-size: 14px; color: #666; }
 .uni-santiago-body .tribe-events-event-details.tribe-clearfix{ padding: 30px !important; }
 .uni-santiago-body .tribe-event-schedule-details{ font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #666; margin-bottom: 15px; }
-.uni-santiago-body h2.tribe-events-list-event-title{ line-height: 1.4 !important; font-size: 16px !important; font-weight: 700 !important; }
+.uni-santiago-body h2.tribe-events-list-event-title{ line-height: 1.4 !important; font-size: 16px !important; font-weight: 500 !important; }
 .uni-santiago-body .tribe-events-list-photo-description.tribe-events-content{ font-size: 15px; color: #333; }
 #tribe-events-pg-template, .tribe-events-pg-template{ padding-top: 80px; padding-bottom: 40px; }
 
