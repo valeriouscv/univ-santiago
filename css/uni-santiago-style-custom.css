@@ -332,7 +332,7 @@ body.uni-santiago-boxed .uni-santiago-body-wrapper, .gdlr-core-page-builder .gdl
 .uni-santiago-page-title-wrap .uni-santiago-page-caption{ color: #1E2B50; }.uni-santiago-page-title-wrap .uni-santiago-page-caption .woocommerce-breadcrumb, .uni-santiago-page-title-wrap .uni-santiago-page-caption .woocommerce-breadcrumb a{ color: #1E2B50; }.uni-santiago-page-title-wrap .uni-santiago-page-title-event-time, .uni-santiago-page-title-wrap .uni-santiago-page-title-event-link a, .uni-santiago-page-title-wrap .uni-santiago-page-title-event-link a:hover{ color: #1E2B50; } 
 .uni-santiago-page-title-wrap .uni-santiago-page-title-overlay{ background-color: #ffffff; } 
 .uni-santiago-page-title-wrap .uni-santiago-page-title-top-gradient{ background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); background: -o-linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); }.uni-santiago-page-title-wrap .uni-santiago-page-title-bottom-gradient{ background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); } 
-.uni-santiago-body, .uni-santiago-body span.wpcf7-not-valid-tip{ color: #6b6b6b; } 
+.uni-santiago-body, .uni-santiago-body span.wpcf7-not-valid-tip{ color: #1E2B50; } 
 .uni-santiago-body h1, .uni-santiago-body h2, .uni-santiago-body h3, .uni-santiago-body h4, .uni-santiago-body h5, .uni-santiago-body h6{ color: #161616; }.woocommerce table.shop_attributes th, .woocommerce table.shop_table th, .single-product.woocommerce div.product .product_meta .uni-santiago-head{ color: #161616; } 
 .uni-santiago-body a{ color: #545454; } 
 .uni-santiago-body a:hover{ color: #1E2B50; }.gdlr-core-blog-item .gdlr-core-excerpt-read-more.gdlr-core-plain-text.gdlr-core-hover-border:hover{ border-color: #1E2B50 !important; } 
@@ -420,13 +420,13 @@ ul.gdlr-core-twitter-widget-wrap li .gdlr-core-twitter-widget-date a, ul.gdlr-co
 .gdlr-core-pagination a:hover, .gdlr-core-pagination a.gdlr-core-active, .gdlr-core-pagination span{ color: #ffffff; }body .page-links > span, body .page-links > a:hover, body .nav-links > span.current, body .nav-links > a:hover{ color: #ffffff; } 
 .gdlr-core-pagination.gdlr-core-with-border a{ color: #b4b4b4; border-color: #b4b4b4; }.gdlr-core-pagination.gdlr-core-style-plain a, .gdlr-core-pagination.gdlr-core-style-plain a:before, .gdlr-core-pagination.gdlr-core-style-plain span:before{ color: #b4b4b4; } 
 .gdlr-core-pagination.gdlr-core-with-border a:hover, .gdlr-core-pagination.gdlr-core-with-border a.gdlr-core-active, .gdlr-core-pagination.gdlr-core-with-border span{ color: #424242; border-color: #424242; }.gdlr-core-pagination.gdlr-core-style-plain a:hover, .gdlr-core-pagination.gdlr-core-style-plain a.gdlr-core-active, .gdlr-core-pagination.gdlr-core-style-plain span{ color: #424242; } 
-.gdlr-core-course-item.gdlr-core-course-style-list .gdlr-core-course-item-title, .gdlr-core-course-item.gdlr-core-course-style-grid .gdlr-core-course-item-title a{ color: #6b6b6b; } 
+.gdlr-core-course-item.gdlr-core-course-style-list .gdlr-core-course-item-title, .gdlr-core-course-item.gdlr-core-course-style-grid .gdlr-core-course-item-title a{ color: #1E2B50; } 
 .gdlr-core-course-item.gdlr-core-course-style-list .gdlr-core-course-item-title:hover, .gdlr-core-course-item.gdlr-core-course-style-grid .gdlr-core-course-item-title a:hover{ color: #1E2B50; } 
 .gdlr-core-course-item.gdlr-core-course-style-list .gdlr-core-course-item-id, .gdlr-core-course-item .gdlr-core-course-item-icon{ color: #1E2B50; } 
 .gdlr-core-course-item.gdlr-core-course-style-list-info .gdlr-core-course-item-list{ background-color: #f2f2f2; } 
 .gdlr-core-course-item.gdlr-core-course-style-list-info .gdlr-core-course-item-title{ color: #3e3e3e; } 
 .gdlr-core-course-item.gdlr-core-course-style-list-info .gdlr-core-course-item-id{ color: #1E2B50; } 
-.gdlr-core-course-item.gdlr-core-course-style-list-info .gdlr-core-course-item-info{ color: #6b6b6b; } 
+.gdlr-core-course-item.gdlr-core-course-style-list-info .gdlr-core-course-item-info{ color: #1E2B50; } 
 .gdlr-core-course-item.gdlr-core-course-style-list-info .gdlr-core-course-item-button,.gdlr-core-course-item.gdlr-core-course-style-list-info .gdlr-core-course-item-button:hover{ background-color: #1E2B50; } 
 .gdlr-core-course-item.gdlr-core-course-style-grid .gdlr-core-course-item-content-wrap{ background-color: #ffffff; } 
 .gdlr-core-body .gdlr-core-course-form input, .gdlr-core-course-form .gdlr-core-course-form-combobox{ background-color: #3b4b6b; } 
