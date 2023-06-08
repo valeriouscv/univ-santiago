@@ -25,7 +25,18 @@
         media="all"
     />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400%2C700%7CRoboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css" />
-
+    <style>
+        .complete{
+        display:none;
+    }       
+        .more{
+        background: white;
+        color: #1E2B50;
+        font-size:13px;
+        padding:3px;
+        cursor:pointer;
+    }
+    </style>
 </head>
 
 <body class="home page-template-default page page-id-6208 gdlr-core-body tribe-no-js uni-santiago-body uni-santiago-body-front uni-santiago-full uni-santiago-with-sticky-navigation uni-santiago-sticky-navigation-no-logo uni-santiago-blockquote-style-1 gdlr-core-link-to-lightbox" >
@@ -33,16 +44,11 @@
     <div class="uni-santiago-mobile-header-wrap">
         <div class="uni-santiago-mobile-header uni-santiago-header-background uni-santiago-style-slide uni-santiago-sticky-mobile-navigation" id="uni-santiago-mobile-header">
             <div class="uni-santiago-mobile-header-container uni-santiago-container clearfix">
-                <div class="uni-santiago-logo uni-santiago-item-pdlr uni-santiago-mobile-logo-center">
-                    <div class="uni-santiago-logo-inner">
-                        <a class="" href="index.html"><img src="upload/logo-bg.webp" alt="" width="200" height="200" title="logo HP" /></a>
-                    </div>
-                </div>
+                <div class="uni-santiago-logo uni-santiago-item-pdlr uni-santiago-mobile-logo-center"><img src="upload/universidade_logo2.webp" alt="" /></div>
                 <div class="uni-santiago-mobile-menu-right">
                     <div class="uni-santiago-main-menu-search" id="uni-santiago-mobile-top-search"><i class="fa fa-search"></i></div>
                     <div class="uni-santiago-top-search-wrap">
                         <div class="uni-santiago-top-search-close"></div>
-
                         <div class="uni-santiago-top-search-row">
                             <div class="uni-santiago-top-search-cell">
                                 <form role="search" method="get" class="search-form" action="#">
@@ -59,130 +65,134 @@
                 <div class="uni-santiago-mobile-menu-left">
                     <div class="uni-santiago-mobile-menu">
                         <a class="uni-santiago-mm-menu-button uni-santiago-mobile-menu-button uni-santiago-mobile-button-hamburger" href="#uni-santiago-mobile-menu"><span></span></a>
-                        <div class="uni-santiago-mm-menu-wrap uni-santiago-navigation-font" id="uni-santiago-mobile-menu" data-slide="right">
+                        <div class="uni-santiago-mm-menu-wrap uni-santiago-navigation-font" id="uni-santiago-mobile-menu" data-slide="left">
                             <ul id="menu-main-navigation" class="m-menu">
                                 <li class="menu-itemmenu-item-home current-menu-item page_item page-item-6208 current_page_item ">
                                     <a href="index.html" aria-current="page">Home</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children ">
-                                    <a href="#">Pages</a>
+                                    <a href="#">Sobre Nós</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item"><a href="about-us.html">About US</a></li>
-                                        <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                        <li class="menu-itemmenu-item-has-children ">
-                                            <a href="portfolio-3-columns.html">Portfolio</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item menu-item-has-children ">
-                                                    <a>Portfolio Grid</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="portfolio-2-columns.html">Portfolio 2 Columns</a></li>
-                                                        <li class="menu-item"><a href="portfolio-3-columns.html">Portfolio 3 Columns</a></li>
-                                                        <li class="menu-item"><a href="portfolio-4-columns.html">Portfolio 4 Columns</a></li>
-                                                        <li class="menu-item"><a href="portfolio-5-columns.html">Portfolio 5 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item menu-item-has-children ">
-                                                    <a>Portfolio Masonry</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="portfolio-masonry-4-columns.html">Masonry 4 Columns</a></li>
-                                                        <li class="menu-item"><a href="portfolio-masonry-3-columns.html">Masonry 3 Columns</a></li>
-                                                        <li class="menu-item"><a href="portfolio-masonry-2-columns.html">Masonry 2 Columns</a></li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="menu-item menu-item-has-children ">
-                                                    <a>Portfolio Side Thumbnail</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="portfolio-left-large-thumbnail.html">Portfolio Left Large Thumbnail</a></li>
-                                                        <li class="menu-item"><a href="portfolio-right-large-thumbnail.html">Portfolio Right Large Thumbnail</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                                        <li class="menu-item"><a href="price-table.html">Price Table</a></li>
-                                        <li class="menu-item"><a href="maintenance.html">Maintenance</a></li>
-                                        <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li class="menu-item "><a href="404.html">404 Page</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us.html#história">História</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us.html#company">Missão</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us.html#company1">Visão</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us.html#company2">Valores</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us.html#campi">Campi</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us.html#ranking">Ranking</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us.html#dados">Dados</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-itemmenu-item-has-children ">
-                                    <a href="#">Academics</a>
+                                    <a href="#">Universidade</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item menu-item-has-children ">
-                                            <a>Undergraduate</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="#">Business Administration</a></li>
-                                                <li class="menu-item"><a href="school-of-law.html">School Of Law</a></li>
-                                                <li class="menu-item"><a href="engineering.html">Engineering</a></li>
-                                                <li class="menu-item"><a href="medicine.html">Medicine</a></li>
-                                                <li class="menu-item"><a href="art-science.html">Art &#038; Science</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children ">
-                                            <a href="#">Graduate Program</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="hospitality-management.html">Hospitality Management</a></li>
-                                                <li class="menu-item"><a href="physics.html">Physics</a></li>
-                                                <li class="menu-item "><a href="#">Chemistry</a></li>
-                                                <li class="menu-item "><a href="#">Computer Science</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children ">
-                                            <a href="#">Resources</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="#">Ciências da Educação, Filosofia e Letras</a></li>
-                                                <li class="menu-item"><a href="#">Ciências da Saúde, Ambiente e Tecnologias</a></li>
-                                                <li class="menu-item">
-                                                    <a href="#">Ciências Económicas e Empresariais</a>
-                                                </li>
-                                                <li class="menu-item "><a href="#">Ciências Jurídicas e Sociais</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item "><a href="#">Logo</a></li>
+                                        <li class="menu-item"><a href="#">Organização</a></li>
+                                        <li class="menu-item"><a href="reitor.html">Reitor</a></li>
+                                        <li class="menu-item"><a href="#">Secretaria Geral</a></li>
+                                        <li class="menu-item"><a href="#">Serviços Académico</a></li>
+                                        <li class="menu-item"><a href="ESTG.html">Escola Superior de Tecnologias e Gestão (ESTG)</a></li>
+                                        <li class="menu-item"><a href="#">Gabinete de Estudos, Planeamento e Desenvolvimento Institucional</a></li>
+                                        <li class="menu-item"><a href="#">SASU – Serviços de Ação Social Universitária</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-itemmenu-item-has-children ">
-                                    <a href="apply-to-us-santiago.html">Admissions</a>
+                                    <a href="#">Ensino</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item"><a href="apply-to-us-santiago.html">Apply To uni-santiago</a></li>
-                                        <li class="menu-item"><a href="campus-tour.html">Campus Tour</a></li>
-                                        <li class="menu-item"><a href="bolsas.html">Scholarships</a></li>
-                                        <li class="menu-item"><a href="athletics.html">Athletics</a></li>
-                                        <li class="menu-item"><a href="us-virtual.html">Give To uni-santiago</a></li>
-                                        <li class="menu-item"><a href="alumni.html">Alumni</a></li>
-                                        <li class="menu-item"><a href="event-calendar.html">Event Calendar</a></li>
+                                        <li class="menu-item">
+                                            <a href="#">Cursos</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="licenciaturas.html">Licenciatura</a></li>
+                                                <li class="menu-item"><a href="mestrados.html">Mestrado</a></li>
+                                                <li class="menu-item"><a href="pós-graduação.html">Pós-graduação</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="#">Acesso Ingressos</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="apply-to-us-santiago.html">Candidaturas</a></li>
+                                                <li class="menu-item"><a href="bolsas.html">Bolsa de Estudos</a></li>
+                                                <li class="menu-item"><a href="pacotes.html">Pacotes</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Departamentos</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="DCEFL.html">DCEFL</a></li>
+                                                <li class="menu-item"><a href="DCSAT.html">DCSAT</a></li>
+                                                <li class="menu-item"><a href="DCEE.html">DCEE</a></li>
+                                                <li class="menu-item"><a href="DCJS.html">DCJS</a></li>
+                                                <li class="menu-item"><a href="departamentos.html">Ver Mais</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Estrutura de Apoio ao Ensino</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="#">Biblioteca</a></li>
+                                                <li class="menu-item"><a href="#">Livraria/papelaria</a></li>
+                                                <li class="menu-item"><a href="#">Laboratórios</a></li>
+                                                <li class="menu-item"><a href="#">CADT</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Pesquisa</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">IPED</a></li>
+                                        <li class="menu-item"><a href="#">Núcleo de Apoio à Pesquisa</a></li>
+                                        <li class="menu-item"><a href="#">Publicações</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-itemmenu-item-has-children">
+                                    <a href="#">Extensão</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Casa do Empreendedor</a></li>
+                                        <li class="menu-item"><a href="#">Fundação Santiago Solidário</a></li>
+                                        <li class="menu-item"><a href="#">Rotas do Arquipélago</a></li>
+                                        <li class="menu-item"><a href="#">US Comunidades</a></li>
+                                        <li class="menu-item"><a href="#">US MUV</a></li>
+                                        <li class="menu-item"><a href="#">Santiago FEST</a></li>
+                                        <li class="menu-item"><a href="#">RoteirUS Mundi</a></li>
+                                        <li class="menu-item"><a href="#">US Green Project</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-has-children ">
-                                    <a href="#">Courses</a>
+                                    <a href="#">Estudantes</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item"><a href="course-search.html">Course Search</a></li>
-                                        <li class="menu-item"><a href="licenciaturas.html">Course List 1</a></li>
-                                        <li class="menu-item"><a href="course-list-2.html">Course List 2</a></li>
+                                        <li class="menu-item"><a href="#">Secretaria Geral</a></li>
+                                            <li class="menu-item"><a href="#">Serviços Académicos</a></li>
+                                            <li class="menu-item"><a href="#">Calendário Academico</a></li>
+                                            <li class="menu-item"><a href="#">Propinas e Emolumentos</a></li>
+                                            <li class="menu-item"><a href="#">Emissão de Documentos</a></li>
+                                            <li class="menu-item"><a href="#">SASU – Serviços de Ação Social Universitária</a></li>
+                                            <li class="menu-item"><a href="#">Provedor do Estudante</a></li>
+                                            <li class="menu-item"><a href="#">Programas de mobilidade e intercâmbio</a></li>
+                                        <li class="menu-itemmenu-item-has-children ">
+                                            <a href="#">Viver na US</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="#">Bibliotecas da Universidade de Santiago</a></li>
+                                                <li class="menu-item"><a href="#">Residência Universitária</a></li>
+                                                <li class="menu-item"><a href="#">Restaurante Universitário</a></li>
+                                                <li class="menu-item"><a href="#">Livraria Universitária</a></li>
+                                                <li class="menu-item"><a href="#">Editora Universitária</a></li>
+                                                <li class="menu-item"><a href="#">US Sport Club</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="menu-item"><a href="athletics.html">Athletics</a></li>
-                                <li class="menu-item"><a href="university-life.html">University Life</a></li>
-                                <li class="menu-itemmenu-item-has-children ">
-                                    <a href="us-virtual.html">Blog</a>
+                                <li class="menu-itemmenu-item-has-children">
+                                    <a href="#">US Virtual</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item menu-item-has-children"><a href="blog-full-right-sidebar.html">Blog Full</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="blog-full-right-sidebar.html">Blog Full Right Sidebar</a></li>
-                                                <li class="menu-item"><a href="blog-full-left-sidebar.html">Blog Full Left Sidebar</a></li>
-                                                <li class="menu-item"><a href="blog-full-both-sidebar.html">Blog Full Both Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children"><a href="blog-grid-3-columns-no-space.html">Blog Grid</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="blog-grid-2-columns.html">Blog Grid 2 Columns</a></li>
-                                                <li class="menu-item"><a href="blog-grid-3-columns.html">Blog Grid 3 Columns</a></li>
-                                                <li class="menu-item"><a href="blog-grid-4-columns.html">Blog Grid 4 Columns</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="standard-post-type.html">Single Post</a></li>
+                                        <li class="menu-item" data-size="60"><a href="https://portal.usantiago.cv/login/#">Portal</a></li>
+                                        <li class="menu-item" data-size="60"><a target="_blank" href="mailto:reitoria@us.edu.cv">E-mail</a></li>
+                                        <li class="menu-item" data-size="60"><a href="https://mcctic.ese.ipsantarem.pt/usantiago/">Moodle</a></li>
+                                        <li class="menu-item" data-size="60"><a target="_blank" href="https://www.facebook.com/usassomada">Facebook</a></li>
+                                        <li class="menu-item" data-size="60"><a target="_blank" href="https://www.instagram.com/universidade.de.santiago_us/?igshid=1sg74zr40hl5l">Instagram</a></li>
+                                        <li class="menu-item" data-size="60"><a target="_blank" href="https://www.youtube.com/channel/UCP6sqqc-8aPPGLeqn58jFRA">Youtube</a></li>
+                                        <li class="menu-item" data-size="60"><a href="#">Biblioteca Digital</a></li>
+                                        <li class="menu-item" data-size="60"><a href="us-virtual.html#ouvidoria">Ouvidoria</a></li>
                                     </ul>
+                                </li>
+                                <li class="menu-itemmenu-item-home page_item page-item-6208 current_page_item ">
+                                    <a href="alumni.html" aria-current="page">Alumni</a>
                                 </li>
                             </ul>
                         </div>
@@ -191,28 +201,31 @@
             </div>
         </div>
     </div>
-    <!-- WEB MAIN NAVIGATION -->
+    <!-- MOBILE MAIN NAVIGATION/MENU END -->
     <div class="uni-santiago-body-outer-wrapper">
         <div class="uni-santiago-body-wrapper clearfix uni-santiago-with-transparent-header uni-santiago-with-frame">
             <div class="uni-santiago-header-background-transparent">
+                <!-- Top Navigation -->
                 <div class="uni-santiago-top-bar">
                     <div class="uni-santiago-top-bar-background"></div>
                     <div class="uni-santiago-top-bar-container uni-santiago-container">
                         <div class="uni-santiago-top-bar-container-inner clearfix">
                             <div class="uni-santiago-top-bar-left uni-santiago-item-pdlr">
-                                <a href="#" style="margin-right: 30px;">Campus</a><a href="#" style="margin-right: 30px;">Documentation</a><a href="#" style="margin-right: 30px;">Login</a>
-                            </div>
-                            <div class="uni-santiago-top-bar-right uni-santiago-item-pdlr">
-                                <div class="uni-santiago-top-bar-right-text"><span style="color: #8dd7e5; margin-right: 30px;">Phone: +1 212 946 2707</span><a href="#" style="margin-right: 0px;">Help Center</a></div>
+                                <a href="index.html"><img style="height: 65px; margin-left: -90px;" src="upload/universidade_logo2.webp" alt="" title="Universidade de Santiago Logo" /></a>
                                 <div class="uni-santiago-top-bar-right-social">
-                                    <a href="#" target="_blank" class="uni-santiago-top-bar-social-icon" title="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" target="_blank" class="uni-santiago-top-bar-social-icon" title="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" target="_blank" class="uni-santiago-top-bar-social-icon" title="instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="" style="margin-right: 30px;">US TV</a>
+                                    <a href="https://portal.usantiago.cv/login/" style="margin-right: 30px;">Portal</a>
+                                    <a href="https://mcctic.ese.ipsantarem.pt/usantiago/" style="margin-right: 30px;">Moodle</a>
+                                    <a href="/contact.html" style="margin-right: 30px;">Contate US</a>
+                                    <a href="https://www.facebook.com/usassomada" target="_blank" class="uni-santiago-top-bar-social-icon" title="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCP6sqqc-8aPPGLeqn58jFRA" target="_blank" class="uni-santiago-top-bar-social-icon" title="youtube"><i class="fa fa-youtube-play"></i></a>
+                                    <a href="https://www.instagram.com/universidade.de.santiago_us/?igshid=1sg74zr40hl5l" target="_blank" class="uni-santiago-top-bar-social-icon" title="instagram"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Web Navigation Start -->
                 <header class="uni-santiago-header-wrap uni-santiago-header-style-plain uni-santiago-style-splitted-menu uni-santiago-sticky-navigation uni-santiago-style-slide clearfix" data-navigation-offset="75px">
                     <div class="uni-santiago-header-background"></div>
                     <div class="uni-santiago-header-container uni-santiago-container">
@@ -220,179 +233,143 @@
                             <div class="uni-santiago-navigation uni-santiago-item-pdlr clearfix">
                                 <div class="uni-santiago-main-menu" id="uni-santiago-main-menu">
                                     <ul id="menu-main-navigation-1" class="sf-menu">
-                                        <li class="menu-itemmenu-item-home  uni-santiago-normal-menu">
+                                        <li class="menu-itemmenu-item-home current-menu-item page_item page-item-6208 current_page_item  uni-santiago-normal-menu">
                                             <a href="index.html">Home</a>
                                         </li>
-                                        <li class="menu-item menu-item-has-children uni-santiago-normal-menu">
-                                            <a href="#" class="sf-with-ul-pre">Pages</a>
+                                        <li class="menu-item menu-item-has-children  uni-santiago-normal-menu">
+                                            <a class="sf-with-ul-pre">Sobre Nós</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item" data-size="60"><a href="about-us.html">About US</a></li>
-                                                <li class="menu-item" data-size="60"><a href="contact.html">Contact</a></li>
-                                                <li class="menu-itemmenu-item-has-children " data-size="60">
-                                                    <a href="portfolio-3-columns.html" class="sf-with-ul-pre">Portfolio</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item menu-item-has-children ">
-                                                            <a class="sf-with-ul-pre">Portfolio Grid</a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item"><a href="portfolio-2-columns.html">Portfolio 2 Columns</a></li>
-                                                                <li class="menu-item"><a href="portfolio-3-columns.html">Portfolio 3 Columns</a></li>
-                                                                <li class="menu-item"><a href="portfolio-4-columns.html">Portfolio 4 Columns</a></li>
-                                                                <li class="menu-item"><a href="portfolio-5-columns.html">Portfolio 5 Columns</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="menu-item menu-item-has-children ">
-                                                            <a class="sf-with-ul-pre">Portfolio Masonry</a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item"><a href="portfolio-masonry-4-columns.html">Masonry 4 Columns</a></li>
-                                                                <li class="menu-item"><a href="portfolio-masonry-3-columns.html">Masonry 3 Columns</a></li>
-                                                                <li class="menu-item"><a href="portfolio-masonry-2-columns.html">Masonry 2 Columns</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="menu-item menu-item-has-children ">
-                                                            <a class="sf-with-ul-pre">Portfolio Side Thumbnail</a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item">
-                                                                    <a href="portfolio-left-large-thumbnail.html">Portfolio Left Large Thumbnail</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="portfolio-right-large-thumbnail.html">Portfolio Right Large Thumbnail</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item" data-size="60"><a href="gallery.html">Gallery</a></li>
-                                                <li class="menu-item" data-size="60"><a href="price-table.html">Price Table</a></li>
-                                                <li class="menu-item" data-size="60"><a href="maintenance.html">Maintenance</a></li>
-                                                <li class="menu-item" data-size="60"><a href="coming-soon.html">Coming Soon</a></li>
-                                                <li class="menu-item " data-size="60"><a href="404.html">404 Page</a></li>
+                                                <li class="menu-item" data-size="60"><a href="about-us.html#história">História</a></li>
+                                                <li class="menu-item" data-size="60"><a href="about-us.html#company">Missão</a></li>
+                                                <li class="menu-item" data-size="60"><a href="about-us.html#company">Visão</a></li>
+                                                <li class="menu-item" data-size="60"><a href="about-us.html#company">Valores</a></li>
+                                                <li class="menu-item" data-size="60"><a href="about-us.html#campi">Campi</a></li>
+                                                <li class="menu-item" data-size="60"><a href="about-us.html#ranking">Ranking</a></li>
+                                                <li class="menu-item" data-size="60"><a href="about-us.html#dados">Dados</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-itemmenu-item-has-children uni-santiago-mega-menu">
-                                            <a href="pacotes.html" class="sf-with-ul-pre">Academics</a>
-                                            <div class="sf-mega sf-mega-full" style="background-image: url('upload/mega-menu-bg.jpg'); background-position: bottom right; background-repeat: no-repeat;">
+                                        <li class="menu-item menu-item-has-children  uni-santiago-normal-menu">
+                                            <a class="sf-with-ul-pre">Universidade</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item" data-size="60"><a href="#">Organização</a></li>
+                                                <li class="menu-item" data-size="60"><a href="reitor.html">Reitor</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">Secretaria Geral</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">Serviços Académicos</a></li>
+                                                <li class="menu-item" data-size="60"><a href="ESTG.html">Escola Superior de Tecnologias e Gestão (ESTG)</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">Gabinete de Estudos, Planeamento e Desenvolvimento Institucional</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">SASU – Serviços de Ação Social Universitária</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-itemmenu-item-has-children  uni-santiago-mega-menu">
+                                            <a class="sf-with-ul-pre">Ensino</a>
+                                            <div class="sf-mega sf-mega-full" style="background-position: bottom right; background-repeat: no-repeat;">
                                                 <ul class="sub-menu">
                                                     <li class="menu-item menu-item-has-children " data-size="15">
-                                                        <a href="licenciaturas.html" class="sf-with-ul-pre">Undergraduate</a>
+                                                        <a href="#" class="sf-with-ul-pre">Cursos</a>
                                                         <ul class="sub-menu">
-                                                            <li class="menu-item">
-                                                                <a href="#">Business Administration</a>
-                                                            </li>
-                                                            <li class="menu-item"><a href="school-of-law.html">School Of Law</a></li>
-                                                            <li class="menu-item"><a href="engineering.html">Engineering</a></li>
-                                                            <li class="menu-item"><a href="medicine.html">Medicine</a></li>
-                                                            <li class="menu-item"><a href="art-science.html">Art &#038; Science</a></li>
+                                                            <li class="menu-item"><a href="licenciaturas.html">Licenciatura</a></li>
+                                                            <li class="menu-item"><a href="mestrados.html">Mestrado</a></li>
+                                                            <li class="menu-item"><a href="pós-graduação.html">Pós-graduação</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item menu-item-has-children " data-size="15">
-                                                        <a href="pos-graduacao.html" class="sf-with-ul-pre">Graduate Program</a>
+                                                        <a href="#" class="sf-with-ul-pre">Acesso Ingressos</a>
                                                         <ul class="sub-menu">
-                                                            <li class="menu-item"><a href="hospitality-management.html">Hospitality Management</a></li>
-                                                            <li class="menu-item"><a href="physics.html">Physics</a></li>
-                                                            <li class="menu-item "><a href="#">Chemistry</a></li>
-                                                            <li class="menu-item "><a href="#">Computer Science</a></li>
+                                                            <li class="menu-item"><a href="apply-to-us-santiago.html">Candidaturas</a></li>
+                                                            <li class="menu-item"><a href="bolsas.html">Bolsa de Estudos</a></li>
+                                                            <li class="menu-item"><a href="pacotes.html">Pacotes</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item menu-item-has-children " data-size="15">
-                                                        <a href="departamentos.html" class="sf-with-ul-pre">Departamentos</a>
+                                                        <a href="#" class="sf-with-ul-pre">Departamentos</a>
                                                         <ul class="sub-menu">
-                                                            <li class="menu-item"><a href="#">Ciências da Educação, Filosofia e Letras</a></li>
-                                                            <li class="menu-item">
-                                                                <a href="#">Ciências da Saúde, Ambiente e Tecnologias</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="#">Ciências Económicas e Empresariais</a>
-                                                            </li>
-                                                            <li class="menu-item "><a href="#">Ciências Jurídicas e Sociais</a></li>
+                                                            <li class="menu-item"><a href="DCEFL.html">DCEFL</a></li>
+                                                            <li class="menu-item"><a href="DCSAT.html">DCSAT</a></li>
+                                                            <li class="menu-item"><a href="DCEE.html">DCEE</a></li>
+                                                            <li class="menu-item"><a href="DCJS.html">DCJS</a></li>
+                                                            <li class="menu-item"><a href="departamentos.html">Ver Mais</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="menu-item " data-size="15">
-                                                        <div class="uni-santiago-mega-menu-section-content">
-                                                            <img src="upload/menu_logo.png" style="margin-bottom: 13px;" alt="" /><br />
-                                                            <span style="font-size: 14px; font-weight: 500;">Academic offerings include 95 majors, 86 minors, and more than 100 in-major specializations</span>
-                                                        </div>
+                                                    <li class="menu-item menu-item-has-children " data-size="15">
+                                                        <a href="#" class="sf-with-ul-pre">Estrutura de Apoio ao Ensino</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="menu-item"><a href="#"> Biblioteca</a></li>
+                                                            <li class="menu-item"><a href="#"> Livraria/papelaria</a></li>
+                                                            <li class="menu-item"><a href="#"> Laboratórios</a></li>
+                                                            <li class="menu-item"><a href="#"> CADT</a></li>
+                                                        </ul>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="menu-itemmenu-item-has-children  uni-santiago-normal-menu">
-                                            <a href="apply-to-us-santiago.html" class="sf-with-ul-pre">Admissions</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item" data-size="60"><a href="apply-to-us-santiago.html">Apply To uni-santiago</a></li>
-                                                <li class="menu-item" data-size="60"><a href="campus-tour.html">Campus Tour</a></li>
-                                                <li class="menu-item" data-size="60"><a href="bolsas.html">Scholarships</a></li>
-                                                <li class="menu-item" data-size="60"><a href="athletics.html">Athletics</a></li>
-                                                <li class="menu-item" data-size="60"><a href="us-virtual.html">Give To uni-santiago</a></li>
-                                                <li class="menu-item" data-size="60"><a href="alumni.html">Alumni</a></li>
-                                                <li class="menu-item" data-size="60"><a href="event-calendar.html">Event Calendar</a></li>
-                                            </ul>
-                                        </li>
                                         <li class="uni-santiago-center-nav-menu-item">
-                                            <div class="uni-santiago-logo uni-santiago-item-pdlr">
+                                            <!-- <div class="uni-santiago-logo uni-santiago-item-pdlr">
                                                 <div class="uni-santiago-logo-inner">
-                                                    <a class="" href="index.html"><img src="upload/logo-bg.webp" alt="" width="200" height="200" title="logo HP" /></a>
+                                                    <a href="index.html"><img style="margin-top: 20px;" src="upload/logo-bg.webp" alt="" width="150" height="150" title="Universidade de Santiago Logo" /></a>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </li>
-                                        <li class="menu-item menu-item-has-children  uni-santiago-normal-menu">
-                                            <a href="licenciaturas.html" class="sf-with-ul-pre">Courses</a>
+                                        <li class="menu-item uni-santiago-normal-menu"><a>Pesquisa</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item" data-size="60"><a href="course-search.html">Course Search</a></li>
-                                                <li class="menu-item" data-size="60"><a href="licenciaturas.html">Course List 1</a></li>
-                                                <li class="menu-item" data-size="60"><a href="course-list-2.html">Course List 2</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">IPED</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">Núcleo de Apoio à Pesquisa</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">Publicações</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item uni-santiago-normal-menu"><a href="athletics.html">Athletics</a></li>
-                                        <li class="menu-item uni-santiago-normal-menu current-menu-item current_page_item"><a href="university-life.html">University Life</a></li>
-                                        <li class="menu-itemmenu-item-has-children  uni-santiago-normal-menu">
-                                            <a href="us-virtual.html" class="sf-with-ul-pre">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-itemmenu-item-has-children " data-size="60">
-                                                    <a href="us-virtual.html" class="sf-with-ul-pre">Blog Full</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="blog-full-right-sidebar.html">Blog Full Right Sidebar</a></li>
-                                                        <li class="menu-item"><a href="blog-full-left-sidebar.html">Blog Full Left Sidebar</a></li>
-                                                        <li class="menu-item"><a href="blog-full-both-sidebar.html">Blog Full Both Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-itemmenu-item-has-children " data-size="60">
-                                                    <a href="blog-grid-3-columns-no-space.html" class="sf-with-ul-pre">Blog Grid</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="blog-grid-2-columns.html">Blog Grid 2 Columns</a></li>
-                                                        <li class="menu-item"><a href="blog-grid-3-columns.html">Blog Grid 3 Columns</a></li>
-                                                        <li class="menu-item"><a href="blog-grid-4-columns.html">Blog Grid 4 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-itemmenu-item-has-children " data-size="60">
-                                                    <a href="blog-3-columns-with-frame.html" class="sf-with-ul-pre">Blog Columns</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="blog-2-columns.html">Blog 2 Columns</a></li>
-                                                        <li class="menu-item"><a href="noticias.html">Blog 3 Columns</a></li>
-                                                        <li class="menu-item"><a href="blog-4-columns.html">Blog 4 Columns</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item"><a href="standard-post-type.html">Single Post</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="uni-santiago-main-menu-right-wrap clearfix uni-santiago-item-mglr uni-santiago-navigation-top">
-                                    <div class="uni-santiago-main-menu-search" id="uni-santiago-top-search"><i class="icon_search"></i></div>
-                                    <div class="uni-santiago-top-search-wrap">
-                                        <div class="uni-santiago-top-search-close"></div>
-
-                                        <div class="uni-santiago-top-search-row">
-                                            <div class="uni-santiago-top-search-cell">
-                                                <form role="search" method="get" class="search-form" action="#">
-                                                    <input type="text" class="search-field uni-santiago-title-font" placeholder="Search..." value="" name="s" />
-                                                    <div class="uni-santiago-top-search-submit"><i class="fa fa-search"></i></div>
-                                                    <input type="submit" class="search-submit" value="Search" />
-                                                    <div class="uni-santiago-top-search-close"><i class="icon_close"></i></div>
-                                                    <input type="hidden" name="ref" value="course" /><input type="hidden" name="post_type" value="lp_course" />
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <li class="menu-item uni-santiago-normal-menu">
+                                        <a>Extensão</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item" data-size="60"><a href="#">Casa do Empreendedor</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Fundação Santiago Solidário</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Rotas do Arquipélago</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">US Comunidades</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">US MUV</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Santiago FEST</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">RoteirUS Mundi</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">US Green Project</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children  uni-santiago-normal-menu">
+                                        <a class="sf-with-ul-pre">Estudantes</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item" data-size="60"><a href="#">Secretaria Geral</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Serviços Académicos</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Calendário Academico</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Propinas e Emolumentos</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Emissão de Documentos</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">SASU – Serviços de Ação Social Universitária</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Provedor do Estudante</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Programas de mobilidade e intercâmbio</a></li>
+                                            <li class="menu-item">
+                                                <a href="#">Viver na US<span style="margin-left: 80%; color: black;">→</span></a>
+                                                <i class="fa-sharp fa-solid fa-circle-arrow-right"></i>
+                                                <ul style="padding-left: 5px; margin-top: -11px;"  class="sub-menu">
+                                                    <li class="menu-item"><a href="#">Bibliotecas da Universidade de Santiago</a></li>
+                                                    <li class="menu-item"><a href="#">Residência Universitária</a></li>
+                                                    <li class="menu-item"><a href="#">Restaurante Universitário</a></li>
+                                                    <li class="menu-item"><a href="#">Livraria Universitária</a></li>
+                                                    <li class="menu-item"><a href="#">Editora Universitária</a></li>
+                                                    <li class="menu-item"><a href="#">US Sport Club</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item uni-santiago-normal-menu">
+                                        <a>US Virtual</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item" data-size="60"><a href="https://portal.usantiago.cv/login/#">Portal</a></li>                                            
+                                            <li class="menu-item" data-size="60"><a href="mailto:reitoria@us.edu.cv">E-mail</a></li>
+                                            <li class="menu-item" data-size="60"><a href="https://mcctic.ese.ipsantarem.pt/usantiago/">Moodle</a></li>
+                                            <li class="menu-item" data-size="60"><a target="_blank" href="https://www.facebook.com/usassomada">Facebook</a></li>
+                                            <li class="menu-item" data-size="60"><a target="_blank" href="https://www.instagram.com/universidade.de.santiago_us/?igshid=1sg74zr40hl5l">Instagram</a></li>
+                                            <li class="menu-item" data-size="60"><a target="_blank" href="https://www.youtube.com/channel/UCP6sqqc-8aPPGLeqn58jFRA">Youtube</a></li>
+                                            <li class="menu-item" data-size="60"><a href="#">Biblioteca Digital</a></li>
+                                            <li class="menu-item" data-size="60"><a href="us-virtual.html#ouvidoria">Ouvidoria</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-itemmenu-item-home page_item page-item-6208 current_page_item ">
+                                        <a href="alumni.html" aria-current="page">Alumni</a>
+                                    </li>
                                 </div>
                             </div>
                             <!-- uni-santiago-navigation -->
@@ -401,10 +378,8 @@
                     </div>
                     <!-- uni-santiago-header-container -->
                 </header>
-                <!-- header -->
+                <!-- End of Web Navigation-->
             </div>
-
-
             <div class="uni-santiago-page-wrapper" id="uni-santiago-page-wrapper">
                 <div class="gdlr-core-page-builder-body">
                     <div class="gdlr-core-pbf-wrapper" style="padding: 530px 0px 75px 0px;">
@@ -452,32 +427,7 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 40px; font-weight: 500; letter-spacing: 0px; text-transform: none; color: #ffffff;">
-                                                            University Life
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align">
-                                                    <div class="gdlr-core-divider-container" style="max-width: 285px;">
-                                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #1E2B50; border-width: 2px;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-column gdlr-core-column-40">
-                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js">
-                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 18px; text-transform: none; color: #ffffff;">
-                                                        <p>
-                                                            Campus on a tour designed for prospective graduate and professional students. You will see how our university like, facilities, studenst and life in this university. Meet our
-                                                            graduate admissions representative to learn more about our graduate programs and decide what it the best for you.
-                                                        </p>
+                                                        <h1 class="uni-santiago-page-title" style="font-size: 48px; font-weight: 500; text-transform: uppercase; letter-spacing: 0px; color: #ffffff;">US Di Nós</h1>
                                                     </div>
                                                 </div>
                                             </div>
@@ -496,26 +446,10 @@
                                         <div class="gdlr-core-pbf-background-wrap"></div>
                                         <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js gdlr-core-sync-height-content">
                                             <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr">
-                                                    <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 22px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Event and Traditions</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 19px; text-transform: none; color: #1E2B50;">
-                                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none; color: #8f8f8f;">
                                                         <p>
-                                                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the
-                                                            necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind
-                                                            texts it is an almost unorthographic life.
+                                                            A Universidade de Santiago vem trabalhando com afinco para proporcionar aos membros da comunidade académica e da sociedade em geral vivências e experiências que perdurem para a vida. O senso de pertença, traduzido na música “a nós é US, US é di nós” é o mote que nos faz caminhar rumo a uma comunidade académica única, que garanta centralidade à pessoa humana, à diversidade cultural e à inclusão da alteridade. Um espaço de aprendizagem onde o conhecimento e o bem-estar andam de mãos dadas. Por isso, na Universidade de Santiago, colocamos à sua disposição diferentes ofertas socioculturais, com destaque para:
                                                         </p>
                                                     </div>
                                                 </div>
@@ -707,36 +641,22 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Dining On Campus</h3>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Residência Universitária</h3>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none; color: #8f8f8f;">
-                                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.</p>
+                                                        <span class="teaser">
+                                                            A Residência Universitária está no centro das atenções e constitui uma das prioridades da Universidade de Santiago para os próximos anos. 
+                                                        </span>
+                                                        <span class="complete">
+                                                            Neste momento, a instituição dispõe de uma RU em Assomada, que tem acolhido estudantes estrangeiros em programas de mobilidade e estudantes da US e dos PALOP. 
+                                                            Espera-se, para breve, a disponibilização de uma RU na cidade da Praia e, a médio prazo, a abertura de uma rede de residências universitárias da US, com objetivo de garantir aos estudantes da US habitações condignas a baixo custo.
+                                                        </span>
+                                                        <span class="more" style="font-weight: bold; text-decoration: underline; color: #D6C723;">Ver Mais</span>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a
-                                                        class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border"
-                                                        href="#"
-                                                        style="
-                                                            font-size: 16px;
-                                                            font-weight: 400;
-                                                            letter-spacing: 0px;
-                                                            color: #3db166;
-                                                            padding: 0px 0px 0px 0px;
-                                                            text-transform: none;
-                                                            border-radius: 0px;
-                                                            -moz-border-radius: 0px;
-                                                            -webkit-border-radius: 0px;
-                                                        "
-                                                    >
-                                                        <span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #3db166;"></i>
-                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -764,36 +684,22 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Athletics</h3>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Restaurante Universitário</h3>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none; color: #8f8f8f;">
-                                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.</p>
+                                                    <span class="teaser">
+                                                        A US possui um Restaurante Universitário no Campus de Bolanha e está em vias de inaugurar o da Praia. Sob o nome “Sombrera.” 
+                                                    </span>
+                                                    <span class="complete">
+                                                        Os restaurantes universitários da US pretendem funcionar como espaços mistos, voltados para os universitários, mas abertos ao grande público. A ideia é de fazer dos restaurantes universitários um locus de experiências gastronómicas ímpares, garantindo variedades de pratos que façam jus à peculiaridade da cultura crioula e à sua vocação cosmopolita.
+                                                        Em Assomada, o RU Sobrera ocupa uma área 800m2 e possui uma arena contígua com cerca de 600 m2, perfazendo um total de 1400m2. Para além disso, integra uma Esplanada, o “Kantinhu di Tera” que pretende ser um espaço de degustação e aprendizagem sobre os produtos made in Cabo Verde. Na Praia, o Sombrera ocupa uma área de cerca de 1150 m2, com vista panorâmica e espaços verdes e de convívio e lazer.
+                                                    </span>
+                                                    <span class="more" style="font-weight: bold; text-decoration: underline; color: #D6C723;">Ver Mais</span>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a
-                                                        class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border"
-                                                        href="#"
-                                                        style="
-                                                            font-size: 16px;
-                                                            font-weight: 400;
-                                                            letter-spacing: 0px;
-                                                            color: #3db166;
-                                                            padding: 0px 0px 0px 0px;
-                                                            text-transform: none;
-                                                            border-radius: 0px;
-                                                            -moz-border-radius: 0px;
-                                                            -webkit-border-radius: 0px;
-                                                        "
-                                                    >
-                                                        <span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #3db166;"></i>
-                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -821,36 +727,21 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Arts & Culture</h3>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Livraria Universitária</h3>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none; color: #8f8f8f;">
-                                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.</p>
+                                                        <span class="teaser">
+                                                            A US possui uma Livraria Universitária, a NexUS, que disponibiliza livros técnicos e especializados à comunidade académica, e não. 
+                                                        </span>
+                                                        <span class="complete">
+                                                            Ao longo dos anos, a NexUS tem realizado feiras de livros, visando despertar os estudantes para a necessidade de disporem do seu próprio acervo bibliográfico e de se despertarem para a leitura. 
+                                                        </span>
+                                                        <span class="more" style="font-weight: bold; text-decoration: underline; color: #D6C723;">Ver Mais</span>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a
-                                                        class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border"
-                                                        href="#"
-                                                        style="
-                                                            font-size: 16px;
-                                                            font-weight: 400;
-                                                            letter-spacing: 0px;
-                                                            color: #3db166;
-                                                            padding: 0px 0px 0px 0px;
-                                                            text-transform: none;
-                                                            border-radius: 0px;
-                                                            -moz-border-radius: 0px;
-                                                            -webkit-border-radius: 0px;
-                                                        "
-                                                    >
-                                                        <span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #3db166;"></i>
-                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -877,14 +768,16 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Information Technology</h3>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Editora Universitária</h3>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none; color: #8f8f8f;">
-                                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.</p>
+                                                        <span class="teaser">
+                                                            A US possui uma Editora Universitária, a US Edições, que vem apostando em publicações de livros e revistas de natureza científica, bem como de obras que estejam voltadas para a promoção da língua materna, o crioulo. 
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -905,7 +798,7 @@
                                                             -webkit-border-radius: 0px;
                                                         "
                                                     >
-                                                        <span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #3db166;"></i>
+                                                        <span class="gdlr-core-content" style="color: #D6C723;">Ler +</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #D6C723;"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -933,14 +826,16 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Safety and Security</h3>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">US Sport Club</h3>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none; color: #8f8f8f;">
-                                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.</p>
+                                                        <p>
+                                                            A Universidade de Santiago tem um forte compromisso com a promoção do desporto. Em diferentes modalidades, mas com particular destaque para handball e futebol, os seus atletas têm estado a participar em campeonatos (federados ou não) e em torneios promovidos por entidades e grupos desportivos dos mais variados pontos da ilha de Santiago.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -948,7 +843,7 @@
                                                 <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
                                                     <a
                                                         class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border"
-                                                        href="#"
+                                                        href="us_sport_club.html"
                                                         style="
                                                             font-size: 16px;
                                                             font-weight: 400;
@@ -961,69 +856,14 @@
                                                             -webkit-border-radius: 0px;
                                                         "
                                                     >
-                                                        <span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #3db166;"></i>
+                                                        <span class="gdlr-core-content" style="color: #D6C723;">Ver Mais</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #D6C723"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="gdlr-core-pbf-column gdlr-core-column-20">
-                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js">
-                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr" style="padding-bottom: 33px;">
-                                                    <div
-                                                        class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-round"
-                                                        style="border-width: 0px; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;"
-                                                    >
-                                                        <a class="gdlr-core-lightgallery gdlr-core-js" href="upload/rawpixel-577480-unsplash.jpg">
-                                                            <img src="upload/rawpixel-577480-unsplash-900x500.jpg" alt="" width="900" height="500" title="rawpixel-577480-unsplash" />
-                                                            <span class="gdlr-core-image-overlay" style="border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;">
-                                                                <i class="gdlr-core-image-overlay-icon gdlr-core-size-22 fa fa-search"></i>
-                                                            </span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px;">
-                                                    <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 18px; font-weight: 600; letter-spacing: 0px; text-transform: none;">Health & Wellness</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px; text-transform: none; color: #8f8f8f;">
-                                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a
-                                                        class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border"
-                                                        href="#"
-                                                        style="
-                                                            font-size: 16px;
-                                                            font-weight: 400;
-                                                            letter-spacing: 0px;
-                                                            color: #3db166;
-                                                            padding: 0px 0px 0px 0px;
-                                                            text-transform: none;
-                                                            border-radius: 0px;
-                                                            -moz-border-radius: 0px;
-                                                            -webkit-border-radius: 0px;
-                                                        "
-                                                    >
-                                                        <span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px; color: #3db166;"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -1071,8 +911,6 @@
                     </div>
                 </div>
             </div>
-
-
             <footer class="uni-santiago-no-title-divider">
                 <div class="uni-santiago-footer-wrapper">
                     <div class="uni-santiago-footer-container uni-santiago-container clearfix">
@@ -1080,65 +918,69 @@
                             <div id="text-2" class="widget widget_text uni-santiago-widget">
                                 <div class="textwidget">
                                     <p>
-                                        <img src="upload/logo-bg.webp" alt="" width="90" /><br />
-                                        <span class="gdlr-core-space-shortcode" style="margin-top: 0px;"></span><br />
-                                        Box 35300<br />
-                                        1810 Campus Way NE
+                                        <img style="width: fit-content; margin-left: -65px; margin-top: -5px;" src="upload/universidade_logo2.webp" alt=""/>
+                                        <br />
+                                        Avenida Bolanha<br />
+                                        Cidade de Assomada - CP 4 <br />
+                                        Ilha de Santiago, Cabo Verde
                                     </p>
                                     <p>
-                                        <span style="font-size: 15px; color: #ffffff;">+1-2534-4456-345</span><br />
+                                        <span style="font-size: 15px; color: #ffffff;">Tel: (+238) 2654154</span><br />
+                                        <span style="font-size: 15px; color: #ffffff;">Fax: (+238) 2654153</span><br />
+                                        <span style="font-size: 15px; color: #ffffff;">Linha verde: 8002526</span><br />
                                         <span class="gdlr-core-space-shortcode" style="margin-top: -20px;"></span><br />
-                                        <a style="font-size: 15px; color: #8dd7e5;" href="#">
-                                            <span class="__cf_email__">test@gmail.com</span>
-                                        </a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="uni-santiago-footer-column uni-santiago-item-pdlr uni-santiago-column-15">
                             <div id="gdlr-core-custom-menu-widget-2" class="widget widget_gdlr-core-custom-menu-widget uni-santiago-widget">
-                                <h3 class="uni-santiago-widget-title">Our Campus</h3>
+                                <h3 class="uni-santiago-widget-title">Universidade</h3>
                                 <span class="clear"></span>
                                 <div class="menu-our-campus-container">
                                     <ul id="menu-our-campus" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Acedemic</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Planning &#038; Administration</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Campus Safety</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Office of the Chancellor</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Facility Services</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Human Resources</a></li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Campi</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Viver na US</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Ação Social Universitária</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Conhecer a US</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="uni-santiago-footer-column uni-santiago-item-pdlr uni-santiago-column-15">
                             <div id="gdlr-core-custom-menu-widget-4" class="widget widget_gdlr-core-custom-menu-widget uni-santiago-widget">
-                                <h3 class="uni-santiago-widget-title">Academics</h3>
+                                <h3 class="uni-santiago-widget-title">Extensão</h3>
                                 <span class="clear"></span>
                                 <div class="menu-academics-container">
                                     <ul id="menu-academics" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Canvas</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Catalyst</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Library</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Time Schedule</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Apply For Admissions</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Pay My Tuition</a></li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Casa do Empreendedor</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Fundação Santiago Solidário</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Rotas do Arquipélago</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">US Comunidades</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">US MUV</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Santiago FEST</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Planeta US</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">RoteirUS Mundi</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Rotas do Arquipélago</li>
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="uni-santiago-footer-column uni-santiago-item-pdlr uni-santiago-column-15">
                             <div id="gdlr-core-custom-menu-widget-3" class="widget widget_gdlr-core-custom-menu-widget uni-santiago-widget">
-                                <h3 class="uni-santiago-widget-title">Campus Life</h3>
+                                <h3 class="uni-santiago-widget-title">Estudante</h3>
                                 <span class="clear"></span>
                                 <div class="menu-campus-life-container">
                                     <ul id="menu-campus-life" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Accessibility</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Financial Aid</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Food Services</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Housing</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Information Technologies</a></li>
-                                        <li class="menu-item  uni-santiago-normal-menu"><a href="#">Student Life</a></li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Serviços Académicos</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">US Pós</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Provedoria de Estudantes</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Calendário Académico</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Estágios Profissionais e Curriculares</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Associação de Estudante da US</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Finalistas e Colação de Grau(Regulamento e Manual)</li>
+                                        <li class="menu-item  uni-santiago-normal-menu">Alumni</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1147,13 +989,14 @@
                 </div>
                 <div class="uni-santiago-copyright-wrapper">
                     <div class="uni-santiago-copyright-container uni-santiago-container clearfix">
-                        <div class="uni-santiago-copyright-left uni-santiago-item-pdlr">Copyright All Right Reserved 2020, Max Themes</div>
-                        <div class="uni-santiago-copyright-right uni-santiago-item-pdlr">
+                        <div class="uni-santiago-copyright-left uni-santiago-item-pdlr">
+                            <div style="font-size: 14px;" class="uni-santiago-copyright-right uni-santiago-item-pdlr">© 2023, Universidade de Santiago - All Right Reserved. Developed by <a href="https://delga.tech/" target="_blank">Delga LLC</a></div>
+                        </div>
+                        <div style="font-size: 12px;" class="uni-santiago-copyright-right uni-santiago-item-pdlr">
                             <div class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align" style="padding-bottom: 0px;">
-                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="linkedin"><i class="fa fa-linkedin"></i></a>
-                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/usassomada" target="_blank" class="gdlr-core-social-network-icon" title="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.youtube.com/channel/UCP6sqqc-8aPPGLeqn58jFRA" target="_blank" class="gdlr-core-social-network-icon" title="youtube"><i class="fa fa-youtube-play"></i></a>
+                                <a href="https://www.instagram.com/universidade.de.santiago_us/?igshid=1sg74zr40hl5l" target="_blank" class="gdlr-core-social-network-icon" title="instagram"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1161,9 +1004,20 @@
             </footer>
         </div>
     </div>
-
-
-
+    <script>
+        document.querySelectorAll('.more').forEach(function(element) {
+    element.addEventListener('click', function() {
+        var completeElement = this.parentNode.querySelector('.complete');
+        if (completeElement.style.display === 'none' || !completeElement.style.display) {
+            completeElement.style.display = 'block';
+            this.textContent = 'Ver Menos';
+        } else {
+            completeElement.style.display = 'none';
+            this.textContent = 'Ver Mais';
+        }
+    });
+    });
+    </script>
     <script src="js/jquery/jquery.js" id="jquery-core-js"></script>
     <script src="js/uni-santiago-learnpress.js" id="uni-santiago-learnpress-js"></script>
     <script>
