@@ -26,6 +26,90 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400%2C700%7CRoboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css" />
 
+    <style>
+    .overlay {
+        display: none;
+        position: fixed;
+        padding: 10px;
+        width: 900px;
+        left: 50%;
+        height: 700px;
+        top: 55%;
+        margin-top: -350px; /* Half of the height */
+        margin-left: -450px;
+        background: #FFF;
+        z-index: 20;
+        overflow-y: auto; /* Enable vertical scrolling for the popup */
+        border-radius: 2%;
+    }
+
+    .overlay img {
+        position: relative;
+        padding-top: 30px;
+        height: 400px;
+        width: 800px;
+        left: 50%;
+        top: 50%;
+        margin-left: -400px;
+        border-radius: 1%;
+    }
+
+    .popup .overlay-text{
+        position: relative;
+        padding: 50px;
+        padding-top: 30px;
+    }
+
+    .popup .overlay-text h2{
+        color: #163269;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 36px;
+        padding-top: 20px;
+    }
+
+    .overlay-text p{
+        font-family: 'Times New Roman';
+        font-size: 16px;
+    }
+
+    #overlay:after {
+        position: fixed;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: -2;
+        overflow-y: hidden; /* Disable vertical scrolling for the background */
+    }
+
+    #overlay:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #FFF;
+        z-index: -1;
+    }
+
+    .popup {
+        position: relative;
+    }
+
+    .popup .close-icon {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #163269;
+        z-index: 30;
+    }
+
+    </style>
 </head>
 
 <body class="home page-template-default page page-id-6208 gdlr-core-body tribe-no-js uni-santiago-body uni-santiago-body-front uni-santiago-full uni-santiago-with-sticky-navigation uni-santiago-sticky-navigation-no-logo uni-santiago-blockquote-style-1 gdlr-core-link-to-lightbox" >
@@ -580,9 +664,21 @@
                                                             <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016</a></span>
                                                         </div>
                                                         <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 600 ;letter-spacing: 0px ;"><a href="#">Professor Tom </a></h3>
-                                                        <div class="gdlr-core-blog-content clearfix">
-                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" href="#">Read More</a>
+                                                        <div style="cursor: pointer;" class="gdlr-core-blog-content clearfix">
+                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" onclick="show('overlay')">Read More</a>
                                                         </div>
+                                                        <div class="overlay" id="overlay">
+                                                            <div class="popup">
+                                                              <span class="close-icon" onclick="hide('overlay')">&times;</span>
+                                                              <!-- Add your popup content here -->
+                                                              <div class="overlay-text">
+                                                                <img src="upload/shutterstock_106223549-900x500.jpg">
+                                                                <h2>Lorem Ipsum</h2>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero non mi euismod vehicula sed quis ante. Phasellus bibendum eros eget diam luctus ultricies. Morbi iaculis urna quis quam facilisis placerat. Sed maximus facilisis augue quis ornare. Aliquam ex augue, malesuada id condimentum mattis, rhoncus quis felis. Vivamus placerat lobortis quam non fermentum. Cras porttitor lectus at augue pharetra, finibus iaculis libero accumsan. Vivamus non dolor eu nunc consequat blandit. Vestibulum ullamcorper, tortor ut vulputate congue, elit augue porta justo, sit amet iaculis purus mauris nec nisi.</p>
+                                                                <p>Aenean fermentum ornare sem, eu cursus sem blandit a. Praesent vel ante vel magna venenatis tempus ac a elit. Phasellus id imperdiet tellus. Ut vel quam lacus. Phasellus consectetur elit vitae hendrerit convallis. Pellentesque tincidunt mi at orci pellentesque, sed interdum lacus malesuada. Phasellus et ligula tortor. Pellentesque suscipit rhoncus porta. Fusce sit amet mollis mauris.</p>
+                                                            </div>
+                                                            </div>
+                                                        </div> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -759,5 +855,19 @@
     </script>
     <script src="js/script-core.js" id="uni-santiago-script-core-js"></script>
     <script type='text/javascript' src='js/isotope.js'></script>
+
+    <!--Overlay-->
+    <script>
+        var show = function(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.classList.add('overlay-open'); // Add class to the body to disable scrolling
+        }
+
+        var hide = function(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.classList.remove('overlay-open'); // Remove class from the body to enable scrolling
+        }
+    </script>
+
 </body>
 </html>
