@@ -26,6 +26,140 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400%2C700%7CRoboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css" />
 
+    <style>
+    
+    :root {
+        --popupHeight: 150%;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .overlay-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    .popup {
+        position: absolute;
+        width: 800px;
+        height: 600px;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        overflow-y: auto;
+        border-radius: 2%;
+        z-index: 20;
+    }
+
+        .overlay img {
+        position: relative;
+        padding-top: 30px;
+        height: 400px;
+        width: 800px;
+        margin: 0 auto;
+        border-radius: 1%;
+        }
+
+        .popup .overlay-text {
+        padding: 50px;
+        padding-top: 30px;
+        }
+
+        .popup .overlay-text h2 {
+        color: #163269;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 36px;
+        padding-top: 20px;
+        }
+
+        .overlay-text p {
+        font-family: 'Times New Roman';
+        font-size: 16px;
+        }
+
+        .popup .close-icon {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #163269;
+        }
+        
+    @media screen and (max-width: 950px) {
+        .popup {
+        position: absolute;
+        width: 600px;
+        height: 500px;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        overflow-y: auto;
+        border-radius: 2%;
+        z-index: 20;
+    }
+
+        .overlay img {
+        position: relative;
+        padding-top: 30px;
+        height: 300px;
+        width: 600px;
+        margin: 0 auto;
+        border-radius: 1%;
+        }
+
+    }
+    @media screen and (max-width: 600px) {
+        .popup {
+        position: absolute;
+        width: 325px;
+        height: 500px;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        overflow-y: auto;
+        border-radius: 2%;
+        z-index: 20;
+    }
+
+        .overlay img {
+        position: relative;
+        padding-top: 30px;
+        height: 200px;
+        width: 600px;
+        margin: 0 auto;
+        border-radius: 1%;
+        }
+
+        .popup .overlay-text {
+        padding: 30px;
+        padding-top: 30px;
+        }
+
+        .popup .overlay-text h2 {
+        color: #163269;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        padding-top: 20px;
+        }
+    }
+
+    </style>
 </head>
 
 <body class="home page-template-default page page-id-6208 gdlr-core-body tribe-no-js uni-santiago-body uni-santiago-body-front uni-santiago-full uni-santiago-with-sticky-navigation uni-santiago-sticky-navigation-no-logo uni-santiago-blockquote-style-1 gdlr-core-link-to-lightbox" >
@@ -391,7 +525,7 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-weight: 500 ; font-size: 48px;  letter-spacing: 0px ;text-transform: none ;color: #ffffff; font-family: Jost, sans-serif;">ALUMNI</h3>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-weight: 500 ; font-size: 48px;  letter-spacing: 0px ;text-transform: none ;color: #ffffff; font-family: Jost, sans-serif;">US ALUMNI</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -413,8 +547,9 @@
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px ;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 18px ;text-transform: none ;color: #ffffff ;">
                                                         <p>
-                                                            From your time as a student to your post-graduate experience as an alumni, uni-santiago’s support and amenities continue, as a result of your connection to the US Alumni Network, now over 150,000 people.
+                                                            A comunidade US afirma-se como uma família cujos vínculos perdura a vida toda. Não por mero acaso, adotamos o slogan “Uma marca para a vida, uma porta para o mundo”. O US Alumni objetiva perenizar os laços que unem a Família US, criando pontes entre as diversas gerações, induzindo cumplicidades positivas, através de comunidade e networking e da abertura de canais de comunicação e entreajuda.
                                                         </p>
+                                                        <p>Através do SISPE (Serviço de Inserção Socioprofissional de Egressos), procuramos acompanhar o percurso dos nossos ex-estudantes, colocando à sua disposição um portfólio de oportunidades formativas, estágios, programas de eventos e outras atividades de extensão, serviços e benefícios exclusivos, visando não só a sua inserção sociolaboral, mas também a sua formação ao longo da vida e o seu crescimento profissional.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -433,11 +568,11 @@
                                     <div class="gdlr-core-event-item gdlr-core-item-pdb" style="padding-bottom: 25px ;">
                                         <div class="gdlr-core-block-item-title-wrap gdlr-core-left-align gdlr-core-item-mglr" style="margin-bottom: 37px ;">
                                             <div class="gdlr-core-block-item-title-inner clearfix">
-                                                <h3 class="gdlr-core-block-item-title" style="font-size: 24px ;font-style: normal ;text-transform: none ;letter-spacing: 0px ;color: #163269 ;">Alumni Events</h3>
+                                                <h3 class="gdlr-core-block-item-title" style="font-size: 24px ;font-style: normal ;text-transform: none ;letter-spacing: 0px ;color: #163269 ;">Galeria de Imagens da Participação dos US Alumni</h3>
                                                 <div class="gdlr-core-block-item-title-divider" style="font-size: 24px ;border-bottom-color: #dcdcdc ;border-bottom-width: 2px ;">
                                                 </div>
                                             </div>
-                                            <a class="gdlr-core-block-item-read-more" href="https://demo.goodlayers.com/uni-santiago/event-calendar/" target="_self" style="color: #3db166 ;">View All Events</a>
+                                            <a class="gdlr-core-block-item-read-more" href="#" target="_self" style="color: #3db166 ;">Ver Todas As Imagens</a> <!--Href to a Galary Picture page-->
                                         </div>
                                         <div class="gdlr-core-event-item-holder clearfix">
                                             <div class="gdlr-core-event-item-list gdlr-core-item-pdlr gdlr-core-style-grid gdlr-core-column-20 gdlr-core-without-frame gdlr-core-column-first clearfix">
@@ -448,9 +583,6 @@
                                                     <span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-start-date-month"><span class="gdlr-core-date">07</span><span class="gdlr-core-month">Jan</span></span>
                                                     <div class="gdlr-core-event-item-content-wrap">
                                                         <h3 class="gdlr-core-event-item-title" style="letter-spacing: 0px ;text-transform: none ;"><a href="#">Reunion Event : uni-santiago’s Alumni Golf Tour</a></h3>
-                                                        <div class="gdlr-core-event-item-info-wrap">
-                                                            <span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-time"><span class="gdlr-core-head"><i class="icon_clock_alt"></i></span><span class="gdlr-core-tail">7:00 am - 11:30 pm</span></span><span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-location"><span class="gdlr-core-head"><i class="icon_pin_alt"></i></span><span class="gdlr-core-tail">uni-santiago Grand Hall</span></span>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -462,9 +594,6 @@
                                                     <span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-start-date-month"><span class="gdlr-core-date">01</span><span class="gdlr-core-month">Jan</span></span>
                                                     <div class="gdlr-core-event-item-content-wrap">
                                                         <h3 class="gdlr-core-event-item-title" style="letter-spacing: 0px ;text-transform: none ;"><a href="#">uni-santiago’s Alumni Hot Air Ballon Trip in Turkey</a></h3>
-                                                        <div class="gdlr-core-event-item-info-wrap">
-                                                            <span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-time"><span class="gdlr-core-head"><i class="icon_clock_alt"></i></span><span class="gdlr-core-tail">10:00 am - 4:30 pm</span></span><span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-location"><span class="gdlr-core-head"><i class="icon_pin_alt"></i></span><span class="gdlr-core-tail">uni-santiago Grand Hall</span></span>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -476,71 +605,6 @@
                                                     <span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-start-date-month"><span class="gdlr-core-date">17</span><span class="gdlr-core-month">Dec</span></span>
                                                     <div class="gdlr-core-event-item-content-wrap">
                                                         <h3 class="gdlr-core-event-item-title" style="letter-spacing: 0px ;text-transform: none ;"><a href="#">Fintech &amp; Key Investment Conference</a></h3>
-                                                        <div class="gdlr-core-event-item-info-wrap">
-                                                            <span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-time"><span class="gdlr-core-head"><i class="icon_clock_alt"></i></span><span class="gdlr-core-tail">1:00 pm - 5:00 pm</span></span><span class="gdlr-core-event-item-info gdlr-core-skin-caption gdlr-core-type-location"><span class="gdlr-core-head"><i class="icon_pin_alt"></i></span><span class="gdlr-core-tail">uni-santiago Grand Hall</span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix gdlr-core-style-blog-column" style="padding-bottom: 0px ;">
-                                        <div class="gdlr-core-block-item-title-wrap gdlr-core-left-align gdlr-core-item-mglr" style="margin-bottom: 40px ;">
-                                            <div class="gdlr-core-block-item-title-inner clearfix">
-                                                <h3 class="gdlr-core-block-item-title" style="font-size: 24px ;font-style: normal ;text-transform: none ;letter-spacing: 0px ;color: #163269 ;">Alumni Updates</h3>
-                                                <div class="gdlr-core-block-item-title-divider" style="font-size: 24px ;border-bottom-width: 2px ;">
-                                                </div>
-                                            </div>
-                                            <a class="gdlr-core-block-item-read-more" href="#" target="_self" style="color: #3db166 ;">Read All News</a>
-                                        </div>
-                                        <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column-first">
-                                                <div class="gdlr-core-blog-grid ">
-                                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                        <a href="#"><img src="upload/3454568-1-900x500.jpg" alt="" width="900" height="500" title="3454568"/></a>
-                                                    </div>
-                                                    <div class="gdlr-core-blog-grid-content-wrap">
-                                                        <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016</a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-category"><a href="#" rel="tag">Blog</a></span>
-                                                        </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 600 ;letter-spacing: 0px ;"><a href="#">The Forum hosts a discussion with Niall Ferguson</a></h3>
-                                                        <div class="gdlr-core-blog-content clearfix">
-                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" href="#">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-blog-grid ">
-                                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                        <a href="#"><img src="upload/shutterstock_62838724-900x500.jpg" alt="" width="900" height="500" title="shutterstock_62838724"/></a>
-                                                    </div>
-                                                    <div class="gdlr-core-blog-grid-content-wrap">
-                                                        <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016</a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-category"><a href="#" rel="tag">Masonry</a></span>
-                                                        </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 600 ;letter-spacing: 0px ;"><a href="#">Can Biology and Chemistry work to save the world?</a></h3>
-                                                        <div class="gdlr-core-blog-content clearfix">
-                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" href="#">Read More</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-blog-grid ">
-                                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                        <a href="#"><img src="upload/shutterstock_1102460810-900x500.jpg" alt="" width="900" height="500" title="shutterstock_1102460810"/></a>
-                                                    </div>
-                                                    <div class="gdlr-core-blog-grid-content-wrap">
-                                                        <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016</a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-category"><a href="#" rel="tag">Blog</a></span>
-                                                        </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 600 ;letter-spacing: 0px ;"><a href="#">Professor Tom comments on voluntary recalls by snack brands</a></h3>
-                                                        <div class="gdlr-core-blog-content clearfix">
-                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" href="#">Read More</a>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -563,7 +627,7 @@
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 20px ;">
                                                     <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 31px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #51be78 ;">uni-santiago Alumni</h3>
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 31px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #51be78 ;">Alumni da Universidade de Santiago</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -575,25 +639,16 @@
                                         <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 15px ;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 23px ;text-transform: none ;color: #d8e3fb ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 23px ;text-transform: none ;color: #ffffff ;">
                                                         <p>
-                                                            We are one of the largest, most diverse universities in the USA with over 90,000 students in USA, and a further 30,000 studying across 180 countries for uni-santiago University.
+                                                            Os membros do US Alumni são parte integrante da comunidade US, podendo participar na vida da instituição de diferentes formas, designadamente como:
+                                                        
                                                         </p>
+                                                        <ul>
+                                                            <li>Embaixador da US - integrando a comunidade de pertença “Ami é US”;</li>
+                                                            <li>RetornadUS - como palestrante, formador ou mentor (inserido no programa RegressUS), ou ainda como aluno reingressado nas atividades académicas da US, em programas de pós-graduação ou cursos de curta duração, obtendo benefícios exclusivos;</li>
+                                                        </ul>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 15px ;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 19px ;font-weight: 500 ;text-transform: none ;color: #ffffff ;">
-                                                        <p>
-                                                            uni-santiago University was established by John Smith in 1920 for the public benefit and it is recognized globally. Throughout our great history, uni-santiago has offered access to a wide range of academic opportunities. As a world leader in higher education, the University has pioneered change in the sector.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border" href="#" id="gdlr-core-button-id-32692"><span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right fa fa-long-arrow-right" style="font-size: 18px ;color: #ffffff ;"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -602,121 +657,109 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gdlr-core-pbf-wrapper " style="padding: 90px 0px 30px 0px;">
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 70px 0px 30px 0px;" data-skin="Blut Title Column Service">
                         <div class="gdlr-core-pbf-background-wrap">
                         </div>
                         <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                             <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                                 <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 40px ;">
-                                        <div class="gdlr-core-title-item-title-wrap clearfix">
-                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 24px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;">Enjoy Benefits & Privileges</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first">
-                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding-bottom: 20px;">
-                                        <div class="gdlr-core-pbf-background-wrap">
-                                        </div>
-                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr" style="padding-bottom: 33px ;">
-                                                    <div class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-round" style="border-width: 0px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;">
-                                                        <a class="gdlr-core-lightgallery gdlr-core-js " href="upload/dan-gold-105699-unsplash.jpg"><img src="upload/dan-gold-105699-unsplash-900x500.jpg" alt="" width="900" height="500" title="dan-gold-105699-unsplash"/><span class="gdlr-core-image-overlay " style="border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;"><i class="gdlr-core-image-overlay-icon gdlr-core-size-22 fa fa-search"></i></span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;">
-                                                    <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 18px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">15% Off For Restaurant in US</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px ;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;text-transform: none ;color: #8f8f8f ;">
-                                                        <p>
-                                                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 16px ;font-weight: 400 ;letter-spacing: 0px ;color: #1E2B50 ;padding: 0px 0px 0px 0px;text-transform: none ;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;"><span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px ;color: #1E2B50 ;"></i></a>
+                                    <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix gdlr-core-style-blog-column" style="padding-bottom: 0px ;">
+                                        <div class="gdlr-core-block-item-title-wrap gdlr-core-left-align gdlr-core-item-mglr" style="margin-bottom: 40px ;">
+                                            <div class="gdlr-core-block-item-title-inner clearfix">
+                                                <h3 class="gdlr-core-block-item-title" style="font-size: 24px ;font-style: normal ;text-transform: none ;letter-spacing: 0px ;color: #163269 ;">Testemunhos dos US Alumni</h3>
+                                                <div class="gdlr-core-block-item-title-divider" style="font-size: 24px ;border-bottom-width: 2px ;">
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-column gdlr-core-column-20">
-                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 0px 0px 20px 0px;">
-                                        <div class="gdlr-core-pbf-background-wrap">
-                                        </div>
-                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr" style="padding-bottom: 33px ;">
-                                                    <div class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-round" style="border-width: 0px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;">
-                                                        <a class="gdlr-core-lightgallery gdlr-core-js " href="upload/shutterstock_167044400.jpg"><img src="upload/shutterstock_167044400-900x500.jpg" alt="" width="900" height="500" title="shutterstock_167044400"/><span class="gdlr-core-image-overlay " style="border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;"><i class="gdlr-core-image-overlay-icon gdlr-core-size-22 fa fa-search"></i></span></a>
+                                        <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column-first">
+                                                <div class="gdlr-core-blog-grid ">
+                                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                        <a href="#"><img src="upload/3454568-1-900x500.jpg" alt="" width="900" height="500" title="3454568"/></a>
+                                                    </div>
+                                                    <div class="gdlr-core-blog-grid-content-wrap">
+                                                        <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016</a></span>
+                                                        </div>
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 600 ;letter-spacing: 0px ;"><a href="#">Eusebio</a></h3>
+                                                        <div style="cursor: pointer;" class="gdlr-core-blog-content clearfix">
+                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" onclick="show('overlay')">Read More</a>
+                                                        </div>
+                                                        <div class="overlay" id="overlay">
+                                                            <div class="overlay-background"></div>
+                                                            <div class="popup">
+                                                                <span class="close-icon" onclick="hide('overlay')">&times;</span>
+                                                                <!-- Add your popup content here -->
+                                                                <div class="overlay-text">
+                                                                    <img src="upload/shutterstock_106223549-900x500.jpg">
+                                                                    <h2>Lorem Ipsum</h2>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero non mi euismod vehicula sed quis ante. Phasellus bibendum eros eget diam luctus ultricies. Morbi iaculis urna quis quam facilisis placerat. Sed maximus facilisis augue quis ornare. Aliquam ex augue, malesuada id condimentum mattis, rhoncus quis felis. Vivamus placerat lobortis quam non fermentum. Cras porttitor lectus at augue pharetra, finibus iaculis libero accumsan. Vivamus non dolor eu nunc consequat blandit. Vestibulum ullamcorper, tortor ut vulputate congue, elit augue porta justo, sit amet iaculis purus mauris nec nisi.</p>
+                                                                    <p>Aenean fermentum ornare sem, eu cursus sem blandit a. Praesent vel ante vel magna venenatis tempus ac a elit. Phasellus id imperdiet tellus. Ut vel quam lacus. Phasellus consectetur elit vitae hendrerit convallis. Pellentesque tincidunt mi at orci pellentesque, sed interdum lacus malesuada. Phasellus et ligula tortor. Pellentesque suscipit rhoncus porta. Fusce sit amet mollis mauris.</p>
+                                                                    <p>Aenean fermentum ornare sem, eu cursus sem blandit a. Praesent vel ante vel magna venenatis tempus ac a elit. Phasellus id imperdiet tellus. Ut vel quam lacus. Phasellus consectetur elit vitae hendrerit convallis. Pellentesque tincidunt mi at orci pellentesque, sed interdum lacus malesuada. Phasellus et ligula tortor. Pellentesque suscipit rhoncus porta. Fusce sit amet mollis mauris.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;">
-                                                    <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 18px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">40% Off US Fitness</h3>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                                <div class="gdlr-core-blog-grid ">
+                                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                        <a href="#"><img src="upload/shutterstock_62838724-900x500.jpg" alt="" width="900" height="500" title="shutterstock_62838724"/></a>
+                                                    </div>
+                                                    <div class="gdlr-core-blog-grid-content-wrap">
+                                                        <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016</a></span>
+                                                        </div>
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 600 ;letter-spacing: 0px ;"><a href="#">Can Biology and Chemistry work to save the world?</a></h3>
+                                                        <div style="cursor: pointer;" class="gdlr-core-blog-content clearfix">
+                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" onclick="show('overlay')">Read More</a>
+                                                        </div>
+                                                        <div class="overlay" id="overlay">
+                                                            <div class="overlay-background"></div>
+                                                            <div class="popup">
+                                                                <span class="close-icon" onclick="hide('overlay')">&times;</span>
+                                                                <!-- Add your popup content here -->
+                                                                <div class="overlay-text">
+                                                                    <img src="upload/shutterstock_106223549-900x500.jpg">
+                                                                    <h2>Lorem Ipsum</h2>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero non mi euismod vehicula sed quis ante. Phasellus bibendum eros eget diam luctus ultricies. Morbi iaculis urna quis quam facilisis placerat. Sed maximus facilisis augue quis ornare. Aliquam ex augue, malesuada id condimentum mattis, rhoncus quis felis. Vivamus placerat lobortis quam non fermentum. Cras porttitor lectus at augue pharetra, finibus iaculis libero accumsan. Vivamus non dolor eu nunc consequat blandit. Vestibulum ullamcorper, tortor ut vulputate congue, elit augue porta justo, sit amet iaculis purus mauris nec nisi.</p>
+                                                                    <p>Aenean fermentum ornare sem, eu cursus sem blandit a. Praesent vel ante vel magna venenatis tempus ac a elit. Phasellus id imperdiet tellus. Ut vel quam lacus. Phasellus consectetur elit vitae hendrerit convallis. Pellentesque tincidunt mi at orci pellentesque, sed interdum lacus malesuada. Phasellus et ligula tortor. Pellentesque suscipit rhoncus porta. Fusce sit amet mollis mauris.</p>
+                                                                    <p>Aenean fermentum ornare sem, eu cursus sem blandit a. Praesent vel ante vel magna venenatis tempus ac a elit. Phasellus id imperdiet tellus. Ut vel quam lacus. Phasellus consectetur elit vitae hendrerit convallis. Pellentesque tincidunt mi at orci pellentesque, sed interdum lacus malesuada. Phasellus et ligula tortor. Pellentesque suscipit rhoncus porta. Fusce sit amet mollis mauris.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px ;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;text-transform: none ;color: #8f8f8f ;">
-                                                        <p>
-                                                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.
-                                                        </p>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-20">
+                                                <div class="gdlr-core-blog-grid ">
+                                                    <div class="gdlr-core-blog-thumbnail gdlr-core-media-image gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                        <a href="#"><img src="upload/shutterstock_1102460810-900x500.jpg" alt="" width="900" height="500" title="shutterstock_1102460810"/></a>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 16px ;font-weight: 400 ;letter-spacing: 0px ;color: #1E2B50 ;padding: 0px 0px 0px 0px;text-transform: none ;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;"><span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px ;color: #1E2B50 ;"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-core-pbf-column gdlr-core-column-20">
-                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 0px 0px 20px 0px;">
-                                        <div class="gdlr-core-pbf-background-wrap">
-                                        </div>
-                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr" style="padding-bottom: 33px ;">
-                                                    <div class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-round" style="border-width: 0px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;">
-                                                        <a class="gdlr-core-lightgallery gdlr-core-js " href="upload/shutterstock_160526219.jpg"><img src="upload/shutterstock_160526219-900x500.jpg" alt="" width="900" height="500" title="shutterstock_160526219"/><span class="gdlr-core-image-overlay " style="border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;"><i class="gdlr-core-image-overlay-icon gdlr-core-size-22 fa fa-search"></i></span></a>
+                                                    <div class="gdlr-core-blog-grid-content-wrap">
+                                                        <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><a href="#">June 6, 2016</a></span>
+                                                        </div>
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 17px ;font-weight: 600 ;letter-spacing: 0px ;"><a href="#">Professor Tom </a></h3>
+                                                        <div style="cursor: pointer;" class="gdlr-core-blog-content clearfix">
+                                                            <a class="gdlr-core-excerpt-read-more gdlr-core-button gdlr-core-rectangle" onclick="show('overlay')">Read More</a>
+                                                        </div>
+                                                        <div class="overlay" id="overlay">
+                                                            <div class="overlay-background"></div>
+                                                            <div class="popup">
+                                                                <span class="close-icon" onclick="hide('overlay')">&times;</span>
+                                                                <!-- Add your popup content here -->
+                                                                <div class="overlay-text">
+                                                                    <img src="upload/shutterstock_106223549-900x500.jpg">
+                                                                    <h2>Lorem Ipsum</h2>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id libero non mi euismod vehicula sed quis ante. Phasellus bibendum eros eget diam luctus ultricies. Morbi iaculis urna quis quam facilisis placerat. Sed maximus facilisis augue quis ornare. Aliquam ex augue, malesuada id condimentum mattis, rhoncus quis felis. Vivamus placerat lobortis quam non fermentum. Cras porttitor lectus at augue pharetra, finibus iaculis libero accumsan. Vivamus non dolor eu nunc consequat blandit. Vestibulum ullamcorper, tortor ut vulputate congue, elit augue porta justo, sit amet iaculis purus mauris nec nisi.</p>
+                                                                    <p>Aenean fermentum ornare sem, eu cursus sem blandit a. Praesent vel ante vel magna venenatis tempus ac a elit. Phasellus id imperdiet tellus. Ut vel quam lacus. Phasellus consectetur elit vitae hendrerit convallis. Pellentesque tincidunt mi at orci pellentesque, sed interdum lacus malesuada. Phasellus et ligula tortor. Pellentesque suscipit rhoncus porta. Fusce sit amet mollis mauris.</p>
+                                                                    <p>Aenean fermentum ornare sem, eu cursus sem blandit a. Praesent vel ante vel magna venenatis tempus ac a elit. Phasellus id imperdiet tellus. Ut vel quam lacus. Phasellus consectetur elit vitae hendrerit convallis. Pellentesque tincidunt mi at orci pellentesque, sed interdum lacus malesuada. Phasellus et ligula tortor. Pellentesque suscipit rhoncus porta. Fusce sit amet mollis mauris.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 20px ;">
-                                                    <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 18px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Free Library Access</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 2px ;">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;text-transform: none ;color: #8f8f8f ;">
-                                                        <p>
-                                                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Dudenmouth.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 16px ;font-weight: 400 ;letter-spacing: 0px ;color: #1E2B50 ;padding: 0px 0px 0px 0px;text-transform: none ;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;"><span class="gdlr-core-content">Read More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 21px ;color: #1E2B50 ;"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -892,5 +935,48 @@
     </script>
     <script src="js/script-core.js" id="uni-santiago-script-core-js"></script>
     <script type='text/javascript' src='js/isotope.js'></script>
+
+    <!--Overlay-->
+    <script>
+        var show = function(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.classList.add('overlay-open'); // Add class to the body to disable scrolling
+        }
+
+        var hide = function(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.classList.remove('overlay-open'); // Remove class from the body to enable scrolling
+        }
+    </script>
+
+    <script>
+        var overlayBackground = null; // Declare the overlay background variable outside the functions
+    
+        var show = function(id) {
+        document.getElementById(id).style.display = 'block';
+        document.body.classList.add('overlay-open'); // Add class to the body to disable scrolling
+    
+        // Check if the browser is Safari
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        if (isSafari && !overlayBackground) {
+            overlayBackground = document.createElement('div');
+            overlayBackground.classList.add('overlay-background');
+            document.body.appendChild(overlayBackground);
+        }
+        }
+    
+        var hide = function(id) {
+        document.getElementById(id).style.display = 'none';
+        document.body.classList.remove('overlay-open'); // Remove class from the body to enable scrolling
+    
+        // Check if the browser is Safari and remove the overlay background
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        if (isSafari && overlayBackground) {
+            overlayBackground.parentNode.removeChild(overlayBackground);
+            overlayBackground = null; // Reset the overlay background variable
+        }
+        }
+    </script>
+  
 </body>
 </html>
