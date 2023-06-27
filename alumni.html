@@ -100,79 +100,63 @@
         }
         
     @media screen and (max-width: 950px) {
-        #overlay {
-            padding: 10px;
-            width: 600px;
-            left: 50%;
-            height: 500px;
-            top: 55%;
-            margin-top: -250px; /* Half of the height */
-            margin-left: -300px;
-        }
-
-        .overlay img {
-            height: 250px;
-            width: 700px;
-            margin-left: -215px;
-        }
-
-        .popup .overlay-text{
-            padding: 75px;
-            padding-top: 30px;
-        }
-
-        .popup .overlay-text h2{
-            color: #163269;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 36px;
-            padding-top: 20px;
-        }
-
-        .overlay-text p{
-            font-family: 'Times New Roman';
-            font-size: 16px;
-        }
-
-        #overlay:before {
-            height: 225%;
-        }
+        .popup {
+        position: absolute;
+        width: 600px;
+        height: 500px;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        overflow-y: auto;
+        border-radius: 2%;
+        z-index: 20;
     }
 
-    @media screen and (max-width: 600px) {
-        #overlay {
-            padding: 0px;
-            width: 300px;
-            height: 500px;
-            margin-top: -250px; /* Half of the height */
-            margin-left: -150px;
+        .overlay img {
+        position: relative;
+        padding-top: 30px;
+        height: 300px;
+        width: 600px;
+        margin: 0 auto;
+        border-radius: 1%;
         }
+
+    }
+    @media screen and (max-width: 600px) {
+        .popup {
+        position: absolute;
+        width: 325px;
+        height: 500px;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        overflow-y: auto;
+        border-radius: 2%;
+        z-index: 20;
+    }
 
         .overlay img {
-            height: 200px;
-            width: 250px;
-            margin-left: -125px;
+        position: relative;
+        padding-top: 30px;
+        height: 200px;
+        width: 600px;
+        margin: 0 auto;
+        border-radius: 1%;
         }
 
-        .popup .overlay-text{
-            padding: 20px;
-            padding-top: 30px;
+        .popup .overlay-text {
+        padding: 30px;
+        padding-top: 30px;
         }
 
-        .popup .overlay-text h2{
-            color: #163269;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 24px;
+        .popup .overlay-text h2 {
+        color: #163269;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        padding-top: 20px;
         }
-
-        .overlay-text p{
-            font-family: 'Times New Roman';
-            font-size: 16px;
-        }
-
-        #overlay:before {
-            height: 350%;
-        }
-    
     }
 
     </style>
