@@ -126,7 +126,7 @@
                                     <a href="#">Pesquisa</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item"><a href="#">IPED</a></li>
-                                        <li class="menu-item"><a href="#">Núcleo de Apoio à Pesquisa</a></li>
+                                        <li class="menu-item"><a href="#">Núcleo de Apoio a Pesquisa</a></li>
                                         <li class="menu-item"><a href="#">Publicações</a></li>
                                     </ul>
                                 </li>
@@ -294,7 +294,7 @@
                                         <li class="menu-item uni-santiago-normal-menu"><a>Pesquisa</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item" data-size="60"><a href="#">IPED</a></li>
-                                                <li class="menu-item" data-size="60"><a href="#">Núcleo de Apoio à Pesquisa</a></li>
+                                                <li class="menu-item" data-size="60"><a href="#">Núcleo de Apoio a Pesquisa</a></li>
                                                 <li class="menu-item" data-size="60"><a href="#">Publicações</a></li>
                                             </ul>
                                         </li>
@@ -460,10 +460,10 @@
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 20px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 17px; text-transform: none;">
                                                         <div class="gdlr-core-title-item-title-wrap clearfix">
-                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 20px; font-weight: 500; letter-spacing: 0px; text-transform: uppercase;""">OBJECTIVOS</h3>
+                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 20px; font-weight: 500; letter-spacing: 0px; text-transform: uppercase;""">OBJETIVOS:</h3>
                                                         </div>
                                                         <p>
-                                                            A saúde materna e infantil em Cabo Verde vem apresentando avanços em relação à qualidade dos serviços prestados e à população abrangida. A cobertura pré-natal, a assistência ao parto a nível hospitalar e a cobertura vacinal na primeira infância aumentaram substancialmente nos últimos anos, possibilitando uma importante redução da mortalidade materna e neonatal.
+                                                            A saúde materna e infantil em Cabo Verde vem apresentando avanços em relação a qualidade dos serviços prestados e a população abrangida. A cobertura pré-natal, a assistência ao parto a nível hospitalar e a cobertura vacinal na primeira infância aumentaram substancialmente nos últimos anos, possibilitando uma importante redução da mortalidade materna e neonatal.
                                                         </p>
                                                         <p>
                                                             Tendo como base essa realidade, apresentamos os objetivos do curso de Mestrado em Enfermagem de Saúde Materno-Infantil em Cabo Verde:
@@ -502,7 +502,7 @@
                                                             <span class="gdlr-core-icon-list-icon-wrap gdlr-core-left" style="margin-top: 5px;">
                                                                 <i class="gdlr-core-icon-list-icon fa fa-dot-circle-o" style="color: #4f4f4f; font-size: 18px; width: 18px;"></i>
                                                             </span>
-                                                            <div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="font-size: 18px;">Capacitar os estudantes a identificarem precocemente os principais problemas de saúde que afetam crianças e adolescentes e intervirem de forma a promover uma melhor assistência à saúde</span></div>
+                                                            <div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="font-size: 18px;">Capacitar os estudantes a identificarem precocemente os principais problemas de saúde que afetam crianças e adolescentes e intervirem de forma a promover uma melhor assistência a saúde</span></div>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -674,7 +674,7 @@
                                                                             <td>4</td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td>Cuidados de Enfermagem à Criança e ao Adolescente <br> em Situação de Doença e Hospitalização</td>
+                                                                            <td>Cuidados de Enfermagem a Criança e ao Adolescente <br> em Situação de Doença e Hospitalização</td>
                                                                             <td>ENF</td>
                                                                             <td>10</td>
                                                                         </tr>
@@ -717,12 +717,12 @@
                                                                             <th style="background-color: #e6e6e6; text-transform: none; color: black; font-weight: 500;">Créditos</th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td>Ensino Clínico I – <br> Atenção à Gestante e à Criança <br> na Atenção Primária de Saúde</td>
+                                                                            <td>Ensino Clínico I – <br> Atenção a Gestante e a Criança <br> na Atenção Primária de Saúde</td>
                                                                             <td>ENF</td>
                                                                             <td>15</td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td>Ensino Clínico II – <br> Atenção à Gestante, Puérpera, Parturiente e <br> Criança no Contexto Hospitalar</td>
+                                                                            <td>Ensino Clínico II – <br> Atenção a Gestante, Puérpera, Parturiente e <br> Criança no Contexto Hospitalar</td>
                                                                             <td>ENF</td>
                                                                             <td>15</td>
                                                                         </tr>
@@ -782,10 +782,10 @@
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 10px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 17px; text-transform: none;">
                                                         <p>
-                                                            A admissão à matrícula no curso de Mestrado em Enfermagem de Saúde Materna e Infantil obedece ao disposto na Lei de Bases do Sistema Educativo, Decreto-Legislativo nº 2/2010, de 7 de maio, conjugado com os dispositivos internos de regulação e normalização das condições de acesso. Regime de graus e diplomas e das IES.
+                                                            A admissão a matrícula no curso de Mestrado em Enfermagem de Saúde Materna e Infantil obedece ao disposto na Lei de Bases do Sistema Educativo, Decreto-Legislativo nº 2/2010, de 7 de maio, conjugado com os dispositivos internos de regulação e normalização das condições de acesso. Regime de graus e diplomas e das IES.
                                                         </p>
                                                         <p>
-                                                            Serão admitidos à matrícula no Mestrado em Enfermagem de Saúde Materno-Infantil os cidadãos nacionais ou estrangeiros que sejam licenciados em Enfermagem.
+                                                            Serão admitidos a matrícula no Mestrado em Enfermagem de Saúde Materno-Infantil os cidadãos nacionais ou estrangeiros que sejam licenciados em Enfermagem.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -801,7 +801,7 @@
                                                 <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 10px;">
                                                     <div class="gdlr-core-text-box-item-content" style="font-size: 17px; text-transform: none;">
                                                         <p>
-                                                            O mestrado em Enfermagem de Saúde Materno-Infantil será um profissional apto a prestar cuidados de enfermagem especializados e de forma crítica à mulher em seu ciclo gravídico puerperal, ao recém-nascido, criança e adolescente em situações de saúde e doença.
+                                                            O mestrado em Enfermagem de Saúde Materno-Infantil será um profissional apto a prestar cuidados de enfermagem especializados e de forma crítica a mulher em seu ciclo gravídico puerperal, ao recém-nascido, criança e adolescente em situações de saúde e doença.
                                                         </p>  
                                                     </div>
                                                 </div>
@@ -909,7 +909,7 @@
         } )( document.body );
     </script>
     <script>
-        /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */
+        /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Segunda","Tue","Wed","Thu","Sexta","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */
     </script>
     <script src="js/script.js" id="gdlr-core-plugin-js"></script>
     <script id="gdlr-core-page-builder-js-extra">
