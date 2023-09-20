@@ -114,10 +114,10 @@
                                         <li class="menu-item">
                                             <a href="#">Estrutura de Apoio ao Ensino</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item"><a href="#">Biblioteca</a></li>
-                                                <li class="menu-item"><a href="#">Livraria/papelaria</a></li>
-                                                <li class="menu-item"><a href="#">Laboratórios</a></li>
-                                                <li class="menu-item"><a href="#">CADT</a></li>
+                                                <li class="menu-item"><a href="viver_na_us.html#biblioteca"> Biblioteca</a></li>
+                                                <li class="menu-item"><a href="viver_na_us.html#livraria"> Livraria/papelaria</a></li>
+                                                <li class="menu-item"><a a type="button" onclick="alert('Em construção')">Laboratórios</a></li>
+                                                <li class="menu-item"><a href="CADT.html"> CADT</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -282,7 +282,7 @@
                                                         <ul class="sub-menu">
                                                             <li class="menu-item"><a href="viver_na_us.html#biblioteca"> Biblioteca</a></li>
                                                             <li class="menu-item"><a href="viver_na_us.html#livraria"> Livraria/papelaria</a></li>
-                                                            <li class="menu-item"><a href="Laboratorios.html"> Laboratórios</a></li>
+                                                            <li class="menu-item"><a a type="button" onclick="alert('Em construção')">Laboratórios</a></li>
                                                             <li class="menu-item"><a href="CADT.html"> CADT</a></li>
                                                         </ul>
                                                     </li>
@@ -345,7 +345,7 @@
                                             <li class="menu-item" data-size="60"><a href="https://portal.usantiago.cv/login/#">Portal</a></li>                                            
                                             <li class="menu-item" data-size="60"><a href="mailto:reitoria@us.edu.cv">E-mail</a></li>
                                             <li class="menu-item" data-size="60"><a href="https://mcctic.ese.ipsantarem.pt/usantiago/">Moodle</a></li>
-                                            <li class="menu-item" data-size="60"><a href="#">Biblioteca Digital</a></li>
+                                            <li class="menu-item" data-size="60"><a a type="button" onclick="alert('Em construção')">Biblioteca Digital</a></li>
                                             <li class="menu-item" data-size="60"><a href="ouvidoria.html">Ouvidoria</a></li>
                                         </ul>
                                     </li>
